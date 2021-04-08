@@ -1,7 +1,0 @@
-stopsound @s music
-function ocarina_of_time:teleports/remove_entities
-function ocarina_of_time:teleports/remove_other
-function ocarina_of_time:teleports/kokiri_forest/enemies
-function ocarina_of_time:teleports/kokiri_forest/loot_reset
-tag @a add Indoors
-tp @s -625 65 -626
