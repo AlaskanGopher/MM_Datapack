@@ -28,4 +28,4 @@ execute if entity @s[x=269,y=37,z=-353,dx=1,dz=0] run function majoras_mask:tele
 
 # Tunnels
 execute if entity @s[x=332,y=50,z=-399,dx=0,dz=4] run function majoras_mask:teleports/clocktown/west_clocktown/tunnels/south_south_clocktown
-execute if entity @s[x=337,y=57,z=-366,dx=0,dz=5] run function majoras_mask:teleports/clocktown/west_clocktown/tunnels/middle_south_clocktown
+execute if entity @s[x=343,y=57,z=-367,dx=0,dz=5] run function majoras_mask:teleports/clocktown/west_clocktown/tunnels/middle_south_clocktown
