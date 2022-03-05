@@ -5,7 +5,7 @@ execute as @e[tag=DekuFlower] at @s if entity @s[distance=1..] run setblock ~ ~ 
 execute as @e[tag=DekuFlower] at @s if entity @p[distance=0..1,scores={Sneak=1..},tag=Wearing_Deku_Mask] run tp @p ~ ~0.5 ~
 execute as @e[tag=DekuFlower] at @s if entity @p[tag=Wearing_Deku_Mask,scores={Sneak=1..},distance=0..2] run setblock ~ ~ ~ minecraft:spruce_slab replace
 
-execute as @e[tag=DekuFlower] at @s if entity @p[tag=Wearing_Deku_Mask,distance=0..1,scores={Sneak=1..}] run scoreboard players add @s _DekuFlowerTimer 1
+execute as @e[tag=DekuFlower] at @s if entity @p[tag=Wearing_Deku_Mask,distance=0..1,scores={Sneak=1..}] run scoreboard players add @p _DekuFlowerTimer 1
 
 execute as @e[tag=DekuFlower,scores={_DekuFlowerTimer=1..20}] at @s if entity @p[tag=Wearing_Deku_Mask,distance=0..1,scores={Sneak=1..}] run playsound minecraft:block.nylium.step block @s ~ ~ ~ 0.1 1
 
