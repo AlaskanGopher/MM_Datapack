@@ -1,6 +1,6 @@
 scoreboard players add @s _DekuFlowerTimer 1
 
-execute if entity @s[scores={_DekuFlowerTimer=1}] run summon minecraft:armor_stand ~ ~ ~ {Tags:["FlowerFloat"],Invulnerable:1b,Invisible:1b}
+execute if entity @s[scores={_DekuFlowerTimer=1}] run summon minecraft:armor_stand ~ ~3 ~ {Tags:["FlowerFloat"],Invulnerable:1b,Invisible:0b}
 
 execute if entity @s[scores={_DekuFlowerTimer=1},tag=!GoldLaunch] run data merge entity @e[type=armor_stand,tag=FlowerFloat,sort=nearest,limit=1] {Motion:[0.0,1.3,0.0]}
 execute if entity @s[scores={_DekuFlowerTimer=1},tag=GoldLaunch] run data merge entity @e[type=armor_stand,tag=FlowerFloat,sort=nearest,limit=1] {Motion:[0.0,2.0,0.0]}
