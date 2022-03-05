@@ -31,8 +31,8 @@ execute if entity @s[scores={_DekuFlowerTimer=15..}] at @s if block ~ ~-.6 ~ min
 execute if entity @s[scores={_DekuFlowerTimer=1..}] if entity @e[type=armor_stand,tag=FlowerFloat] at @s run effect give @s minecraft:levitation 1 1 true
 execute if entity @s[scores={_DekuFlowerTimer=15..}] unless entity @e[type=armor_stand,tag=FlowerFloat] at @s run effect clear @s minecraft:levitation
 
-execute as @e[type=armor_stand,tag=FlowerFloat] run data modify entity @s Pos[0] set from entity @p Pos[0]
-execute as @e[type=armor_stand,tag=FlowerFloat] run data modify entity @s Pos[2] set from entity @p Pos[2]
+execute as @e[type=armor_stand,tag=FlowerFloat] run data modify entity @s Motion[0] set from entity @p Motion[0]
+execute as @e[type=armor_stand,tag=FlowerFloat] run data modify entity @s Motion[2] set from entity @p Motion[2]
 execute as @e[type=armor_stand,tag=FlowerFloat] at @s rotated as @s run tp @p ~ ~ ~ ~ ~
 
 execute if entity @s[scores={_DekuFlowerTimer=0}] unless entity @s[tag=Float] run effect clear @s minecraft:levitation
