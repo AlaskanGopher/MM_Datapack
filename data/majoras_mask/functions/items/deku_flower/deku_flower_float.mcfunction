@@ -1,6 +1,6 @@
 scoreboard players add @s _DekuFlowerTimer 1
 
-execute if entity @s[scores={_DekuFlowerTimer=1}] run summon minecraft:armor_stand ~ ~3 ~ {Tags:["FlowerFloat"],Invulnerable:1b,Invisible:0b}
+execute if entity @s[scores={_DekuFlowerTimer=1}] run summon minecraft:armor_stand ~ ~ ~ {Tags:["FlowerFloat"],Invulnerable:1b,Invisible:0b}
 
 execute if entity @s[scores={_DekuFlowerTimer=1},tag=!GoldLaunch] run data merge entity @e[type=armor_stand,tag=FlowerFloat,sort=nearest,limit=1] {Motion:[0.0,1.3,0.0]}
 execute if entity @s[scores={_DekuFlowerTimer=1},tag=GoldLaunch] run data merge entity @e[type=armor_stand,tag=FlowerFloat,sort=nearest,limit=1] {Motion:[0.0,2.0,0.0]}
@@ -33,7 +33,7 @@ execute if entity @s[scores={_DekuFlowerTimer=15..}] unless entity @e[type=armor
 
 execute as @e[type=armor_stand,tag=FlowerFloat] run data modify entity @s Pos[0] set from entity @p Pos[0]
 execute as @e[type=armor_stand,tag=FlowerFloat] run data modify entity @s Pos[2] set from entity @p Pos[2]
-execute as @e[type=armor_stand,tag=FlowerFloat] at @s rotated as @s run tp @s ~ ~ ~ ~ ~
+execute as @e[type=armor_stand,tag=FlowerFloat] at @s rotated as @s run tp @p ~ ~ ~ ~ ~
 
 execute if entity @s[scores={_DekuFlowerTimer=0}] unless entity @s[tag=Float] run effect clear @s minecraft:levitation
 execute if entity @s[scores={_DekuFlowerTimer=0}] unless entity @s[tag=Float] run effect clear @s minecraft:jump_boost
