@@ -2,11 +2,12 @@
 
 execute if entity @s[scores={DayCycle=1..3,Time=0..20}] run bossbar set minecraft:timetitle style notched_12
 execute if entity @s[scores={DayCycle=1..3,Time=0..20}] run bossbar set minecraft:timetitle max 12000
+execute if entity @s[scores={DayCycle=1..3,Time=0..20}] run bossbar set minecraft:timetitle players @a
 
 
 # 1st Day
-execute if entity @s[scores={DayCycle=1,Time=1}] run title @s subtitle "-72 Hours Remain-"
-execute if entity @s[scores={DayCycle=1,Time=1}] run title @s title "Dawn of The First Day"
+execute if entity @s[scores={DayCycle=1,Time=1}] run title @a subtitle "-72 Hours Remain-"
+execute if entity @s[scores={DayCycle=1,Time=1}] run title @a title "Dawn of The First Day"
 
 execute if entity @s[scores={DayCycle=1,Time=0..999}] run bossbar set minecraft:timetitle name "§7§l1st Day - Hour 6"
 execute if entity @s[scores={DayCycle=1,Time=1000..1999}] run bossbar set minecraft:timetitle name "§7§l1st Day - Hour 7"
@@ -22,8 +23,8 @@ execute if entity @s[scores={DayCycle=1,Time=10000..10999}] run bossbar set mine
 execute if entity @s[scores={DayCycle=1,Time=11000..11999}] run bossbar set minecraft:timetitle name "§7§l1st Day - Hour 5"
 
 # 1st Night
-execute if entity @s[scores={DayCycle=1,Time=12000}] run title @s subtitle "-60 Hours Remain-"
-execute if entity @s[scores={DayCycle=1,Time=12000}] run title @s title "Night of the First Day"
+execute if entity @s[scores={DayCycle=1,Time=12000}] run title @a subtitle "-60 Hours Remain-"
+execute if entity @s[scores={DayCycle=1,Time=12000}] run title @a title "Night of the First Day"
 
 execute if entity @s[scores={DayCycle=1,Time=12000..12999}] run bossbar set minecraft:timetitle name "§7§l1st Night - Hour 6"
 execute if entity @s[scores={DayCycle=1,Time=13000..13999}] run bossbar set minecraft:timetitle name "§7§l1st Night - Hour 7"
@@ -39,8 +40,8 @@ execute if entity @s[scores={DayCycle=1,Time=22000..22999}] run bossbar set mine
 execute if entity @s[scores={DayCycle=1,Time=23000..23999}] run bossbar set minecraft:timetitle name "§7§l1st Night - Hour 5"
 
 # 2nd Day
-execute if entity @s[scores={DayCycle=2,Time=1}] run title @s subtitle "-48 Hours Remain-"
-execute if entity @s[scores={DayCycle=2,Time=1}] run title @s title "Dawn of The Second Day"
+execute if entity @s[scores={DayCycle=2,Time=1}] run title @a subtitle "-48 Hours Remain-"
+execute if entity @s[scores={DayCycle=2,Time=1}] run title @a title "Dawn of The Second Day"
 
 execute if entity @s[scores={DayCycle=2,Time=0..999}] run bossbar set minecraft:timetitle name "§7§l2nd Day - Hour 6"
 execute if entity @s[scores={DayCycle=2,Time=1000..1999}] run bossbar set minecraft:timetitle name "§7§l2nd Day - Hour 7"
@@ -56,8 +57,8 @@ execute if entity @s[scores={DayCycle=2,Time=10000..10999}] run bossbar set mine
 execute if entity @s[scores={DayCycle=2,Time=11000..11999}] run bossbar set minecraft:timetitle name "§7§l2nd Day - Hour 5"
 
 # 2nd Night
-execute if entity @s[scores={DayCycle=2,Time=12000}] run title @s subtitle "-36 Hours Remain-"
-execute if entity @s[scores={DayCycle=2,Time=12000}] run title @s title "Night of the Second Day"
+execute if entity @s[scores={DayCycle=2,Time=12000}] run title @a subtitle "-36 Hours Remain-"
+execute if entity @s[scores={DayCycle=2,Time=12000}] run title @a title "Night of the Second Day"
 
 execute if entity @s[scores={DayCycle=2,Time=12000..12999}] run bossbar set minecraft:timetitle name "§7§l2nd Night - Hour 6"
 execute if entity @s[scores={DayCycle=2,Time=13000..13999}] run bossbar set minecraft:timetitle name "§7§l2nd Night - Hour 7"
@@ -73,8 +74,8 @@ execute if entity @s[scores={DayCycle=2,Time=22000..22999}] run bossbar set mine
 execute if entity @s[scores={DayCycle=2,Time=23000..23999}] run bossbar set minecraft:timetitle name "§7§l2nd Night - Hour 5"
 
 # Final Day
-execute if entity @s[scores={DayCycle=3,Time=1}] run title @s subtitle "-24 Hours Remain-"
-execute if entity @s[scores={DayCycle=3,Time=1}] run title @s title "Dawn of The Final Day"
+execute if entity @s[scores={DayCycle=3,Time=1}] run title @a subtitle "-24 Hours Remain-"
+execute if entity @s[scores={DayCycle=3,Time=1}] run title @a title "Dawn of The Final Day"
 
 execute if entity @s[scores={DayCycle=3,Time=0..999}] run bossbar set minecraft:timetitle name "§7§lFinal Day - Hour 6"
 execute if entity @s[scores={DayCycle=3,Time=1000..1999}] run bossbar set minecraft:timetitle name "§7§lFinal Day - Hour 7"
@@ -91,8 +92,8 @@ execute if entity @s[scores={DayCycle=3,Time=11000..11999}] run bossbar set mine
 
 # 3rd Night
 
-execute if entity @s[scores={DayCycle=3,Time=12000}] run title @s subtitle "-12 Hours Remain-"
-execute if entity @s[scores={DayCycle=3,Time=12000}] run title @s title "Night of the Final Day"
+execute if entity @s[scores={DayCycle=3,Time=12000}] run title @a subtitle "-12 Hours Remain-"
+execute if entity @s[scores={DayCycle=3,Time=12000}] run title @a title "Night of the Final Day"
 
 execute if entity @s[scores={DayCycle=3,Time=12000..12999}] run bossbar set minecraft:timetitle name "§7§lFinal Night - Hour 6"
 execute if entity @s[scores={DayCycle=3,Time=13000..13999}] run bossbar set minecraft:timetitle name "§7§lFinal Night - Hour 7"
@@ -104,8 +105,8 @@ execute if entity @s[scores={DayCycle=3,Time=17000..17999}] run bossbar set mine
 # Final Hours
 
 
-execute if entity @s[scores={DayCycle=3,Time=18000}] run title @s subtitle "-6 Hours Remain-"
-execute if entity @s[scores={DayCycle=3,Time=18000}] run title @s title "Final Hours"
+execute if entity @s[scores={DayCycle=3,Time=18000}] run title @a subtitle "-6 Hours Remain-"
+execute if entity @s[scores={DayCycle=3,Time=18000}] run title @a title "Final Hours"
 
 execute if entity @s[scores={DayCycle=3,Time=18000}] run bossbar set minecraft:timetitle style notched_6
 execute if entity @s[scores={DayCycle=3,Time=18000}] run bossbar set minecraft:timetitle max 6000
