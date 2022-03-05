@@ -10,25 +10,25 @@ execute as @a[scores={DekuBounceCount=1}] at @s if entity @s[tag=DekuWaterBounce
 execute as @a[scores={DekuBounceCount=1}] at @s if entity @s[tag=DekuWaterBounce] run data merge entity @e[type=armor_stand,tag=DekuWaterBounce,limit=1] {Motion:[0.0,0.4,0.0]}
 execute as @a[scores={DekuBounceCount=1}] at @s if entity @s[tag=DekuWaterBounce] run scoreboard players set @s Cooldown 0
 execute as @a[scores={DekuBounceCount=1}] at @s if entity @s[tag=DekuWaterBounce] run playsound minecraft:entity.puffer_fish.blow_up player @s ~ ~ ~ 4 1
-execute as @a[scores={DekuBounceCount=1}] at @s if entity @s[tag=DekuWaterBounce] run effect give @a minecraft:levitation 1 1 true
+execute as @a[scores={DekuBounceCount=1}] at @s if entity @s[tag=DekuWaterBounce] run effect give @s minecraft:levitation 1 1 true
 execute as @a[scores={DekuBounceCount=1}] at @s if entity @s[tag=DekuWaterBounce] run scoreboard players set @s DekuBounceCount 2
 
 execute as @a[scores={DekuBounceCount=3}] at @s if entity @s[tag=DekuWaterBounce] run data merge entity @e[type=armor_stand,tag=DekuWaterBounce,limit=1] {Motion:[0.0,0.5,0.0]}
 execute as @a[scores={DekuBounceCount=3}] at @s if entity @s[tag=DekuWaterBounce] run scoreboard players set @s Cooldown 0
 execute as @a[scores={DekuBounceCount=3}] at @s if entity @s[tag=DekuWaterBounce] run playsound minecraft:entity.puffer_fish.blow_up player @s ~ ~ ~ 6 1
-execute as @a[scores={DekuBounceCount=3}] at @s if entity @s[tag=DekuWaterBounce] run effect give @a minecraft:levitation 1 1 true
+execute as @a[scores={DekuBounceCount=3}] at @s if entity @s[tag=DekuWaterBounce] run effect give @s minecraft:levitation 1 1 true
 execute as @a[scores={DekuBounceCount=3}] at @s if entity @s[tag=DekuWaterBounce] run scoreboard players set @s DekuBounceCount 4
 
 execute as @a[scores={DekuBounceCount=5}] at @s if entity @s[tag=DekuWaterBounce] run data merge entity @e[type=armor_stand,tag=DekuWaterBounce,limit=1] {Motion:[0.0,0.6,0.0]}
 execute as @a[scores={DekuBounceCount=5}] at @s if entity @s[tag=DekuWaterBounce] run scoreboard players set @s Cooldown 0
 execute as @a[scores={DekuBounceCount=5}] at @s if entity @s[tag=DekuWaterBounce] run playsound minecraft:entity.puffer_fish.blow_up player @s ~ ~ ~ 8 1
-execute as @a[scores={DekuBounceCount=5}] at @s if entity @s[tag=DekuWaterBounce] run effect give @a minecraft:levitation 1 1 true
+execute as @a[scores={DekuBounceCount=5}] at @s if entity @s[tag=DekuWaterBounce] run effect give @s minecraft:levitation 1 1 true
 execute as @a[scores={DekuBounceCount=5}] at @s if entity @s[tag=DekuWaterBounce] run scoreboard players set @s DekuBounceCount 6
 
 execute as @a[scores={DekuBounceCount=7}] at @s if entity @s[tag=DekuWaterBounce] run data merge entity @e[type=armor_stand,tag=DekuWaterBounce,limit=1] {Motion:[0.0,0.8,0.0]}
 execute as @a[scores={DekuBounceCount=7}] at @s if entity @s[tag=DekuWaterBounce] run scoreboard players set @s Cooldown 0
 execute as @a[scores={DekuBounceCount=7}] at @s if entity @s[tag=DekuWaterBounce] run playsound minecraft:entity.puffer_fish.blow_up player @s ~ ~ ~ 10 2
-execute as @a[scores={DekuBounceCount=7}] at @s if entity @s[tag=DekuWaterBounce] run effect give @a minecraft:levitation 1 1 true
+execute as @a[scores={DekuBounceCount=7}] at @s if entity @s[tag=DekuWaterBounce] run effect give @s minecraft:levitation 1 1 true
 execute as @a[scores={DekuBounceCount=7}] at @s if entity @s[tag=DekuWaterBounce] run scoreboard players set @s DekuBounceCount 8
 
 execute as @a[scores={DekuBounceCount=9}] at @s if entity @s[tag=DekuWaterBounce] run tp @s 314 50 -380
@@ -38,9 +38,9 @@ execute as @a[scores={DekuBounceCount=9}] at @s if entity @s[tag=DekuWaterBounce
 execute as @a[scores={DekuBounceCount=9}] at @s run scoreboard players set @s DekuBounceCount 0
 
 #Armor Stand, Lock to player X and Z
-data modify entity @e[type=armor_stand,tag=DekuWaterBounce,limit=1] Pos[0] set from entity @p Pos[0]
-data modify entity @e[type=armor_stand,tag=DekuWaterBounce,limit=1] Pos[2] set from entity @p Pos[2]
-execute as @e[type=armor_stand,tag=DekuWaterBounce] at @s rotated as @a run tp @a ~0.0 ~0.0 ~0.0 ~0.0 ~0.0
+execute as @e[type=armor_stand,tag=DekuWaterBounce] run data modify entity @s Pos[0] set from entity @p Pos[0]
+execute as @e[type=armor_stand,tag=DekuWaterBounce] run data modify entity @s Pos[2] set from entity @p Pos[2]
+execute as @e[type=armor_stand,tag=DekuWaterBounce] at @s rotated as @s run tp @s ~0.0 ~0.0 ~0.0 ~0.0 ~0.0
 
 #Out of Water
 execute as @a[scores={Walk=1..}] if entity @s[tag=DekuWaterBounce] run scoreboard players set @s DekuBounceCount 0
