@@ -1,0 +1,6 @@
+##
+ # inside.mcfunction
+ # 
+ #
+ # Created by .
+##

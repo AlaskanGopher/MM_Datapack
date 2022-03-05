@@ -1,1 +1,2 @@
-{}
+execute if entity @a[tag=MeetSalesman,x=304,y=45,z=-310,dx=4,dz=0] run tag @a add MeetSalesman2
+execute if entity @a[tag=MeetSalesman2] run function majoras_mask:jump_cutscenes/clocktown/clocktower/happy_mask_salesman_1

@@ -1,0 +1,6 @@
+##
+ # removeother.mcfunction
+ # 
+ #
+ # Created by .
+##
