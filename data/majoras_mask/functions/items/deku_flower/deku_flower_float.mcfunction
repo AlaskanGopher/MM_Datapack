@@ -1,6 +1,5 @@
 # Run Once
 execute if entity @s[tag=DekuLaunch] run tag @s add Float
-execute if entity @s[tag=DekuLaunch] run tag @s remove Peaked
 
 execute if entity @s[tag=DekuLaunch] run effect give @s levitation 100 15
 execute if entity @s[tag=DekuLaunch] store result score @s DekuFlowerLaunchPeak run scoreboard players get @s Height
@@ -17,6 +16,7 @@ execute if entity @s[tag=Float, tag=SlowFalling] run effect give @s slow_falling
 
 execute if entity @s[tag=Float, tag=SlowFalling] run scoreboard players set @s FlowerDescentTime 0
 
+execute if entity @s[tag=Float, tag=SlowFalling] run tag @s remove Peaked
 execute if entity @s[tag=Float, tag=SlowFalling] run tag @s remove Float
 
 
