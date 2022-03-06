@@ -1,3 +1,6 @@
+#Multiplayer Tick Fix
+function majoras_mask:items/multiplayer_tick_fix
+
 #Deku Flower
 function majoras_mask:items/deku_flower/deku_flower_launch
 
