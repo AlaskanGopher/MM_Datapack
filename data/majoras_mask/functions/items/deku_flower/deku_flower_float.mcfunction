@@ -11,14 +11,16 @@ tag @s remove DekuLaunch
 execute if entity @s[tag=Float] if score @s DekuFlowerLaunchPeak < @s Height run effect clear @s levitation
 execute if entity @s[tag=Float] if score @s DekuFlowerLaunchPeak < @s Height run effect give @s slow_falling
 
+execute if entity @s[tag=Float] if score @s DekuFlowerLaunchPeak < @s Height run scoreboard players set @s FlowerDescentTime 0
+
 execute if entity @s[tag=Float] if score @s DekuFlowerLaunchPeak < @s Height run tag @s add SlowFalling
 execute if entity @s[tag=Float] if score @s DekuFlowerLaunchPeak < @s Height run tag @s remove Float
 
 # Descent
-#execute if entity @s[tag=SlowFalling] if entity @e[type=marker,tag=globals,scores={MOT=0}] run effect give @s levitation
-#execute if entity @s[tag=SlowFalling] if entity @e[type=marker,tag=globals,scores={MOT=1}] run effect clear @s levitation
+execute if entity @s[tag=SlowFalling] run scoreboard players add @s FlowerDescentTime 1
 
-execute if entity @s[tag=SlowFalling] if entity @e[type=marker,tag=globals,scores={MOT=1}] run tp ~ ~-.001 ~
+execute if entity @s[tag=SlowFalling] if entity @e[type=marker,tag=globals,scores={MOT=0}] run effect give @s levitation
+execute if entity @s[tag=SlowFalling] if entity @e[type=marker,tag=globals,scores={MOT=1}] run effect clear @s levitation
 
 # Stop
 execute if entity @s[tag=SlowFalling,tag=onGround] run tag @s remove Float
