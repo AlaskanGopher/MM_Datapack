@@ -19,4 +19,4 @@ execute as @e[tag=DekuFlower,tag=GoldDekuFlower,scores={_DekuFlowerTimer=41..}] 
 execute as @e[tag=DekuFlower] at @s if entity @p[tag=Wearing_Deku_Mask,distance=0..1,scores={Sneak=0}] run scoreboard players set @s _DekuFlowerTimer 0
 # ITEM FRAME ROTATE GLIDING EFFECT
 
-execute as @a[tag=DekuLaunch] as @a[tag=Float] unless entity @s[tag=Float] at @s run function majoras_mask:items/deku_flower/deku_flower_float
+execute as @a[tag=DekuLaunch] as @a[tag=Float] at @s run function majoras_mask:items/deku_flower/deku_flower_float
