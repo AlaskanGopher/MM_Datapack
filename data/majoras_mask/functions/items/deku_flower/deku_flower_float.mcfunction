@@ -10,7 +10,7 @@ tag @s remove DekuLaunch
 # If peak of jump has been reached
 execute if entity @s[tag=Float] if score @s DekuFlowerLaunchPeak < @s Height run effect clear @s levitation
 execute if entity @s[tag=Float] if score @s DekuFlowerLaunchPeak < @s Height run effect give @s slow_falling
-execute if entity @s[tag=Float] if score @s DekuFlowerLaunchPeak < @s Height run tp ~ ~ ~
+execute if entity @s[tag=Float] if score @s DekuFlowerLaunchPeak < @s Height run scoreboard players operation @s DekuFlowerLaunchPeak = @s Height
 
 execute if entity @s[tag=Float] if score @s DekuFlowerLaunchPeak < @s Height run scoreboard players set @s FlowerDescentTime 0
 
