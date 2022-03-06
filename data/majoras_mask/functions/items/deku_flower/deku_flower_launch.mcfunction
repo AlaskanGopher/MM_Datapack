@@ -1,5 +1,5 @@
 # Not Deku Mask
-execute as @e[tag=DekuFlower] at @s if entity @s[distance=1..] run setblock ~ ~ ~ minecraft:coarse_dirt replace
+execute as @e[tag=DekuFlower] at @s if entity @p[distance=1..] run setblock ~ ~ ~ minecraft:coarse_dirt replace
 
 # Deku Mask
 execute as @e[tag=DekuFlower] at @s if entity @p[distance=0..1,scores={Sneak=1..},tag=Wearing_Deku_Mask] run tp @p ~ ~0.5 ~
