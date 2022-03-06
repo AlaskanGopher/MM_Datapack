@@ -21,8 +21,8 @@ execute if entity @s[tag=SlowFalling] if entity @e[type=marker,tag=globals,score
 # Stop
 execute if entity @s[tag=SlowFalling] unless block ~ ~-.6 ~ air run tag @s remove Float
 execute if entity @s[tag=SlowFalling] unless block ~ ~-.6 ~ air run tag @s remove SlowFalling
-execute unless entity @s[tag=SlowFalling] unless block ~ ~-.6 ~ air run effect clear @s slow_falling
-execute unless entity @s[tag=SlowFalling] unless block ~ ~-.6 ~ air run effect clear @s levitation
+execute unless entity @s[tag=SlowFalling] if block ~ ~-.6 ~ air run effect clear @s slow_falling
+execute unless entity @s[tag=SlowFalling] if block ~ ~-.6 ~ air run effect clear @s levitation
 
 
 # scoreboard players add @s _DekuFlowerTimer 1
