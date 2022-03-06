@@ -18,7 +18,10 @@ execute if entity @s[tag=Float] if score @s DekuFlowerLaunchPeak < @s Height run
 
 # Descent
 execute if entity @s[tag=SlowFalling] run scoreboard players add @s FlowerDescentTime 1
-
+execute store result score @s WorkingVariable if entity @s[tag=SlowFalling] run scoreboard players get @s FlowerDescentTime
+execute if entity @s[tag=SlowFalling] run scoreboard players operation @s WorkingVariable *= @e[type=marker,tag=globals,limit=1] FlowerDescentSpeed
+execute store result score @s ExpectedFlowerPosition if entity @s[tag=SlowFalling] run scoreboard players get @s FlowerLaunchPeak
+execute if entity @s[tag=SlowFalling] run scoreboard players operation @s ExpectedFlowerPosition -= @s WorkingVariable
 execute if entity @s[tag=SlowFalling] if entity @e[type=marker,tag=globals,scores={MOT=0}] run effect give @s levitation
 execute if entity @s[tag=SlowFalling] if entity @e[type=marker,tag=globals,scores={MOT=1}] run effect clear @s levitation
 
