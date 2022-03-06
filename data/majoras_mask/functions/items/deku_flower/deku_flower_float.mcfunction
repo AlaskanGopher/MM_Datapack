@@ -1,13 +1,26 @@
+# Run Once
 execute if entity @s[tag=DekuLaunch] run tag @s add Float
 execute if entity @s[tag=DekuLaunch] run effect give @s levitation 100 15
 execute if entity @s[tag=DekuLaunch] store result score @s DekuFlowerLaunchPeak run scoreboard players get @s Height
 execute if entity @s[tag=DekuLaunch] run scoreboard players operation @s DekuFlowerLaunchPeak += @e[type=marker,tag=globals,limit=1] DekuFlowerPeakHeight
+
+# Remove first tick tag
 tag @s remove DekuLaunch
 
+# If peak of jump has been reached
+execute if entity @s[tag=Float] if score @s DekuFlowerLaunchPeak < @s Height run effect clear @s levitation
+execute if entity @s[tag=Float] if score @s DekuFlowerLaunchPeak < @s Height run effect give @s slow_falling
 
+execute if entity @s[tag=Float] if score @s DekuFlowerLaunchPeak < @s Height run tag @s add SlowFalling
+execute if entity @s[tag=Float] if score @s DekuFlowerLaunchPeak < @s Height run tag @s remove Float
 
-execute if score @s DekuFlowerLaunchPeak < @s Height run tag @s remove Float
-execute if score @s DekuFlowerLaunchPeak < @s Height run effect clear @s levitation
+# Descent
+execute if entity @s[tag=SlowFalling] if entity @e[type=marker,tag=globals,scores={MOT=0}] run effect give @s levitation
+execute if entity @s[tag=SlowFalling] if entity @e[type=marker,tag=globals,scores={MOT=1}] run effect clear @s levitation
+
+# Stop
+execute unless block ~ ~ ~ air run tag @s remove SlowFalling
+execute unless entity @s[tag=SlowFalling] run effect clear @s slow_falling
 
 
 # scoreboard players add @s _DekuFlowerTimer 1
