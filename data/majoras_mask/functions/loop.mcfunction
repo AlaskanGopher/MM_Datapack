@@ -1,5 +1,5 @@
-execute unless entity @a[tag=NoNightVision] run effect give @s minecraft:night_vision 1000000 0 true
-execute if entity @a[tag=NoNightVision] run effect clear @s minecraft:night_vision
+execute unless entity @a[tag=NoNightVision] run effect give @p minecraft:night_vision 1000000 0 true
+execute if entity @a[tag=NoNightVision] run effect clear @p minecraft:night_vision
 
 #Teleports
 function majoras_mask:teleports/loop
