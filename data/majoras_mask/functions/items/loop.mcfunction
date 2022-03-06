@@ -14,4 +14,4 @@ execute as @a run scoreboard players add @s Cooldown 1
 execute as @a[scores={UseItem=1..}] run scoreboard players set @s UseItem 0
 
 #Player Height scoreboard
-execute as @a store result score @s Height run data get entity @s Pos[1]
+execute as @a store result score @s Height run data get entity @s Pos[1] 0.01
