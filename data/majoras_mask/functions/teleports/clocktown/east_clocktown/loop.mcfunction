@@ -6,8 +6,8 @@ execute if entity @s[x=261,y=53,z=-390.5,dx=0,dz=1] run function majoras_mask:te
 execute if entity @s[x=259,y=30,z=-390.5,dx=0,dz=1] run function majoras_mask:teleports/clocktown/east_clocktown/honey_darling_shop/outside
 
 # Mayors Residence
-execute if entity @s[x=271,y=56,z=-328,dx=0,dz=0] run function majoras_mask:teleports/clocktown/east_clocktown/mayors_residence/inside
-execute if entity @s[x=270,y=33,z=-341,dx=0,dz=0] run function majoras_mask:teleports/clocktown/east_clocktown/mayors_residence/outside
+execute if entity @s[x=271,y=56,z=-328,dx=0,dz=-0.5] run function majoras_mask:teleports/clocktown/east_clocktown/mayors_residence/inside
+execute if entity @s[x=270,y=33,z=-341,dx=0,dz=0.5] run function majoras_mask:teleports/clocktown/east_clocktown/mayors_residence/outside
 
 # Milk Bar
 execute if entity @s[x=271,y=53,z=-367,dx=1,dz=0] run function majoras_mask:teleports/clocktown/east_clocktown/milk_bar/inside
