@@ -16,6 +16,9 @@ execute as @a[scores={UseItem=1..}] run scoreboard players set @s UseItem 0
 #Player Height scoreboard
 execute as @a store result score @s Height run data get entity @s Pos[1] 100.0
 
+#Player Motion scoreboard
+execute as @a store result score @s YMotion run data get entity @s Motion[1] 100.0
+
 # Player on ground
 execute as @a at @s if block ~ ~-.25 ~ air run tag @s remove onGround
 execute as @a at @s unless block ~ ~-.25 ~ air run tag @s add onGround
