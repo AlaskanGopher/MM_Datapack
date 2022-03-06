@@ -6,4 +6,4 @@ execute if entity @e[type=marker, tag=globals, scores={DayCycle=3, Time=18000..2
 function majoras_mask:teleports/remove_other
 tag @s remove Sewers
 tag @s add East_Clocktown
-tp @s 254 52.5 -335.5
+tp @s 254 52.5 ~1
