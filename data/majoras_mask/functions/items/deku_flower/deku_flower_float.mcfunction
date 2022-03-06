@@ -21,7 +21,7 @@ execute if entity @s[tag=Float, tag=SlowFalling] run tag @s remove Float
 
 
 # Descent
-execute if score @s Height > @s ExpectedFlowerPosition run tag @s add Peaked
+execute if entity @s[tag=SlowFalling] if score @s Height > @s ExpectedFlowerPosition run tag @s add Peaked
 execute store result score @s DekuFlowerLaunchPeak unless entity @s[tag=Peaked] run scoreboard players get @s Height
 
 execute if entity @s[tag=SlowFalling] run scoreboard players add @s FlowerDescentTime 1
