@@ -1,2 +1,2 @@
-stopsound @a music
-playsound minecraft:minigame music @a ~ ~ ~ 10000000
+stopsound @s music
+playsound minecraft:minigame music @s ~ ~ ~ 10000000

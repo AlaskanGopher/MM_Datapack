@@ -1,2 +1,2 @@
-stopsound @a music
-playsound minecraft:fairy_fountain music @a ~ ~ ~ 10000000
+stopsound @s music
+playsound minecraft:fairy_fountain music @s ~ ~ ~ 10000000

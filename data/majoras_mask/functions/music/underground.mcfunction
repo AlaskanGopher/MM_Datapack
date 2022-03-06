@@ -1,2 +1,2 @@
-stopsound @a music
-playsound minecraft:underground music @a ~ ~ ~ 10000000
+stopsound @s music
+playsound minecraft:underground music @s ~ ~ ~ 10000000

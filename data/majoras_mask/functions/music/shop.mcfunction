@@ -1,2 +1,2 @@
-stopsound @a music
-playsound minecraft:shop music @a ~ ~ ~ 10000000
+stopsound @s music
+playsound minecraft:shop music @s ~ ~ ~ 10000000

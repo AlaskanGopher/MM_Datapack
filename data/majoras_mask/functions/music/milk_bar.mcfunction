@@ -1,2 +1,2 @@
-stopsound @a music
-playsound minecraft:milk_bar music @a ~ ~ ~ 10000000
+stopsound @s music
+playsound minecraft:milk_bar music @s ~ ~ ~ 10000000

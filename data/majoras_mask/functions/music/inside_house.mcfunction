@@ -1,2 +1,2 @@
-stopsound @a music
-playsound minecraft:inside_house music @a ~ ~ ~ 10000000
+stopsound @s music
+playsound minecraft:inside_house music @s ~ ~ ~ 10000000

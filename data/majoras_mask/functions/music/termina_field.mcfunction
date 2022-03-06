@@ -1,2 +1,2 @@
-stopsound @a music
-playsound minecraft:termina_field music @a ~ ~ ~ 10000000
+stopsound @s music
+playsound minecraft:termina_field music @s ~ ~ ~ 10000000

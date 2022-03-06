@@ -1,2 +1,2 @@
-stopsound @a music
-playsound minecraft:shooting_gallery music @a ~ ~ ~ 10000000
+stopsound @s music
+playsound minecraft:shooting_gallery music @s ~ ~ ~ 10000000

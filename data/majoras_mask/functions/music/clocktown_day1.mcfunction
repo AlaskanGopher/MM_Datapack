@@ -1,2 +1,2 @@
-stopsound @a music
-playsound minecraft:clocktown_day1 music @a ~ ~ ~ 10000000
+stopsound @s music
+playsound minecraft:clocktown_day1 music @s ~ ~ ~ 10000000
