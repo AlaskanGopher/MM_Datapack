@@ -39,92 +39,92 @@ execute if entity @s[scores={click=3}] run fill 307 45 -304 307 45 -304 minecraf
 execute if entity @s[scores={click=3}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesman,limit=1] {Pose:{Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[294f,302f,0f]}}
 execute if entity @s[scores={click=3}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[294f,302f,0f]}}  
 
-execute if entity @s[scores={click=3}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=3}] run tp @s 307 42 -304
 execute if entity @s[scores={click=3}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"I own the "},{"text":"Happy Mask Shop","color":"red"},{"text":"."}]
 execute if entity @s[scores={click=3}] run scoreboard players set @s click 4
-execute if entity @s[scores={click=5}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=5}] run tp @s 307 42 -304
 execute if entity @s[scores={click=5}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"I travel far and wide in search of masks..."}]
 execute if entity @s[scores={click=5}] run scoreboard players set @s click 6
-execute if entity @s[scores={click=7}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=7}] run tp @s 307 42 -304
 execute if entity @s[scores={click=7}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"During my travels, a very important"},{"text":" mask ","color":"red"},{"text":"was stolen from me by an imp in the woods."}]
 execute if entity @s[scores={click=7}] run scoreboard players set @s click 8
-execute if entity @s[scores={click=9}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=9}] run tp @s 307 42 -304
 execute if entity @s[scores={click=9}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"So here I am at a loss..."}]
 execute if entity @s[scores={click=9}] run scoreboard players set @s click 10
-execute if entity @s[scores={click=11}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=11}] run tp @s 307 42 -304
 execute if entity @s[scores={click=11}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"And now I've found you."}]
 execute if entity @s[scores={click=11}] run scoreboard players set @s click 12
-execute if entity @s[scores={click=13}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=13}] run tp @s 307 42 -304
 execute if entity @s[scores={click=13}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"Now don't think me rude, but I have been following you..."}]
 execute if entity @s[scores={click=13}] run scoreboard players set @s click 14
 
 # On Chin
-execute if entity @s[scores={click=15}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=15}] run tp @s 307 42 -304
 execute if entity @s[scores={click=15}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesman,limit=1] {Pose:{Body:[0f,0f,0f],LeftArm:[342f,0f,44f],RightArm:[266f,315f,0f]}}
 execute if entity @s[scores={click=15}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[342f,0f,44f],RightArm:[266f,315f,0f]}}  
 execute if entity @s[scores={click=15}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"...For I know of a way to return you to your "},{"text":"former self","color":"red"},{"text":"."}]
 execute if entity @s[scores={click=15}] run scoreboard players set @s click 16
-execute if entity @s[scores={click=17}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=17}] run tp @s 307 42 -304
 execute if entity @s[scores={click=17}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"If you can get back the "},{"text":"precious item","color":"red"},{"text":" that was stolen from you,"}]
 execute if entity @s[scores={click=17}] run scoreboard players set @s click 18
-execute if entity @s[scores={click=19}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=19}] run tp @s 307 42 -304
 execute if entity @s[scores={click=19}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"I will return you to "},{"text":"normal","color":"red"},{"text":"."}]
 execute if entity @s[scores={click=19}] run scoreboard players set @s click 20
 
 # Hands Out
-execute if entity @s[scores={click=21}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=21}] run tp @s 307 42 -304
 execute if entity @s[scores={click=21}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesman,limit=1] {Pose:{Body:[10f,0f,0f],LeftArm:[273f,10f,0f],RightArm:[280f,349f,0f]}}
 execute if entity @s[scores={click=21}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Body:[10f,0f,0f],Head:[10f,0f,0f],LeftArm:[273f,10f,0f],RightArm:[280f,349f,0f]}}  
 execute if entity @s[scores={click=21}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"In exchange..."}]
 execute if entity @s[scores={click=21}] run scoreboard players set @s click 22
-execute if entity @s[scores={click=23}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=23}] run tp @s 307 42 -304
 execute if entity @s[scores={click=23}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"All I ask is that you also get back my "},{"text":"precious mask","color":"red"},{"text":" that the imp stole from me."}]
 execute if entity @s[scores={click=23}] run scoreboard players set @s click 24
 
 # On Chin
-execute if entity @s[scores={click=25}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=25}] run tp @s 307 42 -304
 execute if entity @s[scores={click=25}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesman,limit=1] {Pose:{Body:[0f,0f,0f],LeftArm:[342f,0f,44f],RightArm:[266f,315f,0f]}}
 execute if entity @s[scores={click=25}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[342f,0f,44f],RightArm:[266f,315f,0f]}}  
 execute if entity @s[scores={click=25}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"What?"}]
 execute if entity @s[scores={click=25}] run scoreboard players set @s click 26
-execute if entity @s[scores={click=27}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=27}] run tp @s 307 42 -304
 execute if entity @s[scores={click=27}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"Is it not a simple task?"}]
 execute if entity @s[scores={click=27}] run scoreboard players set @s click 28
-execute if entity @s[scores={click=29}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=29}] run tp @s 307 42 -304
 execute if entity @s[scores={click=29}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"Why, to someone like you, it should by no means be a difficult task."}]
 execute if entity @s[scores={click=29}] run scoreboard players set @s click 30
 
 # Hand Hold
-execute if entity @s[scores={click=31}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=31}] run tp @s 307 42 -304
 execute if entity @s[scores={click=31}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesman,limit=1] {Pose:{Body:[10f,0f,0f],LeftArm:[294f,37f,0f],RightArm:[294f,322f,0f]}}
 execute if entity @s[scores={click=31}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Body:[10f,0f,0f],Head:[10f,0f,0f],LeftArm:[294f,37f,0f],RightArm:[294f,322f,0f]}}  
 execute if entity @s[scores={click=31}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"Except..."}]
 execute if entity @s[scores={click=31}] run scoreboard players set @s click 32
-execute if entity @s[scores={click=33}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=33}] run tp @s 307 42 -304
 execute if entity @s[scores={click=33}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"The one thing is..."}]
 execute if entity @s[scores={click=33}] run scoreboard players set @s click 34
-execute if entity @s[scores={click=35}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=35}] run tp @s 307 42 -304
 execute if entity @s[scores={click=35}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"I'm a very busy fellow..."}]
 execute if entity @s[scores={click=35}] run scoreboard players set @s click 36
-execute if entity @s[scores={click=37}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=37}] run tp @s 307 42 -304
 execute if entity @s[scores={click=37}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"And I must leave this place in "},{"text":"three days","color":"red"},{"text":"."}]
 execute if entity @s[scores={click=37}] run scoreboard players set @s click 38
-execute if entity @s[scores={click=39}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=39}] run tp @s 307 42 -304
 execute if entity @s[scores={click=39}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"How grateful I would be if you could bring it back to me before my "},{"text":"time","color":"red"},{"text":" here is up..."}]
 execute if entity @s[scores={click=39}] run scoreboard players set @s click 40
 
 # On Chin
-execute if entity @s[scores={click=41}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=41}] run tp @s 307 42 -304
 execute if entity @s[scores={click=41}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesman,limit=1] {Pose:{Body:[0f,0f,0f],LeftArm:[342f,0f,44f],RightArm:[266f,315f,0f]}}
 execute if entity @s[scores={click=41}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[342f,0f,44f],RightArm:[266f,315f,0f]}}  
 execute if entity @s[scores={click=41}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"But yes... You'll be fine. I see you are young and have tremendous courage."}]
 execute if entity @s[scores={click=41}] run scoreboard players set @s click 42
-execute if entity @s[scores={click=43}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=43}] run tp @s 307 42 -304
 execute if entity @s[scores={click=43}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"I'm sure you'll find it right away."}]
 execute if entity @s[scores={click=43}] run scoreboard players set @s click 44
 
 # Hands Out
-execute if entity @s[scores={click=45}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=45}] run tp @s 307 42 -304
 execute if entity @s[scores={click=45}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesman,limit=1] {Pose:{Body:[10f,0f,0f],LeftArm:[273f,10f,0f],RightArm:[280f,349f,0f]}}
 execute if entity @s[scores={click=45}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Body:[10f,0f,0f],Head:[10f,0f,0f],LeftArm:[273f,10f,0f],RightArm:[280f,349f,0f]}}
 execute if entity @s[scores={click=45}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"Well then, I am counting on you..."}]
@@ -132,7 +132,7 @@ execute if entity @s[scores={click=45}] run scoreboard players set @s click 46
 
 execute if entity @s[scores={click=47}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesman,limit=1] {Pose:{Body:[0f,0f,0f],LeftArm:[294f,37f,0f],RightArm:[294f,322f,0f]}}
 execute if entity @s[scores={click=47}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Body:[0f,0f,0f],Head:[10f,0f,0f],LeftArm:[294f,37f,0f],RightArm:[294f,322f,0f]}}  
-execute if entity @s[scores={click=47}] run tp @s 307 42 -304
+#execute if entity @s[scores={click=47}] run tp @s 307 42 -304
 
 execute if entity @s[scores={click=47}] run tag @s remove NoOcarina
 execute if entity @s[scores={click=47}] run fill 306 42 -303 308 45 -305 minecraft:air replace minecraft:barrier
