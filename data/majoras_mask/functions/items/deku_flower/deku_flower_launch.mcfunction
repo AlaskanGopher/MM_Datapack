@@ -21,3 +21,4 @@ execute as @e[tag=DekuFlower] at @s if entity @p[tag=Wearing_Deku_Mask,distance=
 
 execute as @a[tag=DekuLaunch] run function majoras_mask:items/deku_flower/deku_flower_float
 execute as @a[tag=Float] run function majoras_mask:items/deku_flower/deku_flower_float
+execute as @a[tag=SlowFalling] run function majoras_mask:items/deku_flower/deku_flower_float
