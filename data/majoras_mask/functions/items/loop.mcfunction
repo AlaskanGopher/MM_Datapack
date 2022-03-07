@@ -28,6 +28,14 @@ execute as @a store result score @s DeltaX run scoreboard players operation @s W
 execute as @a run scoreboard players operation @s WorkingVariable = @s ZPos
 execute as @a store result score @s DeltaZ run scoreboard players operation @s WorkingVariable -= @s LastZPos
 
+execute as @a run scoreboard players operation @s HorizontalSpeedSq = @s DeltaX
+execute as @a run scoreboard players operation @s WorkingVariable = @s DeltaZ
+
+execute as @a run scoreboard players operation @s HorizontalSpeedSq *= @s HorizontalSpeedSq
+execute as @a run scoreboard players operation @s WorkingVariable *= @s WorkingVariable
+
+execute as @a run scoreboard players operation @s HorizontalSpeedSq += @s WorkingVariable
+
 # Player on ground
 execute as @a at @s if block ~ ~-.25 ~ air run tag @s remove onGround
 execute as @a at @s unless block ~ ~-.25 ~ air run tag @s add onGround
