@@ -17,16 +17,8 @@ execute as @a[scores={UseItem=1..}] run scoreboard players set @s UseItem 0
 execute as @a store result score @s Height run data get entity @s Pos[1] 100.0
 
 #Player Speed scoreboard
-execute as @a store result score @s SpeedX run data get entity @s Motion[0] 100.0
-execute as @a store result score @s SpeedZ run data get entity @s Motion[2] 100.0
-
-execute as @a run scoreboard players operation @s SpeedSq = @s SpeedX
-execute as @a run scoreboard players operation @s WorkingVariable = @s SpeedZ
-
-execute as @a run scoreboard players operation @s WorkingVariable *= @s WorkingVariable
-execute as @a run scoreboard players operation @s SpeedSq *= @s SpeedSq
-
-execute as @a run scoreboard players operation @s SpeedSq += @s WorkingVariable
+execute as @a store result score @s XPos run data get entity @s Pos[0] 100.0
+execute as @a store result score @s ZPos run data get entity @s Pos[2] 100.0
 
 # Player on ground
 execute as @a at @s if block ~ ~-.25 ~ air run tag @s remove onGround
