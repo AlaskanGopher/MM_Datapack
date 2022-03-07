@@ -23,7 +23,7 @@ execute if entity @s[tag=Float, tag=SlowFalling] run tag @s remove Float
 execute store result score @s DekuFlowerLaunchPeak if score @s Height > @s DekuFlowerLaunchPeak run scoreboard players get @s Height
 
 execute if entity @s[tag=SlowFalling] run scoreboard players add @s FlowerDescentTime 1
-execute if entity @s[tag=SlowFalling] if score @s HorizontalSpeedSq matches 0 run scoreboard players add @s DekuFlowerStationaryTime 1
+execute if entity @s[tag=SlowFalling] if score @s HorizontalSpeedSq matches ..10 run scoreboard players add @s DekuFlowerStationaryTime 1
 
 execute store result score @s WorkingVariable if entity @s[tag=SlowFalling] run scoreboard players get @s FlowerDescentTime
 execute if entity @s[tag=SlowFalling] run scoreboard players operation @s WorkingVariable *= @e[type=marker,tag=globals,limit=1] FlowerDescentSpeed
