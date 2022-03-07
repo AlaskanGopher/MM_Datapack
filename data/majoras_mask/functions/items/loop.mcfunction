@@ -18,7 +18,7 @@ execute as @a store result score @s Height run data get entity @s Pos[1] 100.0
 
 #Player Speed scoreboard
 execute as @a store result score @s SpeedX run data get entity @s Motion[0] 100.0
-execute as @a store result score @s SpeedZ run data get entity @s Motion[0] 100.0
+execute as @a store result score @s SpeedZ run data get entity @s Motion[2] 100.0
 
 execute as @a run scoreboard players operation @s SpeedSq = @s SpeedX
 execute as @a run scoreboard players operation @s WorkingVariable = @s SpeedZ
