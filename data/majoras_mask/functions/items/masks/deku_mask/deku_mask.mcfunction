@@ -6,8 +6,8 @@ execute as @a[scores={Sneak=1..}] if entity @s[tag=Wearing_Deku_Mask] run functi
 execute as @a if entity @s[tag=DekuSpinCharge] run function majoras_mask:items/masks/deku_mask/spin
 
 #Deku Water
-execute as @a[scores={DekuWater=1..}] if entity @s[tag=Wearing_Deku_Mask] run function majoras_mask:items/masks/deku_mask/water
-execute as @a if entity @s[tag=DekuWaterBounce] run function majoras_mask:items/masks/deku_mask/water
+#execute as @a[scores={DekuWater=1..}] if entity @s[tag=Wearing_Deku_Mask] run function majoras_mask:items/masks/deku_mask/water
+#execute as @a if entity @s[tag=DekuWaterBounce] run function majoras_mask:items/masks/deku_mask/water
 
 #Deku Mask : Remove
-execute as @a[scores={UseItem=1..,Cooldown=40..}] at @s if entity @s[nbt={SelectedItem:{tag:{DekuMask:1b}}}] if entity @s[nbt={Inventory:[{Slot:103b,tag:{DekuLink:1b}}]}] run function majoras_mask:items/masks/deku_mask/remove
+#execute as @a[scores={UseItem=1..,Cooldown=40..}] at @s if entity @s[nbt={SelectedItem:{tag:{DekuMask:1b}}}] if entity @s[nbt={Inventory:[{Slot:103b,tag:{DekuLink:1b}}]}] run function majoras_mask:items/masks/deku_mask/remove
