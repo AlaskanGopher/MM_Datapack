@@ -1,3 +1,9 @@
 stopsound @s music
-playsound minecraft:song_of_healing music @s ~ ~ ~ 10000000
+
+execute unless entity @s[tag=Orchestrated] run playsound minecraft:song_of_healing music @s ~ ~ ~ 10000000
+execute unless entity @s[tag=Orchestrated] run scoreboard players set @s MusicEnd 2820
+
+execute if entity @s[tag=Orchestrated] run playsound minecraft:song_of_healing music @s ~ ~ ~ 10000000
+execute if entity @s[tag=Orchestrated] run scoreboard players set @s MusicEnd 2820
+
 tag @s add MusicSongOfHealing
