@@ -16,6 +16,9 @@ function majoras_mask:moving_things/loop
 #Items
 function majoras_mask:items/loop
 
+#Music
+function majoras_mask:music/loop
+
 #Always Active
 recipe take @a *
 stopsound @a music minecraft:music.game
