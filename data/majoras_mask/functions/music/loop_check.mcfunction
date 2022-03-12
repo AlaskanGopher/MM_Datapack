@@ -14,5 +14,6 @@ execute if entity @s[tag=MusicShootingGallery] run function majoras_mask:music/s
 execute if entity @s[tag=MusicShop] run function majoras_mask:music/shop
 execute if entity @s[tag=MusicSongOfHealing] run function majoras_mask:music/song_of_healing
 
+# Termina 
 execute if entity @s[tag=MusicTerminaField] run function majoras_mask:music/termina_field
 execute if entity @s[tag=MusicUnderground] run function majoras_mask:music/underground
