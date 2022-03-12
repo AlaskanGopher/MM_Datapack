@@ -2,9 +2,8 @@ execute if entity @s[scores={Time=0}] run scoreboard players add @s DayCycle 1
 execute if entity @s[scores={DayCycle=4}] run scoreboard players set @s DayCycle 1
 
 # Music
-execute if entity @s[scores={DayCycle=1,Time=12000}] as @a[tag=!Indoors] run stopsound @s music
-execute if entity @s[scores={DayCycle=2,Time=12000}] as @a[tag=!Indoors] run stopsound @s music
-execute if entity @s[scores={DayCycle=3,Time=12000}] as @a[tag=!Indoors] run stopsound @s music
+execute if entity @s[scores={Time=12000}] as @a[tag=!Indoors] run stopsound @s music
+execute if entity @s[scores={Time=12000}] as @a[tag=!Indoors] run function majoras_mask:music/remove_other
 execute if entity @s[scores={DayCycle=3,Time=18000}] as @a[tag=!Indoors] run function majoras_mask:music/clocktown_finalhours
 
 execute if entity @s[scores={Time=0}] run tag @s add Morning
