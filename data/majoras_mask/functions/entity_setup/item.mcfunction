@@ -65,7 +65,7 @@ execute if entity @s[nbt={Item:{tag:{Legendary:1b}}},scores={timer=5..}] at @s r
 execute if entity @s[nbt={Item:{tag:{Legendary:1b}}},scores={timer=5..}] at @s run tp @a 980 4 -642 180 ~
 execute if entity @s[nbt={Item:{tag:{Legendary:1b}}},scores={timer=5..}] at @s run kill @s
 #Phase
-execute if entity @s[nbt={Item:{tag:{Phase:1b}}}] run replaceitem entity @a weapon.mainhand minecraft:firework_rocket{Phase:1b} 64
+execute if entity @s[nbt={Item:{tag:{Phase:1b}}}] run item replace entity @a weapon.mainhand with minecraft:firework_rocket{Phase:1b} 64
 execute if entity @s[nbt={Item:{tag:{Phase:1b}}}] as @a at @s run tp @s ^ ^ ^5
 execute if entity @s[nbt={Item:{tag:{Phase:1b}}}] run kill @s
 
