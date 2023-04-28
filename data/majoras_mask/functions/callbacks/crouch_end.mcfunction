@@ -1,3 +1,3 @@
 tag @s remove Crouching
 
-say uncrouch
+scoreboard players set @s DekuCrouchTimer 0
