@@ -1,5 +1,5 @@
 # East Gate
-execute if entity @s[x=257,y=52,z=-378,dx=0,dy=10,dz=5] run function majoras_mask:teleports/termina_field/east_gate/inside
+execute if entity @s[x=257,y=51,z=-378,dx=0,dy=10,dz=5] run function majoras_mask:teleports/termina_field/east_gate/inside
 
 # South Gate
 execute if entity @s[x=312,y=49,z=-433,dx=5,dy=7,dz=0] run function majoras_mask:teleports/termina_field/south_gate/inside
