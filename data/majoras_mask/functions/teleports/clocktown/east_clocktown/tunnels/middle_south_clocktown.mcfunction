@@ -4,3 +4,5 @@
 
 tag @s remove South_Clocktown
 tag @s add East_Clocktown
+
+say Remove South Add East
