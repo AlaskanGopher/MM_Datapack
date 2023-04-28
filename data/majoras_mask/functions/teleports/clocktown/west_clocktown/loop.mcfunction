@@ -1,5 +1,5 @@
 # West Gate
-execute if entity @s[x=388,y=57,z=-373,dx=0,dy=5,dz=5] run function majoras_mask:teleports/clocktown/west_clocktown/west_gate/inside
+execute if entity @s[x=386,y=57,z=-371,dx=0,dy=6,dz=5] run function majoras_mask:teleports/clocktown/west_clocktown/west_gate/inside
 
 # Bomb Shop
 execute if entity @s[x=363,y=55,z=-387,dx=-0.5,dz=0] run function majoras_mask:teleports/clocktown/west_clocktown/bomb_shop/inside

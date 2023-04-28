@@ -1,5 +1,5 @@
 # East Gate
-execute if entity @s[x=237,y=57,z=-373,dx=0,dy=5,dz=5] run function majoras_mask:teleports/clocktown/east_clocktown/east_gate/inside
+execute if entity @s[x=242,y=57,z=-373,dx=0,dy=7,dz=5] run function majoras_mask:teleports/clocktown/east_clocktown/east_gate/inside
 
 # Honey & Darling Shop
 execute if entity @s[x=261,y=53,z=-390.5,dx=0,dz=1] run function majoras_mask:teleports/clocktown/east_clocktown/honey_darling_shop/inside
