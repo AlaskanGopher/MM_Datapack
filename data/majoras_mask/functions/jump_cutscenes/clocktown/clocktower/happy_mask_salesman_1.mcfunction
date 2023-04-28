@@ -12,8 +12,8 @@ execute unless entity @s[scores={click=0..}] run scoreboard objectives add click
 execute unless entity @s[scores={click=0..}] run scoreboard players set @s click 0
 
 execute if entity @s[scores={click=0}] run scoreboard players set @s click 1
-execute if entity @s[scores={click=1}] run summon armor_stand 308 42 -302 {Tags:[HappyMaskSalesman],Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,ShowArms:1b,Rotation:[160f],ArmorItems:[{id:"leather_boots",Count:1b,tag:{display:{color:9502975}}},{id:"leather_leggings",Count:1b,tag:{display:{color:9502975}}},{id:"leather_chestplate",Count:1b,tag:{display:{color:9502975}}},{id:"player_head",Count:1b,tag:{SkullOwner:{Id:[I;-939075392,516310777,-2017100543,-719750971],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY4YjQwNzJjZWVjOWQ1ZDc3YzI4ZWZhYjQ5NGZmZjg3ZjU0ZGM0NDQ0ZjM5YmQzMzNiMzgyMmQ1ODAyMzg1YSJ9fX0="}]}}}}],HandItems:[{id:"minecraft:stone",tag:{CustomModelData:1},Count:1b},{id:"minecraft:stone",tag:{CustomModelData:1},Count:1b}],CustomName:'{"text":"HappyMaskSalesman"}',Pose:{Body:[10f,0f,0f],LeftArm:[328f,0f,37f],RightArm:[335f,0f,322f]}}
-execute if entity @s[scores={click=1}] run summon armor_stand 308 42 -302 {Tags:[HappyMaskSalesmanBack],Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,Rotation:[160f],ArmorItems:[{},{},{},{id:"minecraft:acacia_planks",Count:1b,tag:{CustomModelData:2}}],CustomName:'{"text":"HappyMaskSalesmanBack"}',Pose:{Body:[10f,0f,0f],Head:[10f,0f,0f],LeftArm:[328f,0f,37f],RightArm:[335f,0f,322f]}}
+execute if entity @s[scores={click=1}] run summon armor_stand 308 42 -302 {Tags:[HappyMaskSalesman],Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,DisabledSlots:16191,ShowArms:1b,Rotation:[160f],ArmorItems:[{id:"leather_boots",Count:1b,tag:{display:{color:9502975}}},{id:"leather_leggings",Count:1b,tag:{display:{color:9502975}}},{id:"leather_chestplate",Count:1b,tag:{display:{color:9502975}}},{id:"player_head",Count:1b,tag:{SkullOwner:{Id:[I;-939075392,516310777,-2017100543,-719750971],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY4YjQwNzJjZWVjOWQ1ZDc3YzI4ZWZhYjQ5NGZmZjg3ZjU0ZGM0NDQ0ZjM5YmQzMzNiMzgyMmQ1ODAyMzg1YSJ9fX0="}]}}}}],HandItems:[{id:"minecraft:stone",tag:{CustomModelData:1},Count:1b},{id:"minecraft:stone",tag:{CustomModelData:1},Count:1b}],CustomName:'{"text":"HappyMaskSalesman"}',Pose:{Body:[10f,0f,0f],LeftArm:[328f,0f,37f],RightArm:[335f,0f,322f]}}
+execute if entity @s[scores={click=1}] run summon armor_stand 308 42 -302 {Tags:[HappyMaskSalesmanBack],Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,DisabledSlots:16191,Rotation:[160f],ArmorItems:[{},{},{},{id:"minecraft:acacia_planks",Count:1b,tag:{CustomModelData:2}}],CustomName:'{"text":"HappyMaskSalesmanBack"}',Pose:{Body:[10f,0f,0f],Head:[10f,0f,0f],LeftArm:[328f,0f,37f],RightArm:[335f,0f,322f]}}
 
 
 # Hand Hold
@@ -37,7 +37,7 @@ execute if entity @s[scores={click=3}] run fill 307 45 -304 307 45 -304 minecraf
 
 # Hand on Chest
 execute if entity @s[scores={click=3}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesman,limit=1] {Pose:{Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[294f,302f,0f]}}
-execute if entity @s[scores={click=3}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[294f,302f,0f]}}  
+execute if entity @s[scores={click=3}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[294f,302f,0f]}}
 
 #execute if entity @s[scores={click=3}] run tp @s 307 42 -304
 execute if entity @s[scores={click=3}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"I own the "},{"text":"Happy Mask Shop","color":"red"},{"text":"."}]
@@ -61,7 +61,7 @@ execute if entity @s[scores={click=13}] run scoreboard players set @s click 14
 # On Chin
 #execute if entity @s[scores={click=15}] run tp @s 307 42 -304
 execute if entity @s[scores={click=15}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesman,limit=1] {Pose:{Body:[0f,0f,0f],LeftArm:[342f,0f,44f],RightArm:[266f,315f,0f]}}
-execute if entity @s[scores={click=15}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[342f,0f,44f],RightArm:[266f,315f,0f]}}  
+execute if entity @s[scores={click=15}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[342f,0f,44f],RightArm:[266f,315f,0f]}}
 execute if entity @s[scores={click=15}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"...For I know of a way to return you to your "},{"text":"former self","color":"red"},{"text":"."}]
 execute if entity @s[scores={click=15}] run scoreboard players set @s click 16
 #execute if entity @s[scores={click=17}] run tp @s 307 42 -304
@@ -74,7 +74,7 @@ execute if entity @s[scores={click=19}] run scoreboard players set @s click 20
 # Hands Out
 #execute if entity @s[scores={click=21}] run tp @s 307 42 -304
 execute if entity @s[scores={click=21}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesman,limit=1] {Pose:{Body:[10f,0f,0f],LeftArm:[273f,10f,0f],RightArm:[280f,349f,0f]}}
-execute if entity @s[scores={click=21}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Body:[10f,0f,0f],Head:[10f,0f,0f],LeftArm:[273f,10f,0f],RightArm:[280f,349f,0f]}}  
+execute if entity @s[scores={click=21}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Body:[10f,0f,0f],Head:[10f,0f,0f],LeftArm:[273f,10f,0f],RightArm:[280f,349f,0f]}}
 execute if entity @s[scores={click=21}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"In exchange..."}]
 execute if entity @s[scores={click=21}] run scoreboard players set @s click 22
 #execute if entity @s[scores={click=23}] run tp @s 307 42 -304
@@ -84,7 +84,7 @@ execute if entity @s[scores={click=23}] run scoreboard players set @s click 24
 # On Chin
 #execute if entity @s[scores={click=25}] run tp @s 307 42 -304
 execute if entity @s[scores={click=25}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesman,limit=1] {Pose:{Body:[0f,0f,0f],LeftArm:[342f,0f,44f],RightArm:[266f,315f,0f]}}
-execute if entity @s[scores={click=25}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[342f,0f,44f],RightArm:[266f,315f,0f]}}  
+execute if entity @s[scores={click=25}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[342f,0f,44f],RightArm:[266f,315f,0f]}}
 execute if entity @s[scores={click=25}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"What?"}]
 execute if entity @s[scores={click=25}] run scoreboard players set @s click 26
 #execute if entity @s[scores={click=27}] run tp @s 307 42 -304
@@ -97,7 +97,7 @@ execute if entity @s[scores={click=29}] run scoreboard players set @s click 30
 # Hand Hold
 #execute if entity @s[scores={click=31}] run tp @s 307 42 -304
 execute if entity @s[scores={click=31}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesman,limit=1] {Pose:{Body:[10f,0f,0f],LeftArm:[294f,37f,0f],RightArm:[294f,322f,0f]}}
-execute if entity @s[scores={click=31}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Body:[10f,0f,0f],Head:[10f,0f,0f],LeftArm:[294f,37f,0f],RightArm:[294f,322f,0f]}}  
+execute if entity @s[scores={click=31}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Body:[10f,0f,0f],Head:[10f,0f,0f],LeftArm:[294f,37f,0f],RightArm:[294f,322f,0f]}}
 execute if entity @s[scores={click=31}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"Except..."}]
 execute if entity @s[scores={click=31}] run scoreboard players set @s click 32
 #execute if entity @s[scores={click=33}] run tp @s 307 42 -304
@@ -116,7 +116,7 @@ execute if entity @s[scores={click=39}] run scoreboard players set @s click 40
 # On Chin
 #execute if entity @s[scores={click=41}] run tp @s 307 42 -304
 execute if entity @s[scores={click=41}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesman,limit=1] {Pose:{Body:[0f,0f,0f],LeftArm:[342f,0f,44f],RightArm:[266f,315f,0f]}}
-execute if entity @s[scores={click=41}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[342f,0f,44f],RightArm:[266f,315f,0f]}}  
+execute if entity @s[scores={click=41}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[342f,0f,44f],RightArm:[266f,315f,0f]}}
 execute if entity @s[scores={click=41}] run tellraw @s ["",{"text":"Happy Mask Salesman: ","color":"gold"},{"text":"But yes... You'll be fine. I see you are young and have tremendous courage."}]
 execute if entity @s[scores={click=41}] run scoreboard players set @s click 42
 #execute if entity @s[scores={click=43}] run tp @s 307 42 -304
@@ -131,7 +131,7 @@ execute if entity @s[scores={click=45}] run tellraw @s ["",{"text":"Happy Mask S
 execute if entity @s[scores={click=45}] run scoreboard players set @s click 46
 
 execute if entity @s[scores={click=47}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesman,limit=1] {Pose:{Body:[0f,0f,0f],LeftArm:[294f,37f,0f],RightArm:[294f,322f,0f]}}
-execute if entity @s[scores={click=47}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Body:[0f,0f,0f],Head:[10f,0f,0f],LeftArm:[294f,37f,0f],RightArm:[294f,322f,0f]}}  
+execute if entity @s[scores={click=47}] run data merge entity @e[type=armor_stand,tag=HappyMaskSalesmanBack,limit=1] {Pose:{Body:[0f,0f,0f],Head:[10f,0f,0f],LeftArm:[294f,37f,0f],RightArm:[294f,322f,0f]}}
 #execute if entity @s[scores={click=47}] run tp @s 307 42 -304
 
 execute if entity @s[scores={click=47}] run tag @s remove NoOcarina
