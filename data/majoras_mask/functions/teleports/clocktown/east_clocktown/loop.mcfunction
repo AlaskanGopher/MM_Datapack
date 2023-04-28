@@ -29,7 +29,7 @@ execute if entity @s[x=283,y=53,z=-391,dx=1,dz=0] run function majoras_mask:tele
 execute if entity @s[x=283,y=17,z=-391,dx=1,dz=0] run function majoras_mask:teleports/clocktown/east_clocktown/treasure_chest_shop/outside
 
 # Tunnels
-execute if entity @s[x=292,y=52,z=-408,dx=0,dy=19,dz=8] run function majoras_mask:teleports/clocktown/east_clocktown/tunnels/south_south_clocktown
+execute if entity @s[x=292,y=49,z=-408,dx=0,dy=19,dz=8] run function majoras_mask:teleports/clocktown/east_clocktown/tunnels/south_south_clocktown
 execute if entity @s[x=298,y=54,z=-374,dx=0,dy=5,dz=5] run function majoras_mask:teleports/clocktown/east_clocktown/tunnels/middle_south_clocktown
 execute if entity @s[x=287,y=56,z=-337,dx=0,dy=6,dz=4] run function majoras_mask:teleports/clocktown/east_clocktown/tunnels/north_north_clocktown
 execute if entity @s[x=253,y=52,z=-336,dx=0,dy=3,dz=1] run function majoras_mask:teleports/clocktown/east_clocktown/tunnels/north_sewers
