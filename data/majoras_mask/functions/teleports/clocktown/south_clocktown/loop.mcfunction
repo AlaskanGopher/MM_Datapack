@@ -1,6 +1,6 @@
 # Clocktower Base
-execute if entity @s[x=313,y=49,z=-373,dx=1,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/clocktower_base/inside
-execute if entity @s[x=304,y=44,z=-311,dx=1,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/clocktower_base/outside
+execute if entity @s[x=-2,y=100,z=-5,dx=5,dy=5,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/clocktower_base/inside
+execute if entity @s[x=9,y=95,z=-55,dx=1,dy=5,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/clocktower_base/outside
 
 # Clocktower Top
 execute if entity @s[x=313,y=63,z=-365,dx=3,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/clocktower_top/inside

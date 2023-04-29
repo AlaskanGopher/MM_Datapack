@@ -7,4 +7,4 @@ execute if entity @e[type=marker, tag=globals, scores={DayCycle=3, Time=18000..2
 function majoras_mask:teleports/remove_other
 tag @s remove StopTime
 bossbar set minecraft:timetitle visible true
-tp @s 314 49 -375
+tp @s 0 100 8
