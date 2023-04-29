@@ -1,17 +1,17 @@
 # Clocktower Base
-execute if entity @s[x=-2,y=100,z=-5,dx=5,dy=5,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/clocktower_base/inside
+execute if entity @s[x=-2,y=100,z=5,dx=5,dy=5,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/clocktower_base/inside
 execute if entity @s[x=9,y=95,z=-55,dx=1,dy=5,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/clocktower_base/outside
 
 # Clocktower Top
-execute if entity @s[x=313,y=63,z=-365,dx=3,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/clocktower_top/inside
+execute if entity @s[x=-1,y=114,z=-1,dx=3,dy=4,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/clocktower_top/inside
 
 # Laundry Pool
-execute if entity @s[x=336,y=52,z=-420,dx=0,dz=3] run function majoras_mask:teleports/clocktown/south_clocktown/laundry_pool/inside
-execute if entity @s[x=350,y=46,z=-409,dx=0,dz=3] run function majoras_mask:teleports/clocktown/south_clocktown/laundry_pool/outside
+execute if entity @s[x=-25,y=102,z=51,dx=3,dy=12,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/laundry_pool/inside
+execute if entity @s[x=-25,y=102,z=45,dx=3,dy=12,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/laundry_pool/outside
 
 # Curiosity Shop Back
-execute if entity @s[x=368,y=44,z=-403,dx=1,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/curiosity_shop_back/inside
-execute if entity @s[x=347,y=24,z=-460,dx=1,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/curiosity_shop_back/outside
+execute if entity @s[x=-55,y=94,z=-37,dx=2,dy=3,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/curiosity_shop_back/inside
+execute if entity @s[x=-34,y=75,z=-94,dx=2,dy=3,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/curiosity_shop_back/outside
 
 # South Gate
 execute if entity @s[x=312,y=51,z=-437,dx=5,dy=7,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/south_gate/inside
