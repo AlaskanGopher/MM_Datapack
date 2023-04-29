@@ -1,4 +1,4 @@
-execute at @e[distance=..1.25, tag=DekuFlower] run setblock ~ ~ ~ spruce_slab replace
+execute at @e[distance=..1.5, tag=DekuFlower] run setblock ~ ~ ~ spruce_slab replace
 
 scoreboard players add @s DekuCrouchTimer 1
 
