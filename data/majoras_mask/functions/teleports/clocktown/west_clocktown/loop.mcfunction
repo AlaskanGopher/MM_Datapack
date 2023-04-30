@@ -6,8 +6,8 @@ execute if entity @s[x=363,y=55,z=-387,dx=-0.5,dz=0] run function majoras_mask:t
 execute if entity @s[x=320,y=28,z=-323,dx=-0.5,dz=0] run function majoras_mask:teleports/clocktown/west_clocktown/bomb_shop/outside
 
 # Curiosity Shop
-execute if entity @s[x=-43,y=104,z=29,dx=0,dz=0.5] run function majoras_mask:teleports/clocktown/west_clocktown/curiosity_shop/inside
-execute if entity @s[x=-43,y=79,z=62,dx=0,dz=-0.5] run function majoras_mask:teleports/clocktown/west_clocktown/curiosity_shop/outside
+execute if entity @s[x=-33,y=102,z=37,dx=0,dz=0.5] run function majoras_mask:teleports/clocktown/west_clocktown/curiosity_shop/inside
+execute if entity @s[x=-26,y=80,z=-13,dx=0,dz=-0.5] run function majoras_mask:teleports/clocktown/west_clocktown/curiosity_shop/outside
 
 # Lottery Shop
 execute if entity @s[x=348,y=56,z=-372,dx=0,dz=0] run function majoras_mask:teleports/clocktown/west_clocktown/lottery_shop/inside
@@ -22,8 +22,8 @@ execute if entity @s[x=359,y=56,z=-356,dx=1,dz=0] run function majoras_mask:tele
 execute if entity @s[x=352,y=20,z=-344,dx=0,dz=0.5] run function majoras_mask:teleports/clocktown/west_clocktown/swordsmans_school/outside
 
 # Trading Post
-execute if entity @s[x=-33,y=102,z=37,dx=-0.25,dz=0.25] run function majoras_mask:teleports/clocktown/west_clocktown/trading_post/inside
-execute if entity @s[x=-26,y=80,z=-13,dx=0,dz=-0.5] run function majoras_mask:teleports/clocktown/west_clocktown/trading_post/outside
+execute if entity @s[x=-43,y=104,z=29,dx=-0.25,dz=0.25] run function majoras_mask:teleports/clocktown/west_clocktown/trading_post/inside
+execute if entity @s[x=-43,y=79,z=62,dx=0,dz=-0.5] run function majoras_mask:teleports/clocktown/west_clocktown/trading_post/outside
 
 # Tunnels
 execute if entity @s[x=-17,y=100,z=30,dx=0,dy=6,dz=4] run function majoras_mask:teleports/clocktown/west_clocktown/tunnels/to_south_clocktown_southern
