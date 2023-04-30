@@ -31,6 +31,6 @@ stopsound @a music minecraft:music.creative
 stopsound @a music minecraft:music.menu
 stopsound @a ambient minecraft:ambient.cave
 
-execute if entity @a[scores={Sneak=1..}] run scoreboard players set @a Sneak 0
-execute if entity @a[scores={Walk=1..}] run scoreboard players set @a Walk 0
-execute if entity @a[scores={Run=1..}] run scoreboard players set @a Run 0
+execute as @a[scores={Sneak=1..}] run scoreboard players set @s Sneak 0
+execute as @a[scores={Walk=1..}] run scoreboard players set @s Walk 0
+execute as @a[scores={Run=1..}] run scoreboard players set @s Run 0
