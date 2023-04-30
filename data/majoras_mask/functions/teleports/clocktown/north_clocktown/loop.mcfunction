@@ -7,7 +7,7 @@ execute if entity @s[x=-15,y=107,z=-29,dx=0,dy=0,dz=0] run function majoras_mask
 execute if entity @s[x=-59,y=70,z=-21,dx=0,dy=2,dz=0] run function majoras_mask:teleports/clocktown/north_clocktown/deku_playground/outside
 
 # North Gate
-execute if entity @s[x=-2,y=107,z=-73,dx=5,dy=6,dz=0] run function majoras_mask:teleports/clocktown/north_clocktown/north_gate/inside
+execute if entity @s[x=-2,y=107,z=-73,dx=5,dy=6,dz=0] run function majoras_mask:teleports/clocktown/north_clocktown/north_gate/to_termina
 
 # Tunnels
 execute if entity @s[x=34,y=107,z=-32,dx=0,dy=6,dz=4] run function majoras_mask:teleports/clocktown/north_clocktown/tunnels/to_east_clocktown
