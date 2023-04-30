@@ -31,6 +31,34 @@ stopsound @a music minecraft:music.creative
 stopsound @a music minecraft:music.menu
 stopsound @a ambient minecraft:ambient.cave
 
+#Global Scoreboards
+
 execute as @a[scores={Sneak=1..}] run scoreboard players set @s Sneak 0
 execute as @a[scores={Walk=1..}] run scoreboard players set @s Walk 0
 execute as @a[scores={Run=1..}] run scoreboard players set @s Run 0
+
+#Positional trash
+
+##Player Height scoreboard
+
+execute as @a store result score @s Height run data get entity @s Pos[1] 100.0
+
+##Player Speed scoreboard
+execute as @a run scoreboard players operation @s LastXPos = @s XPos
+execute as @a run scoreboard players operation @s LastZPos = @s ZPos
+
+execute as @a store result score @s XPos run data get entity @s Pos[0] 100.0
+execute as @a store result score @s ZPos run data get entity @s Pos[2] 100.0
+
+execute as @a run scoreboard players operation @s Accumulator = @s XPos
+execute as @a store result score @s DeltaX run scoreboard players operation @s Accumulator -= @s LastXPos
+execute as @a run scoreboard players operation @s Accumulator = @s ZPos
+execute as @a store result score @s DeltaZ run scoreboard players operation @s Accumulator -= @s LastZPos
+
+execute as @a run scoreboard players operation @s HorizontalSpeedSq = @s DeltaX
+execute as @a run scoreboard players operation @s Accumulator = @s DeltaZ
+
+execute as @a run scoreboard players operation @s HorizontalSpeedSq *= @s HorizontalSpeedSq
+execute as @a run scoreboard players operation @s Accumulator *= @s Accumulator
+
+execute as @a run scoreboard players operation @s HorizontalSpeedSq += @s Accumulator
