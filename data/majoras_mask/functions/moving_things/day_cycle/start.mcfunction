@@ -8,7 +8,7 @@ execute unless entity @s[tag=Slow_Time] run bossbar set minecraft:timetitle colo
 
 execute if entity @s[scores={DayTickAdvance=3..}] run time add 1
 
-execute as @s run function majoras_mask:moving_things/day_cycle/loop
+execute as @s run function majoras_mask:moving_things/day_cycle/tick
 execute as @s run function majoras_mask:moving_things/day_cycle/display
 
 execute if entity @s[scores={DayTickAdvance=3..}] run scoreboard players set @s DayTickAdvance 0

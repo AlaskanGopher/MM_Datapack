@@ -7,22 +7,22 @@ execute as @a[scores={Sneak=0},tag=Crouching] at @s run function majoras_mask:ca
 execute as @a[tag=Crouching] at @s run function majoras_mask:callbacks/crouch
 
 #Teleports
-function majoras_mask:teleports/loop
+function majoras_mask:teleports/tick
 
 #Jump Cutscenes
-function majoras_mask:jump_cutscenes/loop
+function majoras_mask:jump_cutscenes/tick
 
 #Entities
-# function majoras_mask:entity_setup/loop
+# function majoras_mask:entity_setup/tick
 
 #Moving Things
-function majoras_mask:moving_things/loop
+function majoras_mask:moving_things/tick
 
 #Items
-function majoras_mask:items/loop
+function majoras_mask:items/tick
 
 #Music
-function majoras_mask:music/loop
+function majoras_mask:music/tick
 
 #Always Active
 recipe take @a *

@@ -1,55 +1,47 @@
-# Run Once
-execute if entity @s[tag=DekuLaunch] run tag @s add Float
-execute if entity @s[tag=DekuLaunch] run effect give @s levitation 100 15
-execute if entity @s[tag=DekuLaunch] store result score @s DekuFlowerLaunchPeak run scoreboard players get @s Height
-execute if entity @s[tag=DekuLaunch, tag=!GoldLaunch] run scoreboard players operation @s DekuFlowerLaunchPeak += @e[type=marker,tag=globals,limit=1] DekuFlowerPeakHeight
-execute if entity @s[tag=DekuLaunch, tag=GoldLaunch] run scoreboard players operation @s DekuFlowerLaunchPeak += @e[type=marker,tag=globals,limit=1] DekuFlowerGoldPeakHeight
-execute if entity @s[tag=DekuLaunch, tag=GoldLaunch] run tag @s remove GoldLaunch
-
-# Remove first tick tag
-tag @s remove DekuLaunch
-
-# If peak of jump has been reached
-execute if entity @s[tag=Float] if score @s DekuFlowerLaunchPeak < @s Height run tag @s add SlowFalling
-
-execute if entity @s[tag=Float, tag=SlowFalling] run effect clear @s levitation
-execute if entity @s[tag=Float, tag=SlowFalling] run effect give @s slow_falling
-
-execute if entity @s[tag=Float, tag=SlowFalling] run scoreboard players set @s FlowerDescentTime 0
-execute if entity @s[tag=Float, tag=SlowFalling] run scoreboard players set @s DekuFlowerStationaryTime 0
-
-execute if entity @s[tag=Float, tag=SlowFalling] run tag @s remove Float
-
-
 # Descent
+
+# Store the peak launch height as the player's max height
 execute store result score @s DekuFlowerLaunchPeak if score @s Height > @s DekuFlowerLaunchPeak run scoreboard players get @s Height
 
-execute if entity @s[tag=SlowFalling] run scoreboard players add @s FlowerDescentTime 1
-execute if entity @s[tag=SlowFalling] if score @s HorizontalSpeedSq matches ..10 run scoreboard players add @s DekuFlowerStationaryTime 1
+# enumerate time spent descending
+scoreboard players add @s FlowerDescentTime 1
 
-execute store result score @s WorkingVariable if entity @s[tag=SlowFalling] run scoreboard players get @s FlowerDescentTime
-execute if entity @s[tag=SlowFalling] run scoreboard players operation @s WorkingVariable *= @e[type=marker,tag=globals,limit=1] FlowerDescentSpeed
-execute store result score @s ExpectedFlowerPosition if entity @s[tag=SlowFalling] run scoreboard players get @s DekuFlowerLaunchPeak
-execute if entity @s[tag=SlowFalling] run scoreboard players operation @s ExpectedFlowerPosition -= @s WorkingVariable
+# if the player's speed is less than some amount, count them is stationary
+execute if score @s HorizontalSpeedSq < @e[tag=globals,limit=1] STATIONARY_SPEED_THRESHOLD run scoreboard players add @s DekuFlowerStationaryTime 1
 
-execute if entity @s[tag=SlowFalling] if score @s ExpectedFlowerPosition >= @s Height run effect give @s levitation
-execute if entity @s[tag=SlowFalling] if score @s ExpectedFlowerPosition < @s Height run effect clear @s levitation
+# LDA Descent time
+execute store result score @s Accumulator run scoreboard players get @s FlowerDescentTime
 
-# Stop
-execute if entity @s[tag=SlowFalling,tag=onGround] run tag @s remove Float
-execute if entity @s[tag=SlowFalling,tag=onGround] run tag @s remove SlowFalling
+# multiply by speed to get total distance fallen
+scoreboard players operation @s Accumulator *= @e[tag=globals,limit=1] DEKU_FLOWER_DESCENT_SPEED
 
-execute store result score @s WorkingVariable if entity @s[tag=SlowFalling] run scoreboard players get @s DekuFlowerStationaryTime
-execute if entity @s[tag=SlowFalling] run scoreboard players operation @s WorkingVariable *= @e[type=marker,tag=globals,limit=1] FlowerDescentSpeed
-execute store result score @s DekuFlowerFloatEnd if entity @s[tag=SlowFalling] run scoreboard players get @s DekuFlowerLaunchPeak
-execute if entity @s[tag=SlowFalling] run scoreboard players operation @s DekuFlowerFloatEnd -= @s WorkingVariable
-execute if entity @s[tag=SlowFalling] run scoreboard players operation @s DekuFlowerFloatEnd -= @e[type=marker,tag=globals,limit=1] DekuFlowerDescentDistance
+# Set the target height to be the max height minus the expected distance fallen
+execute store result score @s ExpectedFlowerPosition run scoreboard players get @s DekuFlowerLaunchPeak
+scoreboard players operation @s ExpectedFlowerPosition -= @s Accumulator
 
-execute if entity @s[tag=SlowFalling] if score @s Height < @s DekuFlowerFloatEnd run tag @s remove Float
-execute if entity @s[tag=SlowFalling] if score @s Height < @s DekuFlowerFloatEnd run tag @s remove SlowFalling
+# Give levitation if below target, otherwise remove it
+execute if score @s ExpectedFlowerPosition >= @s Height run effect give @s levitation
+execute if score @s ExpectedFlowerPosition < @s Height run effect clear @s levitation
 
-execute unless entity @s[tag=Float] unless entity @s[tag=DekuLaunch] unless entity @s[tag=SlowFalling] run effect clear @s slow_falling
-execute unless entity @s[tag=Float] unless entity @s[tag=DekuLaunch] unless entity @s[tag=SlowFalling] run effect clear @s levitation
+# LDA Time spent while stationary
+execute store result score @s Accumulator run scoreboard players get @s DekuFlowerStationaryTime
+
+# Calculate distance fallen while stationary
+scoreboard players operation @s Accumulator *= @e[tag=globals,limit=1] DEKU_FLOWER_DESCENT_SPEED
+
+# Set the end of the player's descent to be a constant value less than the peak...
+execute store result score @s DekuFlowerFloatEnd run scoreboard players get @s DekuFlowerLaunchPeak
+scoreboard players operation @s DekuFlowerFloatEnd -= @e[tag=globals,limit=1] DEKU_FLOWER_DESCENT_DISTANCE
+
+# ...minus the distance spent unmoving
+scoreboard players operation @s DekuFlowerFloatEnd -= @s Accumulator
+
+# Stop if ground is touched or minimum height is reached
+execute if entity @s[tag=onGround] run tag @s remove DekuFlowerDescend
+execute if score @s Height < @s DekuFlowerFloatEnd run tag @s remove DekuFlowerDescend
+
+execute unless entity @s[tag=DekuFlowerDescend] run effect clear @s slow_falling
+execute unless entity @s[tag=DekuFlowerDescend] run effect clear @s levitation
 
 # Sounds
 
@@ -58,4 +50,3 @@ execute if score @s FlowerDescentTime matches 75 run playsound minecraft:entity.
 execute if score @s FlowerDescentTime matches 95 run playsound minecraft:entity.ender_dragon.flap block @a ~ ~ ~ 0.5 1
 execute if score @s FlowerDescentTime matches 115 run playsound minecraft:entity.ender_dragon.flap block @a ~ ~ ~ 0.5 1
 execute if score @s FlowerDescentTime matches 135 run playsound minecraft:entity.ender_dragon.flap block @a ~ ~ ~ 0.5 1
-execute if score @s FlowerDescentTime matches 15.. if score @s FlowerDescentTime matches 1 run playsound minecraft:entity.ender_dragon.flap block @a ~ ~ ~ 0.5 1
