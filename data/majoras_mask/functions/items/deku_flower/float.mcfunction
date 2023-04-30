@@ -4,24 +4,24 @@
 execute store result score @s DekuFlowerLaunchPeak if score @s Height > @s DekuFlowerLaunchPeak run scoreboard players get @s Height
 
 # enumerate time spent descending
-scoreboard players add @s FlowerDescentTime 1
+scoreboard players add @s DekuFlowerDescentTime 1
 
 # if the player's speed is less than some amount, count them is stationary
 execute if score @s HorizontalSpeedSq < @e[tag=globals,limit=1] STATIONARY_SPEED_THRESHOLD run scoreboard players add @s DekuFlowerStationaryTime 1
 
 # LDA Descent time
-execute store result score @s Accumulator run scoreboard players get @s FlowerDescentTime
+execute store result score @s Accumulator run scoreboard players get @s DekuFlowerDescentTime
 
 # multiply by speed to get total distance fallen
 scoreboard players operation @s Accumulator *= @e[tag=globals,limit=1] DEKU_FLOWER_DESCENT_SPEED
 
 # Set the target height to be the max height minus the expected distance fallen
-execute store result score @s ExpectedFlowerPosition run scoreboard players get @s DekuFlowerLaunchPeak
-scoreboard players operation @s ExpectedFlowerPosition -= @s Accumulator
+execute store result score @s ExpectedDekuFlowerHeight run scoreboard players get @s DekuFlowerLaunchPeak
+scoreboard players operation @s ExpectedDekuFlowerHeight -= @s Accumulator
 
 # Give levitation if below target, otherwise remove it
-execute if score @s ExpectedFlowerPosition >= @s Height run effect give @s levitation
-execute if score @s ExpectedFlowerPosition < @s Height run effect clear @s levitation
+execute if score @s ExpectedDekuFlowerHeight >= @s Height run effect give @s levitation
+execute if score @s ExpectedDekuFlowerHeight < @s Height run effect clear @s levitation
 
 # LDA Time spent while stationary
 execute store result score @s Accumulator run scoreboard players get @s DekuFlowerStationaryTime

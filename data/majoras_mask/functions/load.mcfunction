@@ -9,7 +9,7 @@ execute as @e[tag=globals,limit=1] run function majoras_mask:initialize_globals
 
 #Counters
 scoreboard objectives add DekuCrouchTimer dummy
-scoreboard objectives add FlowerDescentTime dummy
+scoreboard objectives add DekuFlowerDescentTime dummy
 scoreboard objectives add DekuFlowerStationaryTime dummy
 
 #Accessors
@@ -25,6 +25,8 @@ scoreboard objectives add HorizontalSpeedSq dummy
 scoreboard objectives add DeltaX dummy
 scoreboard objectives add DeltaZ dummy
 scoreboard objectives add DekuFlowerLaunchPeak dummy
+scoreboard objectives add ExpectedDekuFlowerHeight dummy
+scoreboard objectives add DekuFlowerFloatEnd dummy
 
 #Math
 scoreboard objectives add Accumulator dummy
