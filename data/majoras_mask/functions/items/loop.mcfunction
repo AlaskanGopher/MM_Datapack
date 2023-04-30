@@ -6,7 +6,7 @@ function majoras_mask:items/multiplayer_tick_fix
 # Set block to coarse dirt when no sneaking players are nearby.
 # execute as @e[tag=DekuFlower] at @s unless entity @a[tag=Crouching, tag=WearingDekuMask, distance=..1.25] run setblock ~ ~ ~ coarse_dirt
 
-execute as @e[tag=DekuFlower] run function majoras_mask:items/deku_flower/deku_flower_tick
+execute as @e[tag=DekuFlower] at @s run function majoras_mask:items/deku_flower/deku_flower_tick
 
 #Deku Mask
 function majoras_mask:items/masks/deku_mask/deku_mask

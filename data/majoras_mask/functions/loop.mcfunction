@@ -2,9 +2,9 @@ execute as @a unless entity @s[tag=NoNightVision] run effect give @s minecraft:n
 execute as @a if entity @s[tag=NoNightVision] run effect clear @s minecraft:night_vision
 
 # Callbacks
-execute as @a[scores={Sneak=1},tag=!Crouching] run function majoras_mask:callbacks/crouch_start
-execute as @a[scores={Sneak=0},tag=Crouching] run function majoras_mask:callbacks/crouch_end
-execute as @a[tag=Crouching] run function majoras_mask:callbacks/crouch
+execute as @a[scores={Sneak=1},tag=!Crouching] at @s run function majoras_mask:callbacks/crouch_start
+execute as @a[scores={Sneak=0},tag=Crouching] at @s run function majoras_mask:callbacks/crouch_end
+execute as @a[tag=Crouching] at @s run function majoras_mask:callbacks/crouch
 
 #Teleports
 function majoras_mask:teleports/loop
