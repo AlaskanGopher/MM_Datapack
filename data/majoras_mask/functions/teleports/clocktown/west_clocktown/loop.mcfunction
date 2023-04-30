@@ -2,8 +2,8 @@
 execute if entity @s[x=-77,y=107,z=3,dx=0,dy=6,dz=5] run function majoras_mask:teleports/clocktown/west_clocktown/west_gate/to_termina
 
 # Bomb Shop
-execute if entity @s[x=363,y=55,z=-387,dx=-0.5,dz=0] run function majoras_mask:teleports/clocktown/west_clocktown/bomb_shop/inside
-execute if entity @s[x=320,y=28,z=-323,dx=-0.5,dz=0] run function majoras_mask:teleports/clocktown/west_clocktown/bomb_shop/outside
+execute if entity @s[x=-49,y=106,z=21,dx=-0.5,dz=0] run function majoras_mask:teleports/clocktown/west_clocktown/bomb_shop/inside
+execute if entity @s[x=-6,y=79,z=-43,dx=-0.5,dz=0] run function majoras_mask:teleports/clocktown/west_clocktown/bomb_shop/outside
 
 # Curiosity Shop
 execute if entity @s[x=-33,y=102,z=37,dx=0,dz=0.5] run function majoras_mask:teleports/clocktown/west_clocktown/curiosity_shop/inside

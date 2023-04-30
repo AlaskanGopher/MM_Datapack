@@ -6,4 +6,4 @@ execute if entity @e[type=marker, tag=globals, scores={DayCycle=3, Time=0..11999
 execute if entity @e[type=marker, tag=globals, scores={DayCycle=3, Time=18000..23999}] run function majoras_mask:music/clocktown_finalhours
 function majoras_mask:teleports/remove_other
 #execute positioned 320 28 -323 as @a[distance=..1] at @s run 
-tp @s 361 55 -386 ~180 ~
+tp @s -48 106 21 ~180 ~
