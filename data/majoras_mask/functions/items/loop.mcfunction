@@ -8,6 +8,8 @@ function majoras_mask:items/multiplayer_tick_fix
 
 execute as @e[tag=DekuFlower] run function majoras_mask:items/deku_flower/deku_flower_tick
 
+say ?????
+
 #Deku Mask
 function majoras_mask:items/masks/deku_mask/deku_mask
 
