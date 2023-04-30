@@ -8,8 +8,6 @@ function majoras_mask:items/multiplayer_tick_fix
 
 execute as @e[tag=DekuFlower] run function majoras_mask:items/deku_flower/deku_flower_tick
 
-execute as @a at @s if entity @e[tag=DekuFlower, distance=..1.5] run tag @s add NearDekuFlower
-
 #Deku Mask
 function majoras_mask:items/masks/deku_mask/deku_mask
 
