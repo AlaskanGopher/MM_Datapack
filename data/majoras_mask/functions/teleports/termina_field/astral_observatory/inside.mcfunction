@@ -5,4 +5,4 @@ function majoras_mask:teleports/remove_other
 tag @s remove Termina_Field
 tag @s add Sewers
 tag @s add Indoors
-tp @s 161 29 -332 ~-90 ~
+tp @s 153 97 -33 ~-90 ~

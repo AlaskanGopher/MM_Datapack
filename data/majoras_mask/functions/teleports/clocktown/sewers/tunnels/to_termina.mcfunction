@@ -4,4 +4,4 @@ execute if entity @e[type=marker, tag=globals, scores={Time=0..11999}] run funct
 function majoras_mask:teleports/remove_other
 tag @s remove Sewers
 tag @s add Termina_Field
-tp @s 153 97 -33 ~90 ~
+tp @s 126 112 44 ~90 ~
