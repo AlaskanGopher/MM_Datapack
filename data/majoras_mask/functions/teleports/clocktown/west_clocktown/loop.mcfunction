@@ -18,8 +18,8 @@ execute if entity @s[x=351,y=56,z=-356,dx=1,dz=0] run function majoras_mask:tele
 execute if entity @s[x=371,y=34,z=-386,dx=0,dz=-0.5] run function majoras_mask:teleports/clocktown/west_clocktown/post_office/outside
 
 # Swordmans School
-execute if entity @s[x=359,y=56,z=-356,dx=1,dz=0] run function majoras_mask:teleports/clocktown/west_clocktown/swordsmans_school/inside
-execute if entity @s[x=352,y=20,z=-344,dx=0,dz=0.5] run function majoras_mask:teleports/clocktown/west_clocktown/swordsmans_school/outside
+execute if entity @s[x=-46,y=107,z=-10,dx=1,dz=0] run function majoras_mask:teleports/clocktown/west_clocktown/swordsmans_school/inside
+execute if entity @s[x=-38,y=71,z=-22,dx=0,dz=0.5] run function majoras_mask:teleports/clocktown/west_clocktown/swordsmans_school/outside
 
 # Trading Post
 execute if entity @s[x=-43,y=104,z=29,dx=-0.25,dz=0.25] run function majoras_mask:teleports/clocktown/west_clocktown/trading_post/inside
