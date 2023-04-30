@@ -1,1 +1,2 @@
-scoreboard players set bombchuconst lifetime -1
+scoreboard objectives add DekuCrouchTimer dummy
+scoreboard objectives add Sneak minecraft.custom:sneak_time
