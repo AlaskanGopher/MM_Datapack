@@ -7,6 +7,8 @@ function majoras_mask:items/multiplayer_tick_fix
 # execute as @e[tag=DekuFlower] at @s unless entity @a[tag=Crouching, tag=WearingDekuMask, distance=..1.25] run setblock ~ ~ ~ coarse_dirt
 
 execute as @e[tag=DekuFlower] at @s run function majoras_mask:items/deku_flower/tick
+execute as @a[tag=DekuFlowerAscend] if score @s DekuFlowerLaunchPeak < @s Height run function majoras_mask:items/deku_flower/begin_float
+execute as @a[tag=DekuFlowerDescend] run function majoras_mask:items/deku_flower/float
 
 #Deku Mask
 function majoras_mask:items/masks/deku_mask/deku_mask
@@ -16,6 +18,3 @@ execute as @a run scoreboard players add @s Cooldown 1
 
 #Use Item Reset
 execute as @a[scores={UseItem=1..}] run scoreboard players set @s UseItem 0
-
-#Player Height scoreboard
-execute as @a store result score @s Height run data get entity @s Pos[1] 100.0
