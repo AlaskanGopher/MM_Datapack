@@ -7,7 +7,7 @@ execute if entity @s[x=-6,y=79,z=-43,dx=-0.5,dy=0,dz=0] run function majoras_mas
 
 # Curiosity Shop
 execute if entity @s[x=-33,y=102,z=37,dx=0,dy=0,dz=0.5] run function majoras_mask:teleports/clocktown/west_clocktown/curiosity_shop/inside
-execute if entity @s[x=-26,y=80,z=-13,dx=0,dy=0,dz=-0.5] run function majoras_mask:teleports/clocktown/west_clocktown/curiosity_shop/outside
+execute if entity @s[x=-43,y=79,z=62,dx=0,dy=0,dz=-0.5] run function majoras_mask:teleports/clocktown/west_clocktown/curiosity_shop/outside
 
 # Lottery Shop
 execute if entity @s[x=-34,y=106,z=6,dx=0,dy=2,dz=0] run function majoras_mask:teleports/clocktown/west_clocktown/lottery_shop/inside
