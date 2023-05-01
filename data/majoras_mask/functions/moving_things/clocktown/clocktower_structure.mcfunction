@@ -2,7 +2,10 @@
 # NEW WORLD TOWER CENTER (0,144,0) when standing on top of the Tower.
 # OLD WORLD TOWER CENTER (314, 93, -366) when standing on top of the Tower.
 
-# DIFFERENCE (-314, 51, 366)
+# DIFFERENCE (-314, 51, 366)                -314 51 366
+# ROTATED 180 DEGREES (inverse signs)       180 0
+
+
 
 # structure block:  majora:clocktown/towerclock1 relative -12 -12 -5 @ 316 69 -369
 # structure block:  majora:clocktown/towerclock1 relative -13 19 -7 @ 314 69 -369
