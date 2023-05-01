@@ -26,7 +26,7 @@ scoreboard objectives add HorizontalSpeedSq dummy
 scoreboard objectives add DeltaX dummy
 scoreboard objectives add DeltaZ dummy
 scoreboard objectives add DekuFlowerLaunchPeak dummy
-scoreboard objectives add ExpectedDekuFlowerHeight dummy
+scoreboard objectives add TargetDekuFlowerHeight dummy
 scoreboard objectives add DekuFlowerFloatEnd dummy
 
 #Math
