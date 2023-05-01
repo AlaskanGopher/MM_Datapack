@@ -30,6 +30,6 @@ execute if entity @s[x=30,y=68,z=25,dx=2,dy=3,dz=0] run function majoras_mask:te
 
 # Tunnels
 execute if entity @s[x=18,y=100,z=35,dx=0,dy=15,dz=8] run function majoras_mask:teleports/clocktown/east_clocktown/tunnels/to_south_clocktown_southern
-execute if entity @s[x=15,y=104,z=4,dx=0,dy=5,dz=5] run function majoras_mask:teleports/clocktown/east_clocktown/tunnels/mto_south_clocktown_central
+execute if entity @s[x=15,y=104,z=4,dx=0,dy=5,dz=5] run function majoras_mask:teleports/clocktown/east_clocktown/tunnels/to_south_clocktown_central
 execute if entity @s[x=26,y=107,z=-32,dx=0,dy=6,dz=4] run function majoras_mask:teleports/clocktown/east_clocktown/tunnels/to_north_clocktown
 execute if entity @s[x=61,y=103,z=-31,dx=0,dy=4,dz=1] run function majoras_mask:teleports/clocktown/east_clocktown/tunnels/to_sewers
