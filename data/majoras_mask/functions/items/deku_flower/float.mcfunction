@@ -1,7 +1,7 @@
 # Descent
 
 # Store the peak launch height as the player's max height
-execute store result score @s DekuFlowerLaunchPeak if score @s Height > @s DekuFlowerLaunchPeak run scoreboard players get @s Height
+# execute store result score @s DekuFlowerLaunchPeak if score @s Height > @s DekuFlowerLaunchPeak run scoreboard players get @s Height
 
 # enumerate time spent descending
 scoreboard players add @s DekuFlowerDescentTime 1
