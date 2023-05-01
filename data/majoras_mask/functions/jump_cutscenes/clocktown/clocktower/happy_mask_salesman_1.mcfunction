@@ -131,6 +131,6 @@ execute if entity @s[scores={click=47}] run data merge entity @e[type=armor_stan
 
 
 execute if entity @s[scores={click=47}] run tag @s remove NoOcarina
-execute if entity @s[scores={click=47}] run fill 306 42 -303 308 45 -305 minecraft:air replace minecraft:barrier
+execute if entity @s[scores={click=47}] run fill 8 93 -63 6 96 -61 minecraft:air replace minecraft:barrier
 execute if entity @s[scores={click=47}] run tag @s remove MeetSalesman2
 execute if entity @s[scores={click=47}] run scoreboard objectives remove click
