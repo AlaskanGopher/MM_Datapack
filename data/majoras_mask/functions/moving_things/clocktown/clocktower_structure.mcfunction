@@ -7,6 +7,8 @@
 
 
 
+# BEGIN
+
 # structure block:  majora:clocktown/towerclock1 relative -12 -12 -5 @ 316 69 -369
 # structure block:  majora:clocktown/towerclock1 relative -13 19 -7 @ 314 69 -369
 # command:          /fill 318 88 -359 310 80 -340 air
@@ -57,5 +59,43 @@
 
 # command:          /fill 315 62 -371 313 58 -371 air
 
+# END
 
 
+# Auto-Generated
+
+# scoreboard players set @e[tag=globals,limit=1] ClockTowerAnimationTimer 0
+
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 0 run place template majora:clocktown/towerclock1 -10 108 -8
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 0 run place template majora:clocktown/towerclock1 -13 139 -10
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 0 run fill 4 139 7 -4 131 26 air
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 0 run clone -15 83 -17 -17 79 -17 -17 79 -17
+
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 24 run place template majora:clocktown/towerclock2 -10 108 -8
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 24 run place template majora:clocktown/towerball2 -4 139 -3
+
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 48 run place template majora:clocktown/towerclock3 -10 108 -8
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 48 run place template majora:clocktown/towerball3 -4 139 -3
+
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 72 run place template majora:clocktown/towerclock4 -10 116 -8
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 72 run place template majora:clocktown/towerclock4 -4 139 -3
+
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 96 run place template majora:clocktown/towerclock5 -10 120 -8
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 96 run place template majora:clocktown/towerball5 -4 139 -3
+
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 120 run place template majora:clocktown/towerballpeak -4 139 -3
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 120 run place template majora:clocktown/towerclockpeak -10 120 -8
+
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 152 run place template majora:clocktown/towerclockturn -10 127 -11
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 152 run place template majora:clocktown/towerballpeakremove -4 150 -3
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 152 run place template majora:clocktown/towerballturn -4 141 6
+
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 184 run place template majora:clocktown/towerballfinal -4 131 11
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 184 run place template majora:clocktown/towerclockfinal1 -10 132 -11
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 184 run fill -2 151 9 2 150 10 air
+
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 208 run place template majora:clocktown/towerclockfinal2 -10 132 -10
+
+execute if score @e[tag=globals,limit=1] ClockTowerAnimationTimer matches 224 run fill 1 113 -5 -1 109 -5 air
+
+scoreboard players add @e[tag=globals,limit=1] ClockTowerAnimationTimer 1
