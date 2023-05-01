@@ -22,7 +22,7 @@ execute if entity @s[x=-46,y=107,z=-10,dx=1,dy=0,dz=0] run function majoras_mask
 execute if entity @s[x=-38,y=71,z=-22,dx=0,dy=0,dz=0.5] run function majoras_mask:teleports/clocktown/west_clocktown/swordsmans_school/outside
 
 # Trading Post
-execute if entity @s[x=-43,y=104,z=30,dx=-0.25,dy=0,dz=0.25] run function majoras_mask:teleports/clocktown/west_clocktown/trading_post/inside
+execute if entity @s[x=-43,y=104,z=29,dx=-0.25,dy=0,dz=0.25] run function majoras_mask:teleports/clocktown/west_clocktown/trading_post/inside
 execute if entity @s[x=-26,y=95,z=1,dx=0,dy=0,dz=-0.5] run function majoras_mask:teleports/clocktown/west_clocktown/trading_post/outside
 
 # Tunnels
