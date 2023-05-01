@@ -40,13 +40,15 @@ scoreboard players operation @s DekuFlowerFloatEnd -= @s Accumulator
 execute if entity @s[nbt={OnGround:1b}] run tag @s remove DekuFlowerDescend
 execute if score @s Height < @s DekuFlowerFloatEnd run tag @s remove DekuFlowerDescend
 
+execute if entity @s[nbt={OnGround:1b}] run say onGround
+
 execute unless entity @s[tag=DekuFlowerDescend] run effect clear @s slow_falling
 execute unless entity @s[tag=DekuFlowerDescend] run effect clear @s levitation
 
 # Sounds
 
-execute if score @s FlowerDescentTime matches 15.. run playsound minecraft:entity.item_frame.rotate_item block @a ~ ~ ~ 0.5 1
-execute if score @s FlowerDescentTime matches 75 run playsound minecraft:entity.ender_dragon.flap block @a ~ ~ ~ 0.5 1
-execute if score @s FlowerDescentTime matches 95 run playsound minecraft:entity.ender_dragon.flap block @a ~ ~ ~ 0.5 1
-execute if score @s FlowerDescentTime matches 115 run playsound minecraft:entity.ender_dragon.flap block @a ~ ~ ~ 0.5 1
-execute if score @s FlowerDescentTime matches 135 run playsound minecraft:entity.ender_dragon.flap block @a ~ ~ ~ 0.5 1
+execute if score @s DekuFlowerDescentTime matches 15.. run playsound minecraft:entity.item_frame.rotate_item block @a ~ ~ ~ 0.5 1
+execute if score @s DekuFlowerDescentTime matches 75 run playsound minecraft:entity.ender_dragon.flap block @a ~ ~ ~ 0.5 1
+execute if score @s DekuFlowerDescentTime matches 95 run playsound minecraft:entity.ender_dragon.flap block @a ~ ~ ~ 0.5 1
+execute if score @s DekuFlowerDescentTime matches 115 run playsound minecraft:entity.ender_dragon.flap block @a ~ ~ ~ 0.5 1
+execute if score @s DekuFlowerDescentTime matches 135 run playsound minecraft:entity.ender_dragon.flap block @a ~ ~ ~ 0.5 1
