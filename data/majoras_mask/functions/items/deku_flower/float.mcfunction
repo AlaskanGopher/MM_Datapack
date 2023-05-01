@@ -37,7 +37,7 @@ scoreboard players operation @s DekuFlowerFloatEnd -= @e[tag=globals,limit=1] DE
 scoreboard players operation @s DekuFlowerFloatEnd -= @s Accumulator
 
 # Stop if ground is touched or minimum height is reached
-execute if entity @s[tag=onGround] run tag @s remove DekuFlowerDescend
+execute if entity @s[nbt={onGround:1b}] run tag @s remove DekuFlowerDescend
 execute if score @s Height < @s DekuFlowerFloatEnd run tag @s remove DekuFlowerDescend
 
 execute unless entity @s[tag=DekuFlowerDescend] run effect clear @s slow_falling
