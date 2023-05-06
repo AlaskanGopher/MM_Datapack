@@ -4,6 +4,7 @@ scoreboard objectives add DEKU_FLOWER_LAUNCH_HEIGHT dummy
 scoreboard objectives add GOLD_DEKU_FLOWER_LAUNCH_HEIGHT dummy
 scoreboard objectives add DEKU_FLOWER_DESCENT_SPEED dummy
 scoreboard objectives add DEKU_FLOWER_DESCENT_DISTANCE dummy
+scoreboard objectives add DEKU_FLOWER_EXTRA_HEIGHT dummy
 
 execute unless entity @e[tag=globals] run summon marker 0.5 144.5 0.5 {Tags:["globals"]}
 execute as @e[tag=globals,limit=1] run function majoras_mask:initialize_globals
