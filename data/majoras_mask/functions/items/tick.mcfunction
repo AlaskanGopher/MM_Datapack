@@ -7,8 +7,10 @@ function majoras_mask:items/multiplayer_tick_fix
 # execute as @e[tag=DekuFlower] at @s unless entity @a[tag=Crouching, tag=WearingDekuMask, distance=..1.25] run setblock ~ ~ ~ coarse_dirt
 
 execute as @e[tag=DekuFlower] at @s run function majoras_mask:items/deku_flower/tick
-execute as @a[tag=DekuFlowerAscend] if score @s DekuFlowerLaunchPeak < @s Height at @s run function majoras_mask:items/deku_flower/begin_float
+
+# Dont you dare switch these you ocd moron it'll break everything
 execute as @a[tag=DekuFlowerDescend] run function majoras_mask:items/deku_flower/float
+execute as @a[tag=DekuFlowerAscend] if score @s DekuFlowerLaunchPeak < @s Height at @s run function majoras_mask:items/deku_flower/begin_float
 
 #Deku Mask
 function majoras_mask:items/masks/deku_mask/deku_mask
