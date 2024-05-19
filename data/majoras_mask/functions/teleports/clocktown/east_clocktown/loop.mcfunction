@@ -2,7 +2,7 @@
 execute if entity @s[x=76,y=107,z=3,dx=0,dy=7,dz=5] run function majoras_mask:teleports/clocktown/east_clocktown/east_gate/inside
 
 # Honey & Darling Shop
-execute if entity @s[x=53,y=104,z=24,dx=0,dy=3,dz=2] run function majoras_mask:teleports/clocktown/east_clocktown/honey_darling_shop/inside
+execute if entity @s[x=53,y=104,z=23,dx=0,dy=3,dz=2] run function majoras_mask:teleports/clocktown/east_clocktown/honey_darling_shop/inside
 execute if entity @s[x=55,y=81,z=24,dx=0,dy=3,dz=2] run function majoras_mask:teleports/clocktown/east_clocktown/honey_darling_shop/outside
 
 # Mayors Residence
