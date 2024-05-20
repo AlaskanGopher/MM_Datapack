@@ -1,6 +1,6 @@
 #Initialize
 execute as @a[scores={Sneak=1..}] at @s unless entity @s[tag=DekuSpinCharge] at @s if entity @s[tag=Wearing_Deku_Mask] run scoreboard players set @s Cooldown 0
-execute as @a[scores={Sneak=1..}] at @s at @s if entity @s[tag=Wearing_Deku_Mask] run tag @s add DekuSpinCharge
+execute as @a[scores={Sneak=1..}] at @s if entity @s[tag=Wearing_Deku_Mask] run tag @s add DekuSpinCharge
 
 #Success? Add Effect
 execute as @a[scores={Sneak=0,Cooldown=..5}] at @s if entity @s[tag=DekuSpinCharge] run effect give @s minecraft:speed 1 1 true
