@@ -19,10 +19,10 @@ execute if entity @s[x=54,y=71,z=45,dx=2,dy=3,dz=0] run function majoras_mask:te
 
 # Stock Pot Inn
 execute if entity @s[x=30,y=104,z=2,dx=2,dy=3,dz=0] run function majoras_mask:teleports/clocktown/east_clocktown/stock_pot_inn/inside_bottom
-execute if entity @s[x=50,y=83,z=-3,dx=0,dy=2,dz=0] run function majoras_mask:teleports/clocktown/east_clocktown/stock_pot_inn/outside_bottom
+execute if entity @s[x=52,y=85,z=9,dx=0,dy=2,dz=0] run function majoras_mask:teleports/clocktown/east_clocktown/stock_pot_inn/outside_bottom
 
 execute if entity @s[x=25,y=110,z=-11,dx=2,dy=3,dz=0] run function majoras_mask:teleports/clocktown/east_clocktown/stock_pot_inn/inside_top
-execute if entity @s[x=45,y=88,z=-12,dx=1,dy=2,dz=0] run function majoras_mask:teleports/clocktown/east_clocktown/stock_pot_inn/outside_top
+execute if entity @s[x=45,y=92,z=-3,dx=0,dy=2,dz=0] run function majoras_mask:teleports/clocktown/east_clocktown/stock_pot_inn/outside_top
 
 # Treasure Chest Shop
 execute if entity @s[x=30,y=104,z=25,dx=2,dy=3,dz=0] run function majoras_mask:teleports/clocktown/east_clocktown/treasure_chest_shop/inside
