@@ -3,4 +3,3 @@ item replace entity @p armor.head with minecraft:oak_button[minecraft:custom_mod
 attribute @s minecraft:generic.scale base set 0.84
 tag @s add Wearing_Deku_Mask
 scoreboard players set @s Cooldown 0
-say Success
