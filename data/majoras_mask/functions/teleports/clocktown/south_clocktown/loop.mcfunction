@@ -11,7 +11,7 @@ execute if entity @s[x=-25,y=102,z=45,dx=3,dy=12,dz=0] run function majoras_mask
 
 # Curiosity Shop Back
 execute if entity @s[x=-55,y=94,z=37,dx=2,dy=3,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/curiosity_shop_back/inside
-execute if entity @s[x=-34,y=75,z=94,dx=2,dy=3,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/curiosity_shop_back/outside
+execute if entity @s[x=-33,y=75,z=91,dx=0,dy=3,dz=1] run function majoras_mask:teleports/clocktown/south_clocktown/curiosity_shop_back/outside
 
 # South Gate
 execute if entity @s[x=-2,y=102,z=82,dx=5,dy=6,dz=0] run function majoras_mask:teleports/clocktown/south_clocktown/south_gate/to_termina
