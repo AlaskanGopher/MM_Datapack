@@ -5,4 +5,5 @@ execute if entity @e[type=marker, tag=globals, scores={DayCycle=2, Time=0..11999
 execute if entity @e[type=marker, tag=globals, scores={DayCycle=3, Time=0..11999}] run function majoras_mask:music/clocktown_day3
 execute if entity @e[type=marker, tag=globals, scores={DayCycle=3, Time=18000..23999}] run function majoras_mask:music/clocktown_finalhours
 function majoras_mask:teleports/remove_other
+tag @s add East_Clocktown
 tp @s 26 110 -10
