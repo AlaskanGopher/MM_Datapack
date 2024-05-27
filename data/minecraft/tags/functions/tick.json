@@ -1,5 +1,6 @@
 {
-  "values": [
-    "majoras_mask:loop"
-  ]
+	"values": [
+		"majoras_mask:loop",
+		"animated_java:tick"
+	]
 }

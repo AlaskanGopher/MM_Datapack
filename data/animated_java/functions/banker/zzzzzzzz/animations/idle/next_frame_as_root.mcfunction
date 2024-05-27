@@ -1,0 +1,1 @@
+function animated_java:banker/zzzzzzzz/animations/idle/tick_animation

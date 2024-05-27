@@ -1,0 +1,5 @@
+function animated_java:banker/zzzzzzzz/animations/default/pause_as_root
+function animated_java:banker/zzzzzzzz/animations/idle/pause_as_root
+function animated_java:banker/zzzzzzzz/animations/wave/pause_as_root
+function animated_java:banker/zzzzzzzz/animations/pound/pause_as_root
+function animated_java:banker/zzzzzzzz/animations/dance/pause_as_root

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.banker.root] run function animated_java:banker/zzzzzzzz/tick_as_root

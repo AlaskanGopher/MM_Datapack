@@ -1,5 +1,6 @@
 {
-  "values": [
-    "majoras_mask:load"
-  ]
+	"values": [
+		"majoras_mask:load",
+		"animated_java:banker/zzzzzzzz/load"
+	]
 }
