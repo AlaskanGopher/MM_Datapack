@@ -8,7 +8,7 @@ function majoras_mask:teleports/loop
 function majoras_mask:jump_cutscenes/loop
 
 #Entities
-# function majoras_mask:entity_setup/loop
+#function majoras_mask:entity_setup/loop
 
 #Moving Things
 function majoras_mask:moving_things/loop
