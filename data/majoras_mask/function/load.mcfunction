@@ -21,6 +21,7 @@ scoreboard objectives add Time dummy
 scoreboard objectives add DayTickAdvance dummy
 scoreboard objectives add MusicEnd dummy
 scoreboard objectives add Run dummy
+scoreboard objectives add ClockTowerAnimationTimer dummy
 
 scoreboard objectives add WorkingVariable dummy
 
