@@ -1,6 +1,7 @@
 {
   "pack": {
-    "pack_format": 1,
-    "description": "Legend of Zelda Data"
+    "description": "Legend of Zelda Data",
+    "min_format": 88,
+    "max_format": 1000
   }
 }

@@ -1,0 +1,7 @@
+{
+    "json.validate.enable": true,
+    "json.schemaDownload.enable": true,
+    "spyglassmc.env.gameVersion": "Latest release",
+    "spyglassmc.diagnostics.enable": true,
+    "spyglassmc.diagnostics.workspace": true
+}

@@ -1,1 +1,0 @@
-function animated_java:banker/zzzzzzzz/animations/pound/tick_animation

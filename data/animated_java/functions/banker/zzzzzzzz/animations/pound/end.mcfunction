@@ -1,3 +1,0 @@
-execute if score @s aj.banker.animation.pound.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:banker/zzzzzzzz/animations/pound/end_loop
-execute if score @s aj.banker.animation.pound.loop_mode = $aj.loop_mode.once aj.i run function animated_java:banker/animations/pound/stop
-execute if score @s aj.banker.animation.pound.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:banker/animations/pound/pause
