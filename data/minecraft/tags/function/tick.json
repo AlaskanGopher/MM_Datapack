@@ -1,5 +1,4 @@
 {
-	"values": [
-		"majoras_mask:loop"
-	]
+	"replace": false,
+	"values": ["majoras_mask:loop", "animated_java:global/on_tick"]
 }

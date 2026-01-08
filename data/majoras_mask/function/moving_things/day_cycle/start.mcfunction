@@ -1,5 +1,5 @@
 # 24000 score a day
-bossbar set minecraft:timetitle players @p
+
 # Slow Time: 
 execute if entity @s[tag=Slow_Time] run scoreboard players add @s DayTickAdvance 1
 execute if entity @s[tag=Slow_Time] run bossbar set minecraft:timetitle color blue

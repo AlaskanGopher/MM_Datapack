@@ -1,5 +1,4 @@
 {
-	"values": [
-		"majoras_mask:load"
-	]
+	"replace": false,
+	"values": ["animated_java:global/on_load", "majoras_mask:load"]
 }
