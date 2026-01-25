@@ -23,51 +23,83 @@ execute if entity @s[scores={DayCycle=1..3,Time=320},tag=Morning] run tag @s rem
 
 # Clocktown Day 1
     # Reset Clocktower
-execute if entity @s[scores={DayCycle=1,Time=1}] run fill 318 49 -361 318 49 -361 minecraft:redstone_block
-execute if entity @s[scores={DayCycle=1,Time=2}] run fill 318 49 -361 318 49 -361 minecraft:air
+        execute if entity @s[scores={DayCycle=1,Time=1}] run place template majora:clocktown/towerclock1 10 108 8 180
+        execute if entity @s[scores={DayCycle=1,Time=1}] run place template majora:clocktown/towerball1 13 139 10 180
+        execute if entity @s[scores={DayCycle=1,Time=1}] run fill -5 130 -6 6 143 -26 air
     # Reset Rain
-execute if entity @s[scores={Time=1}] run weather clear
+        execute if entity @s[scores={Time=1}] run weather clear
     # Reset Festival Tower
-execute if entity @s[scores={DayCycle=1,Time=1}] run fill 316 41 -404 316 41 -404 minecraft:redstone_block
-execute if entity @s[scores={DayCycle=1,Time=2}] run fill 316 41 -404 316 41 -404 minecraft:air
-execute if entity @s[scores={DayCycle=1,Time=2}] run kill @e[type=minecraft:item,x=311,y=54,z=-406,dx=6,dy=6,dz=6]
+        #execute if entity @s[scores={DayCycle=1,Time=1}] run fill 316 41 -404 316 41 -404 minecraft:redstone_block
+        #execute if entity @s[scores={DayCycle=1,Time=2}] run fill 316 41 -404 316 41 -404 minecraft:air
+        #execute if entity @s[scores={DayCycle=1,Time=2}] run kill @e[type=minecraft:item,x=311,y=54,z=-406,dx=6,dy=6,dz=6]
 
     # Kill Erudites dumb entities.
     
 
 # Clocktown Day 2
+    # Clocktower
+        execute if entity @s[scores={DayCycle=2,Time=1}] run place template majora:clocktown/towerclock2 10 108 8 180
+        execute if entity @s[scores={DayCycle=2,Time=1}] run place template majora:clocktown/towerball2 4 139 3 180
     # Festival Tower
-execute if entity @s[scores={DayCycle=2,Time=1}] run fill 314 41 -404 314 41 -404 minecraft:redstone_block
-execute if entity @s[scores={DayCycle=2,Time=2}] run fill 314 41 -404 314 41 -404 minecraft:air
+        #execute if entity @s[scores={DayCycle=2,Time=1}] run fill 314 41 -404 314 41 -404 minecraft:redstone_block
+        #execute if entity @s[scores={DayCycle=2,Time=2}] run fill 314 41 -404 314 41 -404 minecraft:air
     # Rain
-execute if entity @s[scores={DayCycle=2,Time=980}] run weather rain
-execute if entity @s[scores={DayCycle=2,Time=17920}] run weather clear
+        execute if entity @s[scores={DayCycle=2,Time=980}] run weather rain
+        execute if entity @s[scores={DayCycle=2,Time=17920}] run weather clear
 
 # Clocktown Day 3
-execute if entity @s[scores={DayCycle=3,Time=1}] run fill 312 41 -404 312 41 -404 minecraft:redstone_block
-execute if entity @s[scores={DayCycle=3,Time=2}] run fill 312 41 -404 312 41 -404 minecraft:air
+    # Clocktower
+        execute if entity @s[scores={DayCycle=3,Time=1}] run place template majora:clocktown/towerclock3 10 108 8 180
+        execute if entity @s[scores={DayCycle=3,Time=1}] run place template majora:clocktown/towerball3 4 139 3 180
+    # Festival Tower?
+       # execute if entity @s[scores={DayCycle=3,Time=1}] run fill 312 41 -404 312 41 -404 minecraft:redstone_block
+       # execute if entity @s[scores={DayCycle=3,Time=2}] run fill 312 41 -404 312 41 -404 minecraft:air
 
 # Final Hours
     # Clocktower Open
-execute if entity @s[scores={DayCycle=3,Time=18000}] run fill 318 49 -361 318 49 -361 minecraft:redstone_block
-execute if entity @s[scores={DayCycle=3,Time=18001}] run fill 318 49 -361 318 49 -361 minecraft:air
-execute if entity @s[scores={DayCycle=3,Time=18040}] run fill 314 49 -361 314 49 -361 minecraft:redstone_block
-execute if entity @s[scores={DayCycle=3,Time=18041}] run fill 314 49 -361 314 49 -361 minecraft:air
-execute if entity @s[scores={DayCycle=3,Time=18080}] run fill 310 49 -361 310 49 -361 minecraft:redstone_block
-execute if entity @s[scores={DayCycle=3,Time=18081}] run fill 310 49 -361 310 49 -361 minecraft:air
-execute if entity @s[scores={DayCycle=3,Time=18120}] run fill 318 49 -364 318 49 -364 minecraft:redstone_block
-execute if entity @s[scores={DayCycle=3,Time=18121}] run fill 318 49 -364 318 49 -364 minecraft:air
-execute if entity @s[scores={DayCycle=3,Time=18160}] run fill 314 49 -364 314 49 -364 minecraft:redstone_block
-execute if entity @s[scores={DayCycle=3,Time=18161}] run fill 314 49 -364 314 49 -364 minecraft:air
-execute if entity @s[scores={DayCycle=3,Time=18200}] run fill 310 49 -364 310 49 -364 minecraft:redstone_block
-execute if entity @s[scores={DayCycle=3,Time=18201}] run fill 310 49 -364 310 49 -364 minecraft:air
-execute if entity @s[scores={DayCycle=3,Time=18240}] run fill 318 49 -367 318 49 -367 minecraft:redstone_block
-execute if entity @s[scores={DayCycle=3,Time=18241}] run fill 318 49 -367 318 49 -367 minecraft:air
-execute if entity @s[scores={DayCycle=3,Time=18240}] run fill 317 55 -362 317 55 -362 minecraft:redstone_block
-execute if entity @s[scores={DayCycle=3,Time=18241}] run fill 317 55 -362 317 55 -362 minecraft:air
-execute if entity @s[scores={DayCycle=3,Time=18280}] run fill 314 55 -361 314 55 -361 minecraft:redstone_block
-execute if entity @s[scores={DayCycle=3,Time=18281}] run fill 314 55 -361 314 55 -361 minecraft:air
-execute if entity @s[scores={DayCycle=3,Time=18320}] run fill 311 55 -362 311 55 -362 minecraft:redstone_block
-execute if entity @s[scores={DayCycle=3,Time=18321}] run fill 311 55 -362 311 55 -362 minecraft:air
-execute if entity @s[scores={DayCycle=3,Time=18360}] run fill 309 55 -362 309 55 -362 minecraft:redstone_block
-execute if entity @s[scores={DayCycle=3,Time=18361}] run fill 309 55 -362 309 55 -362 minecraft:air
+        execute if entity @s[scores={DayCycle=3,Time=18160}] run place template majora:clocktown/towerclock4 10 116 8 180
+        execute if entity @s[scores={DayCycle=3,Time=18160}] run place template majora:clocktown/towerball4 4 139 3 180
+
+        execute if entity @s[scores={DayCycle=3,Time=18200}] run place template majora:clocktown/towerclock5 10 120 8 180
+        execute if entity @s[scores={DayCycle=3,Time=18200}] run place template majora:clocktown/towerball5 4 139 3 180
+
+        execute if entity @s[scores={DayCycle=3,Time=18240}] run place template majora:clocktown/towerballpeak 4 139 3 180
+        execute if entity @s[scores={DayCycle=3,Time=18240}] run place template majora:clocktown/towerclockpeak 10 120 8 180
+
+        execute if entity @s[scores={DayCycle=3,Time=18280}] run place template majora:clocktown/towerballpeakremove 4 141 3 180
+        execute if entity @s[scores={DayCycle=3,Time=18280}] run place template majora:clocktown/towerclockturn 10 127 11 180
+        execute if entity @s[scores={DayCycle=3,Time=18280}] run place template majora:clocktown/towerballturn 4 141 -6 180
+        
+        execute if entity @s[scores={DayCycle=3,Time=18320}] run place template majora:clocktown/towerballfinal 4 131 -11 180
+        execute if entity @s[scores={DayCycle=3,Time=18320}] run place template majora:clocktown/towerclockfinal1 10 132 11 180
+        execute if entity @s[scores={DayCycle=3,Time=18320}] run fill 2 149 -8 -3 153 -11 air
+
+        
+        execute if entity @s[scores={DayCycle=3,Time=18360}] run place template majora:clocktown/towerclockfinal2 10 132 10 180
+
+
+
+
+
+#execute if entity @s[scores={DayCycle=3,Time=18000}] run fill 318 49 -361 318 49 -361 minecraft:redstone_block
+#execute if entity @s[scores={DayCycle=3,Time=18001}] run fill 318 49 -361 318 49 -361 minecraft:air
+#execute if entity @s[scores={DayCycle=3,Time=18040}] run fill 314 49 -361 314 49 -361 minecraft:redstone_block
+#execute if entity @s[scores={DayCycle=3,Time=18041}] run fill 314 49 -361 314 49 -361 minecraft:air
+#execute if entity @s[scores={DayCycle=3,Time=18080}] run fill 310 49 -361 310 49 -361 minecraft:redstone_block
+#execute if entity @s[scores={DayCycle=3,Time=18081}] run fill 310 49 -361 310 49 -361 minecraft:air
+#execute if entity @s[scores={DayCycle=3,Time=18120}] run fill 318 49 -364 318 49 -364 minecraft:redstone_block
+#execute if entity @s[scores={DayCycle=3,Time=18121}] run fill 318 49 -364 318 49 -364 minecraft:air
+#execute if entity @s[scores={DayCycle=3,Time=18160}] run fill 314 49 -364 314 49 -364 minecraft:redstone_block
+#execute if entity @s[scores={DayCycle=3,Time=18161}] run fill 314 49 -364 314 49 -364 minecraft:air
+#execute if entity @s[scores={DayCycle=3,Time=18200}] run fill 310 49 -364 310 49 -364 minecraft:redstone_block
+#execute if entity @s[scores={DayCycle=3,Time=18201}] run fill 310 49 -364 310 49 -364 minecraft:air
+#execute if entity @s[scores={DayCycle=3,Time=18240}] run fill 318 49 -367 318 49 -367 minecraft:redstone_block
+#execute if entity @s[scores={DayCycle=3,Time=18241}] run fill 318 49 -367 318 49 -367 minecraft:air
+#execute if entity @s[scores={DayCycle=3,Time=18240}] run fill 317 55 -362 317 55 -362 minecraft:redstone_block
+#execute if entity @s[scores={DayCycle=3,Time=18241}] run fill 317 55 -362 317 55 -362 minecraft:air
+#execute if entity @s[scores={DayCycle=3,Time=18280}] run fill 314 55 -361 314 55 -361 minecraft:redstone_block
+#execute if entity @s[scores={DayCycle=3,Time=18281}] run fill 314 55 -361 314 55 -361 minecraft:air
+#execute if entity @s[scores={DayCycle=3,Time=18320}] run fill 311 55 -362 311 55 -362 minecraft:redstone_block
+#execute if entity @s[scores={DayCycle=3,Time=18321}] run fill 311 55 -362 311 55 -362 minecraft:air
+#execute if entity @s[scores={DayCycle=3,Time=18360}] run fill 309 55 -362 309 55 -362 minecraft:redstone_block
+#execute if entity @s[scores={DayCycle=3,Time=18361}] run fill 309 55 -362 309 55 -362 minecraft:air
