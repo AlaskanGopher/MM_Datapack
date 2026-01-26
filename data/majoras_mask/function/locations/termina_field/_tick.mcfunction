@@ -1,0 +1,1 @@
+function majoras_mask:locations/termina_field/_teleports/_tick

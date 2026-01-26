@@ -1,0 +1,1 @@
+function majoras_mask:locations/clocktown_north/_teleports/_tick

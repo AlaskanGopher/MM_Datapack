@@ -2,7 +2,7 @@ execute as @a unless entity @s[tag=NoNightVision] run effect give @s minecraft:n
 execute as @a if entity @s[tag=NoNightVision] run effect clear @s minecraft:night_vision
 
 #Teleports
-function majoras_mask:teleports/loop
+function majoras_mask:locations/_tick
 
 #Jump Cutscenes
 #function majoras_mask:jump_cutscenes/loop
