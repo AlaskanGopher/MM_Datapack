@@ -23,9 +23,9 @@ execute if entity @s[scores={DayCycle=1..3,Time=320},tag=Morning] run tag @s rem
 
 # Clocktown Day 1
     # Reset Clocktower
-        execute if entity @s[scores={DayCycle=1,Time=1}] run place template majora:clocktown/towerclock1 10 108 8 180
-        execute if entity @s[scores={DayCycle=1,Time=1}] run place template majora:clocktown/towerball1 13 139 10 180
-        execute if entity @s[scores={DayCycle=1,Time=1}] run fill -5 130 -6 6 143 -26 air
+        #execute if entity @s[scores={DayCycle=1,Time=1}] run place template majora:clocktown/towerclock1 10 108 8 180
+        #execute if entity @s[scores={DayCycle=1,Time=1}] run place template majora:clocktown/towerball1 13 139 10 180
+        #execute if entity @s[scores={DayCycle=1,Time=1}] run fill -5 130 -6 6 143 -26 air
     # Reset Rain
         execute if entity @s[scores={Time=1}] run weather clear
     # Reset Festival Tower
@@ -38,8 +38,8 @@ execute if entity @s[scores={DayCycle=1..3,Time=320},tag=Morning] run tag @s rem
 
 # Clocktown Day 2
     # Clocktower
-        execute if entity @s[scores={DayCycle=2,Time=1}] run place template majora:clocktown/towerclock2 10 108 8 180
-        execute if entity @s[scores={DayCycle=2,Time=1}] run place template majora:clocktown/towerball2 4 139 3 180
+        #execute if entity @s[scores={DayCycle=2,Time=1}] run place template majora:clocktown/towerclock2 10 108 8 180
+        #execute if entity @s[scores={DayCycle=2,Time=1}] run place template majora:clocktown/towerball2 4 139 3 180
     # Festival Tower
         #execute if entity @s[scores={DayCycle=2,Time=1}] run fill 314 41 -404 314 41 -404 minecraft:redstone_block
         #execute if entity @s[scores={DayCycle=2,Time=2}] run fill 314 41 -404 314 41 -404 minecraft:air
@@ -49,33 +49,33 @@ execute if entity @s[scores={DayCycle=1..3,Time=320},tag=Morning] run tag @s rem
 
 # Clocktown Day 3
     # Clocktower
-        execute if entity @s[scores={DayCycle=3,Time=1}] run place template majora:clocktown/towerclock3 10 108 8 180
-        execute if entity @s[scores={DayCycle=3,Time=1}] run place template majora:clocktown/towerball3 4 139 3 180
+        #execute if entity @s[scores={DayCycle=3,Time=1}] run place template majora:clocktown/towerclock3 10 108 8 180
+        #execute if entity @s[scores={DayCycle=3,Time=1}] run place template majora:clocktown/towerball3 4 139 3 180
     # Festival Tower?
        # execute if entity @s[scores={DayCycle=3,Time=1}] run fill 312 41 -404 312 41 -404 minecraft:redstone_block
        # execute if entity @s[scores={DayCycle=3,Time=2}] run fill 312 41 -404 312 41 -404 minecraft:air
 
 # Final Hours
     # Clocktower Open
-        execute if entity @s[scores={DayCycle=3,Time=18160}] run place template majora:clocktown/towerclock4 10 116 8 180
-        execute if entity @s[scores={DayCycle=3,Time=18160}] run place template majora:clocktown/towerball4 4 139 3 180
+        #execute if entity @s[scores={DayCycle=3,Time=18160}] run place template majora:clocktown/towerclock4 10 116 8 180
+        #execute if entity @s[scores={DayCycle=3,Time=18160}] run place template majora:clocktown/towerball4 4 139 3 180
 
-        execute if entity @s[scores={DayCycle=3,Time=18200}] run place template majora:clocktown/towerclock5 10 120 8 180
-        execute if entity @s[scores={DayCycle=3,Time=18200}] run place template majora:clocktown/towerball5 4 139 3 180
+        #execute if entity @s[scores={DayCycle=3,Time=18200}] run place template majora:clocktown/towerclock5 10 120 8 180
+        #execute if entity @s[scores={DayCycle=3,Time=18200}] run place template majora:clocktown/towerball5 4 139 3 180
 
-        execute if entity @s[scores={DayCycle=3,Time=18240}] run place template majora:clocktown/towerballpeak 4 139 3 180
-        execute if entity @s[scores={DayCycle=3,Time=18240}] run place template majora:clocktown/towerclockpeak 10 120 8 180
+        #execute if entity @s[scores={DayCycle=3,Time=18240}] run place template majora:clocktown/towerballpeak 4 139 3 180
+        #execute if entity @s[scores={DayCycle=3,Time=18240}] run place template majora:clocktown/towerclockpeak 10 120 8 180
 
-        execute if entity @s[scores={DayCycle=3,Time=18280}] run place template majora:clocktown/towerballpeakremove 4 141 3 180
-        execute if entity @s[scores={DayCycle=3,Time=18280}] run place template majora:clocktown/towerclockturn 10 127 11 180
-        execute if entity @s[scores={DayCycle=3,Time=18280}] run place template majora:clocktown/towerballturn 4 141 -6 180
+        #execute if entity @s[scores={DayCycle=3,Time=18280}] run place template majora:clocktown/towerballpeakremove 4 141 3 180
+        #execute if entity @s[scores={DayCycle=3,Time=18280}] run place template majora:clocktown/towerclockturn 10 127 11 180
+        #execute if entity @s[scores={DayCycle=3,Time=18280}] run place template majora:clocktown/towerballturn 4 141 -6 180
         
-        execute if entity @s[scores={DayCycle=3,Time=18320}] run place template majora:clocktown/towerballfinal 4 131 -11 180
-        execute if entity @s[scores={DayCycle=3,Time=18320}] run place template majora:clocktown/towerclockfinal1 10 132 11 180
-        execute if entity @s[scores={DayCycle=3,Time=18320}] run fill 2 149 -8 -3 153 -11 air
+        #execute if entity @s[scores={DayCycle=3,Time=18320}] run place template majora:clocktown/towerballfinal 4 131 -11 180
+        #execute if entity @s[scores={DayCycle=3,Time=18320}] run place template majora:clocktown/towerclockfinal1 10 132 11 180
+        #execute if entity @s[scores={DayCycle=3,Time=18320}] run fill 2 149 -8 -3 153 -11 air
 
         
-        execute if entity @s[scores={DayCycle=3,Time=18360}] run place template majora:clocktown/towerclockfinal2 10 132 10 180
+        #execute if entity @s[scores={DayCycle=3,Time=18360}] run place template majora:clocktown/towerclockfinal2 10 132 10 180
 
 
 

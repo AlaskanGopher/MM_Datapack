@@ -65,4 +65,3 @@ execute if entity @s[x=127,y=112,z=44,dx=0.5,dy=0,dz=0] run function majoras_mas
     # West Gate
     execute if entity @s[x=-90,y=105,z=-26,dx=0,dy=0.1,dz=0] run function majoras_mask:teleports/termina_field/grottos/closeto_west_gate/to_inside
     execute if entity @s[x=-90,y=79,z=-26,dx=0,dy=1,dz=0] run function majoras_mask:teleports/termina_field/grottos/closeto_west_gate/to_outside
-

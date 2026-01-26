@@ -23,6 +23,13 @@ scoreboard objectives add MusicEnd dummy
 scoreboard objectives add Run dummy
 scoreboard objectives add ClockTowerAnimationTimer dummy
 
+scoreboard objectives add coord_x dummy
+scoreboard objectives add coord_y dummy
+scoreboard objectives add coord_z dummy
+scoreboard objectives add last_coord_x dummy
+scoreboard objectives add last_coord_y dummy
+scoreboard objectives add last_coord_z dummy
+
 scoreboard objectives add WorkingVariable dummy
 
 #scoreboard players set bombchuconst lifetime -1

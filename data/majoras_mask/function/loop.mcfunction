@@ -29,3 +29,6 @@ stopsound @a ambient minecraft:ambient.cave
 execute if entity @a[scores={Sneak=1..}] run scoreboard players set @a Sneak 0
 execute if entity @a[scores={Walk=1..}] run scoreboard players set @a Walk 0
 execute if entity @a[scores={Run=1..}] run scoreboard players set @a Run 0
+execute store result score @p coord_x run data get entity @p Pos[0]
+execute store result score @p coord_y run data get entity @p Pos[1]
+execute store result score @p coord_z run data get entity @p Pos[2]
