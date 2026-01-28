@@ -1,4 +1,10 @@
 {
 	"replace": false,
-	"values": ["animated_java:banker/on_load", "animated_java:soldier/on_load"]
+	"values": [
+		"animated_java:apprentice/on_load",
+		"animated_java:brac/on_load",
+		"animated_java:bremor/on_load",
+		"animated_java:mack/on_load",
+		"animated_java:south_gate_soldier/on_load"
+	]
 }

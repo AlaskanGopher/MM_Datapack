@@ -1,0 +1,720 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": "MM Debug Menu",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "Work In Progress"
+  },
+  "after_action": "close",
+  "exit_action": {
+    "label": "Back"
+  },
+  "dialogs": [
+    {
+      "type": "minecraft:dialog_list",
+      "title": "Teleports",
+      "dialogs": [
+        {
+          "type": "minecraft:dialog_list",
+          "title": "Clocktown",
+          "dialogs": [
+            {
+              "type": "minecraft:dialog_list",
+              "title": "North",
+              "dialogs": [
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Deku Playground",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_north/_teleports/deku_playground/inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_north/_teleports/deku_playground/outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Fairy Fountain",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_north/_teleports/fairy_fountain/inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_north/_teleports/fairy_fountain/outside"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "minecraft:dialog_list",
+              "title": "West",
+              "dialogs": [
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Bomb Shop",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_west/_teleports/bomb_shop/inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_west/_teleports/bomb_shop/outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Curiosity Shop",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_west/_teleports/curiosity_shop/inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_west/_teleports/curiosity_shop/outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Lottery Shop",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_west/_teleports/lottery_shop/inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_west/_teleports/lottery_shop/outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Post Office",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_west/_teleports/post_office/inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_west/_teleports/post_office/outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Swordmans School",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_west/_teleports/swordsmans_school/inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_west/_teleports/swordsmans_school/outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Trading Post",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_west/_teleports/trading_post/inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_west/_teleports/trading_post/outside"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "minecraft:dialog_list",
+              "title": "East + Sewers",
+              "dialogs": [
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Honey & Darling",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_east/_teleports/honey_darling_shop/inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_east/_teleports/honey_darling_shop/outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Mayor's Residence",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_east/_teleports/mayors_residence/inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_east/_teleports/mayors_residence/outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Milk Bar",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_east/_teleports/milk_bar/inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_east/_teleports/milk_bar/outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Shooting Gallery",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_east/_teleports/shooting_gallery/inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_east/_teleports/shooting_gallery/outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Stock Pot Inn",
+                  "actions": [
+                    {
+                      "label": "To Inside Downstairs ",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_east/_teleports/stock_pot_inn/inside_bottom"
+                      }
+                    },
+                    {
+                      "label": "To Outside Downstairs",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_east/_teleports/stock_pot_inn/outside_bottom"
+                      }
+                    },
+                    {
+                      "label": "To Inside Upstairs",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_east/_teleports/stock_pot_inn/inside_top"
+                      }
+                    },
+                    {
+                      "label": "To Outside Upstairs",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_east/_teleports/stock_pot_inn/outside_top"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Treasure Chest Shop",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_east/_teleports/treasure_chest_shop/inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_east/_teleports/treasure_chest_shop/outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Astral Observatory",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "execute if entity @s[x=127,y=112,z=44,dx=0.5,dy=0,dz=0] run function majoras_mask:locations/termina_field/_teleports/astral_observatory/inside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Sewer",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_east/_teleports/tunnels/to_sewers"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_east/_teleports/tunnels/to_east_clocktown"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "minecraft:dialog_list",
+              "title": "South + Laundry Pool",
+              "dialogs": [
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Clocktower Base",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_south/_teleports/clocktower_base/inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_south/_teleports/clocktower_base/outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Clocktower Top",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_south/_teleports/clocktower_top/inside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Curiosity Shop Back",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_south/_teleports/curiosity_shop_back/inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/clocktown_south/_teleports/curiosity_shop_back/outside"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:dialog_list",
+          "title": "Termina Field",
+          "dialogs": [
+            {
+              "type": "minecraft:multi_action",
+              "title": "Astral Observatory",
+              "actions": [
+                {
+                  "label": "To Outside",
+                  "action": {
+                    "type": "minecraft:run_command",
+                    "command": "function majoras_mask:locations/clocktown_east/_teleports/tunnels/to_termina"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:dialog_list",
+              "title": "Grottos",
+              "dialogs": [
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "North of Astral",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_astral_north/to_inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_astral_north/to_outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "West of Astral",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_astral_west/to_inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_astral_west/to_outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Ikana Pillar",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_ikana_pillar/to_inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_ikana_pillar/to_outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Near North Gate",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_north_gate/to_inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_north_gate/to_outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Near Ocean",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_ocean/to_inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_ocean/to_outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Near Romani",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_romani/to_inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_romani/to_outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Near Snowhead",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_snowhead/to_inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_snowhead/to_outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Swamp East",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_swamp_east/to_inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_swamp_east/to_outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Swamp Log",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_swamp_log/to_inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_swamp_log/to_outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Swamp West",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_swamp_west/to_inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_swamp_west/to_outside"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:multi_action",
+                  "title": "Near West Gate",
+                  "actions": [
+                    {
+                      "label": "To Inside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_west_gate/to_inside"
+                      }
+                    },
+                    {
+                      "label": "To Outside",
+                      "action": {
+                        "type": "minecraft:run_command",
+                        "command": "function majoras_mask:locations/termina_field/_teleports/grottos/closeto_west_gate/to_outside"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "minecraft:dialog_list",
+      "title": "Items",
+      "dialogs": [
+        {
+          "type": "minecraft:multi_action",
+          "title": "Masks",
+          "actions": [
+            {
+              "label": "Deku Mask",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "give @s minecraft:carrot_on_a_stick[minecraft:custom_model_data={strings:[\"deku_mask\"]},minecraft:custom_name={\"text\":\"Deku Mask\",\"italic\":false}] 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:multi_action",
+          "title": "Debug Items",
+          "actions": [
+            {
+              "label": "Invisible Item Frame",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "give @s minecraft:item_frame[custom_name='{\"text\":\"Invisible Item Frame\",\"italic\":false}',minecraft:enchantment_glint_override=true,minecraft:entity_data={id:\"item_frame\",Invisible:1b}] 1"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "minecraft:multi_action",
+      "title": "Reset",
+      "actions": [
+        {
+          "label": "South Clocktown",
+          "action": {
+            "type": "minecraft:run_command",
+            "command": "function majoras_mask:locations/clocktown_south/_debug/_debug"
+          }
+        }
+      ]
+    }
+  ]
+}

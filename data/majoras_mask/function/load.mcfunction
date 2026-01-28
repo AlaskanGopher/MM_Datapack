@@ -22,6 +22,9 @@ scoreboard objectives add DayTickAdvance dummy
 scoreboard objectives add MusicEnd dummy
 scoreboard objectives add Run dummy
 scoreboard objectives add ClockTowerAnimationTimer dummy
+scoreboard objectives add text dummy
+scoreboard objectives add npc_movement dummy
+scoreboard objectives add npc_movement_tick dummy
 
 scoreboard objectives add coord_x dummy
 scoreboard objectives add coord_y dummy
