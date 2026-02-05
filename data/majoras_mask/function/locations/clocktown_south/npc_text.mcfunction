@@ -24,7 +24,7 @@
 # Apprentice
     execute at @e[tag=ApprenticeInteraction] if score @s text matches 1 on target if entity @s[distance=..4] if entity @e[tag=globals,limit=1,scores={Time=..12000}] run tellraw @a[distance=..6] ["",{"text":"Apprentice: ","color":"green"},{"text":"Huh? The moon?"}]
     execute at @e[tag=ApprenticeInteraction] if score @s text matches 1 on target if entity @s[distance=..4] if entity @e[tag=globals,limit=1,scores={Time=12000..}] run tellraw @a[distance=..6] ["",{"text":"Apprentice: ","color":"green"},{"text":"It's gotten bigger again. Th-this is bad..."}]
-# Apprentice
+# Bremor
     execute at @e[tag=BremorInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] run tellraw @a[distance=..6] ["",{"text":"Bremor: ","color":"dark_purple"},{"text":"Tsk! Is Brac working t'night?"}]
     execute at @e[tag=BremorInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] run tellraw @a[distance=..6] ["",{"text":"Bremor: ","color":"dark_purple"},{"text":"Tsk, tsk, Brac... I wonder if this'll make it?"}]
     execute at @e[tag=BremorInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] run tellraw @a[distance=..6] ["",{"text":"Bremor: ","color":"dark_purple"},{"text":"Tsk! I knew it... It's startin' to feel like this job'll be impossible."}]
