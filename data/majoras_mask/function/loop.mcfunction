@@ -1,5 +1,6 @@
 execute as @a if entity @s[tag=NightVision] run effect give @s minecraft:night_vision 1000000 0 true
 execute as @a unless entity @s[tag=NightVision] run effect clear @s minecraft:night_vision
+execute as @e[type=marker, tag=globals, limit=1] store result score @s Time run time query daytime
 
 #Teleports
 function majoras_mask:locations/_tick

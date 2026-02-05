@@ -5,6 +5,7 @@
 		"animated_java:brac/on_load",
 		"animated_java:bremor/on_load",
 		"animated_java:mack/on_load",
-		"animated_java:south_gate_soldier/on_load"
+		"animated_java:south_gate_soldier/on_load",
+		"animated_java:tingle/on_load"
 	]
 }

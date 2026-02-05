@@ -1,0 +1,35 @@
+# Tingle
+    # Set Temp Timer Forward
+    execute at @e[tag=TingleInteraction] if score @s text matches 1 on target if entity @s[distance=..6] run scoreboard players set @e[tag=TingleInteraction,limit=1] npc_timer_temp 61
+    # Meet Tingle (First Time each cycle)
+    execute at @e[tag=TingleInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"What's this? Green clothes... White fairy... Sir, could you, by chance, be a forest fairy?"}]
+    execute at @e[tag=TingleInteraction] if score @s text matches 2 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Oh my!"}]
+    execute at @e[tag=TingleInteraction] if score @s text matches 3 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"My name is "},{"text":"Tingle","color":"red"},{"text":"! I think I am the same as you, sir. A forest fairy!"}]
+    execute at @e[tag=TingleInteraction] if score @s text matches 4 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Alas, though I am already age 35, no fairy has come to me yet..."}]
+    execute at @e[tag=TingleInteraction] if score @s text matches 5 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"My father tells me to grow up and act my age, but why?"}]
+    execute at @e[tag=TingleInteraction] if score @s text matches 6 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"I tell you... Tingle is the very reincarnation of a fairy!"}]
+    execute at @e[tag=TingleInteraction] if score @s text matches 7 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Now while I stand here waiting for a fairy of my own, I sell maps to help out my father."}]
+    execute at @e[tag=TingleInteraction] if score @s text matches 8 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Lucky! Lucky! You're so lucky to have a fairy! I know! I know! We should be friends!"}]
+    execute at @e[tag=TingleInteraction] if score @s text matches 9 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Yes! Yes! In exchange, I will sell you a map for cheap as a sign of my friendship."}]
+    execute at @e[tag=TingleInteraction] if score @s text matches 10 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Will you buy one of Tingle's "},{"text":"maps?","color":"green"},{"text":"?"}]
+
+    execute at @e[tag=TingleInteraction] if score @s text matches 11 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"[Shop will be added later...]"}]
+
+    execute at @e[tag=TingleInteraction] if score @s text matches 12 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"...I see! Well, call again!"}]
+    execute at @e[tag=TingleInteraction] if score @s text matches 13 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Tingle, Tingle! Kooloo-Limpah!","color":"green"}]
+        execute at @e[tag=TingleInteraction] if score @s text matches 13 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run scoreboard players set @e[tag=TingleInteraction,limit=1] npc_timer_temp 0
+
+    execute at @e[tag=TingleInteraction,scores={npc_timer_temp=50..}] if score @s text matches 14 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"...These are the magic words that Tingle created himself."}]
+    execute at @e[tag=TingleInteraction,scores={npc_timer_temp=50..}] if score @s text matches 15 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Don't steal them!"}]
+        execute at @e[tag=TingleInteraction,scores={npc_timer_temp=50..}] if score @s text matches 15 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tag @e[tag=globals,limit=1] add TingleMet
+
+    # Tingle Met
+    execute at @e[tag=TingleInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Uh, sir?"}]
+    execute at @e[tag=TingleInteraction] if score @s text matches 2 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Hello, Mr. Fairy!"}]
+    execute at @e[tag=TingleInteraction] if score @s text matches 3 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Will you buy one of Tingle's "},{"text":"maps?","color":"green"},{"text":"?"}]
+    
+    execute at @e[tag=TingleInteraction] if score @s text matches 4 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"[Shop will be added later...]"}]
+    
+    execute at @e[tag=TingleInteraction] if score @s text matches 5 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"...I see! Well, call again!"}]
+    execute at @e[tag=TingleInteraction] if score @s text matches 6 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Tingle, Tingle! Kooloo-Limpah!","color":"green"}]
+        execute at @e[tag=TingleInteraction] if score @s text matches 6 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=TingleMet] run scoreboard players set @e[tag=TingleInteraction,limit=1] npc_timer_temp 0

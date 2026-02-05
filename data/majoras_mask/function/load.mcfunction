@@ -25,6 +25,12 @@ scoreboard objectives add ClockTowerAnimationTimer dummy
 scoreboard objectives add text dummy
 scoreboard objectives add npc_movement dummy
 scoreboard objectives add npc_movement_tick dummy
+scoreboard objectives add npc_state dummy
+scoreboard objectives add npc_timer dummy
+scoreboard objectives add npc_timer_temp dummy
+scoreboard objectives add _ClocktowerTunnelDistance dummy
+scoreboard objectives add _ClocktowerTunnelHoldVariable dummy
+scoreboard objectives add _ClocktowerTunnelDynamicVariable dummy
 
 scoreboard objectives add coord_x dummy
 scoreboard objectives add coord_y dummy

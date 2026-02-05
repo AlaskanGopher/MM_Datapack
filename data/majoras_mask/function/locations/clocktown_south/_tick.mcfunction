@@ -15,3 +15,10 @@ execute as @e[type=item_display, tag=aj.apprentice.root, limit=1] run function m
 
 # Bremor
 execute as @e[type=item_display, tag=aj.bremor.root, limit=1] run function majoras_mask:locations/clocktown_south/npcs/bremor
+
+# Day Cycle / Final Hours
+execute if entity @e[tag=globals,limit=1,scores={Time=0}] run function majoras_mask:locations/clocktown_south/day_cycle/festival_tower
+
+
+execute if entity @e[tag=globals,limit=1,scores={Time=0}] run function majoras_mask:locations/clocktown_south/day_cycle/reload
+execute if entity @e[tag=globals,limit=1,scores={DayCycle=3,Time=18000}] run function majoras_mask:locations/clocktown_south/day_cycle/reload

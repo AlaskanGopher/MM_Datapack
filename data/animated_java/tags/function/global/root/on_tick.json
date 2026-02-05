@@ -5,6 +5,7 @@
 		"animated_java:brac/root/on_tick",
 		"animated_java:bremor/root/on_tick",
 		"animated_java:mack/root/on_tick",
-		"animated_java:south_gate_soldier/root/on_tick"
+		"animated_java:south_gate_soldier/root/on_tick",
+		"animated_java:tingle/root/on_tick"
 	]
 }

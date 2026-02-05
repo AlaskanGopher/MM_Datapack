@@ -4,175 +4,213 @@ execute as @e[tag=BremorInteraction] on target as @e[tag=BremorInteraction] run 
 execute as @e[tag=BremorInteraction] run data remove entity @s interaction
 execute as @e[tag=BremorInteraction] at @s unless entity @a[distance=..6] run scoreboard players set @s text 0
 
-#Bremor Work FML
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 0 run tp @s 0 100 45 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 1 run tp @s -1 100 45 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 2 run tp @s -2 100 45 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 3 run tp @s -3 100 45 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 4 run tp @s -4 100 45 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 5 run tp @s -5 100 45 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 6 run tp @s -6 100 45 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 7 run tp @s -7 100 45 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 8 run tp @s -8 100 45 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 9 run tp @s -9 100 45 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 10 run tp @s -10 100 45 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 11 run tp @s -10 100 44 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 12 run tp @s -10 100 43 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 13 run tp @s -10 100 42 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 14 run tp @s -10 100 41 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 15 run tp @s -10 100 40 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 16 run tp @s -10 100 39 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 17 run tp @s -10 100 38 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 18 run tp @s -10 100 37 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 19 run tp @s -10 100 36 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 20 run tp @s -10 100 35 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 21 run tp @s -10 100 34 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 22 run tp @s -10 100 33 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 23 run tp @s -10 100 32 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 24 run tp @s -10 100 31 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 25 run tp @s -10 100 30 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 26 run tp @s -10 100 29 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 27 run tp @s -10 100 28 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 28 run tp @s -10 100 27 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 29 run tp @s -10 100 26 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 30 run tp @s -10 100 25 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 31 run tp @s -10 100 24 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 32 run tp @s -10 100 23 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 33 run tp @s -10 100 22 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 34 run tp @s -10 100 21 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 35 run tp @s -10 100 20 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 36 run tp @s -10 100 19 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 37 run tp @s -10 100 18 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 38 run tp @s -10 100 17 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 39 run tp @s -10 100 16 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 40 run tp @s -10 100 15 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 41 run tp @s -10 100 14 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 42 run tp @s -10 100 13 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 43 run tp @s -10 100 12 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 44 run tp @s -10 100 11 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 45 run tp @s -10 100 10 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 46 run tp @s -10 100 9 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 47 run tp @s -10 100 8 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 48 run tp @s -10 101 7 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 49 run tp @s -10 102 6 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 50 run tp @s -10 102 5 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 51 run tp @s -10 103 4 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 52 run tp @s -10 104 3 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 53 run tp @s -10 104 2 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 54 run tp @s -10 104 1 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 55 run tp @s -10 104 0 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 56 run tp @s -10 104 -1 -180 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 57 run tp @s -10.3 104 -1.9 161 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 58 run tp @s -10.6 104 -2.8 161 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 59 run tp @s -10.9 104 -3.7 161 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 60 run tp @s -11.2 104 -4.6 161 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 61 run tp @s -11.5 104 -5.5 161 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 62 run tp @s -11.8 104 -6.4 161 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 63 run tp @s -12.1 104 -7.3 161 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 64 run tp @s -12.4 104 -8.2 161 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 65 run tp @s -12.7 104 -9.1 161 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 66 run tp @s -13 104 -10 161 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 67 run tp @s -12 104 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 68 run tp @s -11 104 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 69 run tp @s -10 104.5 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 70 run tp @s -9 105 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 71 run tp @s -8 105.5 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 72 run tp @s -7 106 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 73 run tp @s -6 106.5 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 74 run tp @s -5 107 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 75 run tp @s -4 107 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 76 run tp @s -3 107 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 77 run tp @s -2 107 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 78 run tp @s -1 107 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 79 run tp @s 0 107 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 80 run tp @s 1 107 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 81 run tp @s 2 107 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 82 run tp @s 3 107 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 83 run tp @s 4 107 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 84 run tp @s 5 107 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 85 run tp @s 6 107 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 86 run tp @s 7 107 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 87 run tp @s 8 107 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 88 run tp @s 9 107 -10 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 89 run tp @s 9 107 -9 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 90 run tp @s 9 107 -8 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 91 run tp @s 9 107 -7 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 92 run tp @s 9 106.5 -6 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 93 run tp @s 9 106 -5 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 94 run tp @s 9 105.5 -4 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 95 run tp @s 9 105 -3 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 96 run tp @s 9 104.5 -2 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 97 run tp @s 9 104 -1 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 98 run tp @s 9 104 -0 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 99 run tp @s 9 104 1 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 100 run tp @s 9 104 2 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 101 run tp @s 9 104 3 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 102 run tp @s 9 104 4 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 103 run tp @s 9 104 5 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 104 run tp @s 9 104 6 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 105 run tp @s 9 104 7 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 106 run tp @s 9 104 8 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 107 run tp @s 9 104 9 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 108 run tp @s 9 104 10 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 109 run tp @s 8 104 10 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 110 run tp @s 7 103 10 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 111 run tp @s 6 102 10 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 112 run tp @s 5 102 10 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 113 run tp @s 4 101 10 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 114 run tp @s 3 100 10 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 115 run tp @s 2 100 10 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 116 run tp @s 1 100 10 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 117 run tp @s 0 100 10 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 118 run tp @s 0 100 11 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 119 run tp @s 0 100 12 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 120 run tp @s 0 100 13 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 121 run tp @s 0 100 14 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 122 run tp @s 0 100 15 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 123 run tp @s 0 100 16 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 124 run tp @s 0 100 17 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 125 run tp @s 0 100 18 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 126 run tp @s 0 100 19 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 127 run tp @s 0 100 20 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 128 run tp @s 0 100 21 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 129 run tp @s 0 100 22 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 130 run tp @s 0 100 23 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 131 run tp @s 0 100 24 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 132 run tp @s 0 100 25 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 133 run tp @s 0 100 26 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 134 run tp @s 0 100 27 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 135 run tp @s 0 100 28 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 136 run tp @s 0 100 29 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 137 run tp @s 0 100 30 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 138 run tp @s 1 100 30 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 139 run tp @s 2 100 30 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 140 run tp @s 3 100 30 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 141 run tp @s 4 100 30 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 142 run tp @s 5 100 30 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 143 run tp @s 6 100 30 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 144 run tp @s 7 100 30 -90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 145 run tp @s 7 100 31 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 146 run tp @s 7 100 32 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 147 run tp @s 7 100 33 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 148 run tp @s 7 100 34 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 149 run tp @s 7 100 35 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 150 run tp @s 7 100 36 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 151 run tp @s 7 100 37 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 152 run tp @s 7 100 38 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 153 run tp @s 7 100 39 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 154 run tp @s 7 100 40 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 155 run tp @s 7 100 41 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 156 run tp @s 7 100 42 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 157 run tp @s 7 100 43 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 158 run tp @s 7 100 44 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 159 run tp @s 7 100 45 0 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 160 run tp @s 6 100 45 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 161 run tp @s 5 100 45 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 162 run tp @s 4 100 45 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 163 run tp @s 3 100 45 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 164 run tp @s 2 100 45 90 0
-execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 165 run tp @s 1 100 45 90 0
+# Bremor Day 1
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 0 run tp @s 0 100 45 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 1 run tp @s -1 100 45 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 2 run tp @s -2 100 45 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 3 run tp @s -3 100 45 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 4 run tp @s -4 100 45 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 5 run tp @s -5 100 45 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 6 run tp @s -6 100 45 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 7 run tp @s -7 100 45 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 8 run tp @s -8 100 45 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 9 run tp @s -9 100 45 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 10 run tp @s -10 100 45 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 11 run tp @s -10 100 44 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 12 run tp @s -10 100 43 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 13 run tp @s -10 100 42 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 14 run tp @s -10 100 41 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 15 run tp @s -10 100 40 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 16 run tp @s -10 100 39 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 17 run tp @s -10 100 38 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 18 run tp @s -10 100 37 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 19 run tp @s -10 100 36 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 20 run tp @s -10 100 35 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 21 run tp @s -10 100 34 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 22 run tp @s -10 100 33 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 23 run tp @s -10 100 32 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 24 run tp @s -10 100 31 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 25 run tp @s -10 100 30 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 26 run tp @s -10 100 29 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 27 run tp @s -10 100 28 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 28 run tp @s -10 100 27 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 29 run tp @s -10 100 26 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 30 run tp @s -10 100 25 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 31 run tp @s -10 100 24 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 32 run tp @s -10 100 23 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 33 run tp @s -10 100 22 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 34 run tp @s -10 100 21 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 35 run tp @s -10 100 20 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 36 run tp @s -10 100 19 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 37 run tp @s -10 100 18 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 38 run tp @s -10 100 17 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 39 run tp @s -10 100 16 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 40 run tp @s -10 100 15 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 41 run tp @s -10 100 14 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 42 run tp @s -10 100 13 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 43 run tp @s -10 100 12 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 44 run tp @s -10 100 11 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 45 run tp @s -10 100 10 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 46 run tp @s -10 100 9 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 47 run tp @s -10 100 8 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 48 run tp @s -10 101 7 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 49 run tp @s -10 102 6 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 50 run tp @s -10 102 5 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 51 run tp @s -10 103 4 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 52 run tp @s -10 104 3 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 53 run tp @s -10 104 2 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 54 run tp @s -10 104 1 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 55 run tp @s -10 104 0 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 56 run tp @s -10 104 -1 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 57 run tp @s -10.3 104 -1.9 161 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 58 run tp @s -10.6 104 -2.8 161 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 59 run tp @s -10.9 104 -3.7 161 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 60 run tp @s -11.2 104 -4.6 161 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 61 run tp @s -11.5 104 -5.5 161 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 62 run tp @s -11.8 104 -6.4 161 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 63 run tp @s -12.1 104 -7.3 161 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 64 run tp @s -12.4 104 -8.2 161 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 65 run tp @s -12.7 104 -9.1 161 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 66 run tp @s -13 104 -10 161 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 67 run tp @s -12 104 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 68 run tp @s -11 104 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 69 run tp @s -10 104.5 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 70 run tp @s -9 105 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 71 run tp @s -8 105.5 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 72 run tp @s -7 106 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 73 run tp @s -6 106.5 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 74 run tp @s -5 107 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 75 run tp @s -4 107 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 76 run tp @s -3 107 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 77 run tp @s -2 107 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 78 run tp @s -1 107 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 79 run tp @s 0 107 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 80 run tp @s 1 107 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 81 run tp @s 2 107 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 82 run tp @s 3 107 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 83 run tp @s 4 107 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 84 run tp @s 5 107 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 85 run tp @s 6 107 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 86 run tp @s 7 107 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 87 run tp @s 8 107 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 88 run tp @s 9 107 -10 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 89 run tp @s 9 107 -9 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 90 run tp @s 9 107 -8 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 91 run tp @s 9 107 -7 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 92 run tp @s 9 106.5 -6 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 93 run tp @s 9 106 -5 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 94 run tp @s 9 105.5 -4 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 95 run tp @s 9 105 -3 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 96 run tp @s 9 104.5 -2 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 97 run tp @s 9 104 -1 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 98 run tp @s 9 104 -0 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 99 run tp @s 9 104 1 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 100 run tp @s 9 104 2 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 101 run tp @s 9 104 3 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 102 run tp @s 9 104 4 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 103 run tp @s 9 104 5 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 104 run tp @s 9 104 6 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 105 run tp @s 9 104 7 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 106 run tp @s 9 104 8 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 107 run tp @s 9 104 9 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 108 run tp @s 9 104 10 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 109 run tp @s 8 104 10 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 110 run tp @s 7 103 10 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 111 run tp @s 6 102 10 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 112 run tp @s 5 102 10 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 113 run tp @s 4 101 10 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 114 run tp @s 3 100 10 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 115 run tp @s 2 100 10 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 116 run tp @s 1 100 10 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 117 run tp @s 0 100 10 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 118 run tp @s 0 100 11 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 119 run tp @s 0 100 12 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 120 run tp @s 0 100 13 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 121 run tp @s 0 100 14 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 122 run tp @s 0 100 15 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 123 run tp @s 0 100 16 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 124 run tp @s 0 100 17 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 125 run tp @s 0 100 18 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 126 run tp @s 0 100 19 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 127 run tp @s 0 100 20 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 128 run tp @s 0 100 21 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 129 run tp @s 0 100 22 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 130 run tp @s 0 100 23 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 131 run tp @s 0 100 24 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 132 run tp @s 0 100 25 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 133 run tp @s 0 100 26 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 134 run tp @s 0 100 27 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 135 run tp @s 0 100 28 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 136 run tp @s 0 100 29 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 137 run tp @s 0 100 30 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 138 run tp @s 1 100 30 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 139 run tp @s 2 100 30 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 140 run tp @s 3 100 30 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 141 run tp @s 4 100 30 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 142 run tp @s 5 100 30 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 143 run tp @s 6 100 30 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 144 run tp @s 7 100 30 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 145 run tp @s 7 100 31 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 146 run tp @s 7 100 32 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 147 run tp @s 7 100 33 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 148 run tp @s 7 100 34 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 149 run tp @s 7 100 35 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 150 run tp @s 7 100 36 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 151 run tp @s 7 100 37 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 152 run tp @s 7 100 38 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 153 run tp @s 7 100 39 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 154 run tp @s 7 100 40 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 155 run tp @s 7 100 41 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 156 run tp @s 7 100 42 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 157 run tp @s 7 100 43 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 158 run tp @s 7 100 44 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 159 run tp @s 7 100 45 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 160 run tp @s 6 100 45 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 161 run tp @s 5 100 45 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 162 run tp @s 4 100 45 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 163 run tp @s 3 100 45 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 164 run tp @s 2 100 45 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 165 run tp @s 1 100 45 90 0
 
+# Bremor Day 2
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 0 run tp @s 1.0 109 39.0 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 1 run tp @s 0.0 109 39.0 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 2 run tp @s -1.0 109 39.0 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 3 run tp @s -1.0 109 39.0 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 4 run tp @s -1.0 109 38.0 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 5 run tp @s -1.0 109 37.0 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 6 run tp @s -1.0 109 36.0 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 7 run tp @s -1.0 109 36.0 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 8 run tp @s 0.0 109 36.0 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 9 run tp @s 1.0 109 36.0 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 10 run tp @s 2.0 109 36.0 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 11 run tp @s 2.0 109 36.0 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 12 run tp @s 2.0 109 37.0 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 13 run tp @s 2.0 109 38.0 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 14 run tp @s 2.0 109 39.0 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 15 run tp @s 2.0 109 39.0 90 0
+
+# Bremor Day 3
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 0 run tp @s 1.0 112 39.0 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 1 run tp @s 0.0 112 39.0 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 2 run tp @s -1.0 112 39.0 90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 3 run tp @s -1.0 112 39.0 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 4 run tp @s -1.0 112 38.0 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 5 run tp @s -1.0 112 37.0 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 6 run tp @s -1.0 112 36.0 -180 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 7 run tp @s -1.0 112 36.0 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 8 run tp @s 0.0 112 36.0 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 9 run tp @s 1.0 112 36.0 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 10 run tp @s 2.0 112 36.0 -90 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 11 run tp @s 2.0 112 36.0 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 12 run tp @s 2.0 112 37.0 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 13 run tp @s 2.0 112 38.0 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 14 run tp @s 2.0 112 39.0 0 0
+execute as @e[type=item_display, tag=aj.bremor.root, limit=1] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] if score @e[tag=BremorInteraction,limit=1] npc_movement matches 15 run tp @s 2.0 112 39.0 90 0
+
+# Adjust Scoreboard
 execute as @e[tag=BremorInteraction] run scoreboard players add @s npc_movement_tick 1
 execute as @e[tag=BremorInteraction] if entity @s[scores={npc_movement_tick=31..}] run scoreboard players add @s npc_movement 1
 execute as @e[tag=BremorInteraction] if entity @s[scores={npc_movement_tick=31..}] run scoreboard players set @s npc_movement_tick 0
-execute as @e[tag=BremorInteraction] if entity @s[scores={npc_movement=165..}] run scoreboard players set @s npc_movement 0
+execute as @e[tag=BremorInteraction] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] if entity @s[scores={npc_movement=165..}] run scoreboard players set @s npc_movement 0
+execute as @e[tag=BremorInteraction] if entity @e[tag=globals,limit=1,scores={DayCycle=2..3}] if entity @s[scores={npc_movement=15..}] run scoreboard players set @s npc_movement 0

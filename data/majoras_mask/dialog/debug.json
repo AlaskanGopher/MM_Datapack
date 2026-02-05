@@ -713,6 +713,13 @@
             "type": "minecraft:run_command",
             "command": "function majoras_mask:locations/clocktown_south/_debug/_debug"
           }
+        },
+        {
+          "label": "North Clocktown",
+          "action": {
+            "type": "minecraft:run_command",
+            "command": "function majoras_mask:locations/clocktown_north/_debug/_debug"
+          }
         }
       ]
     }

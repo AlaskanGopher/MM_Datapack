@@ -1,4 +1,5 @@
 function majoras_mask:music/remove_other
+execute unless entity @a[tag=South_Clocktown] run function majoras_mask:locations/clocktown_south/game_states/load
 execute if entity @e[type=marker, tag=globals, scores={DayCycle=1, Time=0..11999}] run function majoras_mask:music/clocktown_day1
 execute if entity @e[type=marker, tag=globals, scores={DayCycle=2, Time=0..11999}] run function majoras_mask:music/clocktown_day2
 execute if entity @e[type=marker, tag=globals, scores={DayCycle=3, Time=0..11999}] run function majoras_mask:music/clocktown_day3
