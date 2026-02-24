@@ -1,0 +1,5 @@
+#outside
+    #Rosa_sister Needs cutscene added let lem know where to put text for it when added 
+execute at @e[tag=ORosa_sistersInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!Rosa_Sister_Dancing] run tellraw @a[distance=..6] ["",{"text":"Rosa Sisters","color": "#FFFFFF"},{"text":"Don't bother us!!!"}]
+execute at @e[tag=ORosa_sistersInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=Rosa_Sister_Dancing] if entity @e[tag=globals,tag=!WearingKamaroMask] run tellraw @a[distance=..6] ["",{"text":"Rosa Sisters","color": "#FFFFFF"},{"text":"Don't bother us!!!"}]
+execute at @e[tag=ORosa_sistersInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=Rosa_Sister_Dancing] if entity @e[tag=globals,tag=WearingKamaroMask] run tellraw @a[distance=..6] ["",{"text":"Rosa Sisters","color": "#FFFFFF"},{"text":"Master! Please come to our performance!"}]
