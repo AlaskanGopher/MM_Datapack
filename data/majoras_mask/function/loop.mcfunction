@@ -2,7 +2,7 @@ execute as @a if entity @s[tag=NightVision] run effect give @s minecraft:night_v
 execute as @a unless entity @s[tag=NightVision] run effect clear @s minecraft:night_vision
 execute as @e[type=marker, tag=globals, limit=1] store result score @s Time run time query daytime
 
-#Teleports
+# Locations
 function majoras_mask:locations/_tick
 
 #Jump Cutscenes
