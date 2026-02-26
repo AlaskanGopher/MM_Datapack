@@ -16,7 +16,7 @@ execute if entity @e[tag=globals,tag=GatesOpen,scores={DayCycle=0..2}] run funct
 execute if entity @e[tag=globals,tag=GatesOpen,scores={DayCycle=3}] run function animated_java:south_gate_soldier/animations/guard_idle_day3/resume
 
 # Move Around
-execute if entity @a[sort=nearest,x=1,y=100,z=56,dx=-4,dy=1,dz=-3] at @a[sort=nearest,x=1,y=100,z=56,dx=-2,dy=1,dz=-3] if entity @e[tag=globals,tag=!GatesOpen] run tp @s ~ 100 57.5
+execute if entity @a[sort=nearest,x=1,y=100,z=56,dx=-4,dy=1,dz=-3] at @a[sort=nearest,x=1,y=100,z=56,dx=-4,dy=1,dz=-3] if entity @e[tag=globals,tag=!GatesOpen] run tp @s ~ 100 57.5
 execute if entity @a[sort=nearest,x=4,y=100,z=56,dx=-1,dy=1,dz=-3] if entity @e[tag=globals,tag=!GatesOpen] run tp @s 2 100 57.5
 execute if entity @a[sort=nearest,x=-3,y=100,z=56,dx=-1,dy=1,dz=-3] if entity @e[tag=globals,tag=!GatesOpen] run tp @s -2 100 57.5
 execute unless entity @a[sort=nearest,x=3,y=100,z=56,dx=-6,dy=1,dz=-3] run tp @s 0 100 57.5 180 0

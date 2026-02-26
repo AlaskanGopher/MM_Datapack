@@ -9,7 +9,7 @@ function animated_java:north_gate_soldier/set_default_pose
 execute if data storage animated_java:temp args.animation run function animated_java:north_gate_soldier/zzz/summon/animation_arg/process with storage animated_java:temp args
 execute if score #success aj.i matches 0 run return fail
 execute on passengers run rotate @s ~ ~
-data modify entity @s teleport_duration set value 1
-execute on passengers run data modify entity @s teleport_duration set value 1
+data modify entity @s teleport_duration set value 3
+execute on passengers run data modify entity @s teleport_duration set value 3
 tag @s remove aj.new
 execute on passengers run tag @s remove aj.new
