@@ -39,6 +39,7 @@ scoreboard objectives add last_coord_x dummy
 scoreboard objectives add last_coord_y dummy
 scoreboard objectives add last_coord_z dummy
 
+# Temp variable for local storage
 scoreboard objectives add WorkingVariable dummy
 
 #scoreboard players set bombchuconst lifetime -1

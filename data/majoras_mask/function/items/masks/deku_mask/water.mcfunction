@@ -53,5 +53,7 @@
 #execute as @a[scores={Run=1..}] if entity @s[tag=DekuWaterBounce] run effect clear @s minecraft:levitation
 #execute as @a[scores={Run=1..}] if entity @s[tag=DekuWaterBounce] run kill @e[type=armor_stand,tag=DekuWaterBounce]
 
-execute if function majoras_mask:items/masks/deku_mask/water_check run tellraw @s "You're on water... and this works"
+execute store result score @s WorkingVariable run function majoras_mask:items/masks/deku_mask/water_check
+
+execute if score @s WorkingVariable matches 0 run tellraw @s "You're on water... and this works"
 
