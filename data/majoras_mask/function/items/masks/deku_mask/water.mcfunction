@@ -54,23 +54,23 @@
 #execute as @a[scores={Run=1..}] if entity @s[tag=DekuWaterBounce] run kill @e[type=armor_stand,tag=DekuWaterBounce]
 
 execute as @s at @s anchored feet rotated ~ 0 if block ^ ^-1 ^ minecraft:water \
-    run setblock ^ ^-1 ^ frosted_ice replace 
+    run setblock ^ ^-1 ^ ice replace 
 execute as @s at @s anchored feet rotated ~ 0 if block ^1 ^-1 ^ minecraft:water \
-    run setblock ^1 ^-1 ^ frosted_ice replace 
+    run setblock ^1 ^-1 ^ ice replace 
 execute as @s at @s anchored feet rotated ~ 0 if block ^-1 ^-1 ^ minecraft:water \
-    run setblock ^-1 ^-1 ^ frosted_ice replace 
+    run setblock ^-1 ^-1 ^ ice replace 
 
 execute as @s at @s anchored feet rotated ~ 0 if block ^ ^-1 ^-1 minecraft:water \
-    run setblock ^ ^-1 ^-1 frosted_ice replace 
+    run setblock ^ ^-1 ^-1 ice replace 
 execute as @s at @s anchored feet rotated ~ 0 if block ^1 ^-1 ^-1 minecraft:water \
-    run setblock ^1 ^-1 ^-1 frosted_ice replace 
+    run setblock ^1 ^-1 ^-1 ice replace 
 execute as @s at @s anchored feet rotated ~ 0 if block ^-1 ^-1 ^-1 minecraft:water \
-    run setblock ^-1 ^-1 ^-1 frosted_ice replace 
+    run setblock ^-1 ^-1 ^-1 ice replace 
 
 execute as @s at @s anchored feet rotated ~ 0 if block ^ ^-1 ^1 minecraft:water \
-    run setblock ^ ^-1 ^1 frosted_ice replace 
+    run setblock ^ ^-1 ^1 ice replace 
 execute as @s at @s anchored feet rotated ~ 0 if block ^1 ^-1 ^1 minecraft:water \
-    run setblock ^1 ^-1 ^1 frosted_ice replace 
+    run setblock ^1 ^-1 ^1 ice replace 
 execute as @s at @s anchored feet rotated ~ 0 if block ^-1 ^-1 ^1 minecraft:water \
-    run setblock ^-1 ^-1 ^1 frosted_ice replace 
+    run setblock ^-1 ^-1 ^1 ice replace 
 
