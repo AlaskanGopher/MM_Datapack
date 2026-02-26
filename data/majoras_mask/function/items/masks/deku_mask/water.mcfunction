@@ -62,3 +62,6 @@ $execute if score @s WorkingVariable matches 0 if entity @e[tag=$(id)] run kill 
 execute if score @s WorkingVariable matches 0 run return fail
 
 $execute unless entity @e[tag=$(id)] as @s at @s run summon happy_ghast ^ ^-4 ^ {NoAI: 1b, Invulnerable: 1, Tags:["$(id)"]}
+
+$tellraw @a "$(id)"
+say I am still too
