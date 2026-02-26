@@ -6,4 +6,4 @@ execute unless score @s PlayerID matches 0.. run scoreboard players add MMGameMa
 execute unless score @s PlayerID matches 0.. run scoreboard players operation @s PlayerID = MMGameManager PlayerID
 
 tag @s add Registered
-say I am running
+tellraw @a {"selector":"@s"}
