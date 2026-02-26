@@ -33,3 +33,6 @@ execute if entity @a[scores={Run=1..}] run scoreboard players set @a Run 0
 execute store result score @p coord_x run data get entity @p Pos[0]
 execute store result score @p coord_y run data get entity @p Pos[1]
 execute store result score @p coord_z run data get entity @p Pos[2]
+
+# Temp Login
+execute if entity @a[tag=!Registered] run function majoras_mask:entity_setup/login

@@ -39,7 +39,16 @@ scoreboard objectives add last_coord_x dummy
 scoreboard objectives add last_coord_y dummy
 scoreboard objectives add last_coord_z dummy
 
+scoreboard objectives add UUID0 dummy
+scoreboard objectives add UUID1 dummy
+scoreboard objectives add UUID2 dummy
+scoreboard objectives add UUID3 dummy
+scoreboard objectives add PlayerID dummy
+
 # Temp variable for local storage
 scoreboard objectives add WorkingVariable dummy
+
+# Global Scoreboard
+scoreboard players add MMGameManager PlayerID 0
 
 #scoreboard players set bombchuconst lifetime -1
