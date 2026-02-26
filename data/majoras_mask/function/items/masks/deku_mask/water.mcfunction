@@ -56,21 +56,21 @@
 execute as @s at @s anchored feet rotated ~ 0 if block ^ ^-1 ^ minecraft:water \
     run setblock ^ ^-1 ^ frosted_ice replace 
 execute as @s at @s anchored feet rotated ~ 0 if block ^1 ^-1 ^ minecraft:water \
-    run setblock ^ ^-1 ^ frosted_ice replace 
+    run setblock ^1 ^-1 ^ frosted_ice replace 
 execute as @s at @s anchored feet rotated ~ 0 if block ^-1 ^-1 ^ minecraft:water \
-    run setblock ^ ^-1 ^ frosted_ice replace 
+    run setblock ^-1 ^-1 ^ frosted_ice replace 
 
 execute as @s at @s anchored feet rotated ~ 0 if block ^ ^-1 ^-1 minecraft:water \
-    run setblock ^ ^-1 ^ frosted_ice replace 
+    run setblock ^ ^-1 ^-1 frosted_ice replace 
 execute as @s at @s anchored feet rotated ~ 0 if block ^1 ^-1 ^-1 minecraft:water \
-    run setblock ^ ^-1 ^ frosted_ice replace 
+    run setblock ^1 ^-1 ^-1 frosted_ice replace 
 execute as @s at @s anchored feet rotated ~ 0 if block ^-1 ^-1 ^-1 minecraft:water \
-    run setblock ^ ^-1 ^ frosted_ice replace 
+    run setblock ^-1 ^-1 ^-1 frosted_ice replace 
 
 execute as @s at @s anchored feet rotated ~ 0 if block ^ ^-1 ^1 minecraft:water \
-    run setblock ^ ^-1 ^ frosted_ice replace 
+    run setblock ^ ^-1 ^1 frosted_ice replace 
 execute as @s at @s anchored feet rotated ~ 0 if block ^1 ^-1 ^1 minecraft:water \
-    run setblock ^ ^-1 ^ frosted_ice replace 
+    run setblock ^1 ^-1 ^1 frosted_ice replace 
 execute as @s at @s anchored feet rotated ~ 0 if block ^-1 ^-1 ^1 minecraft:water \
-    run setblock ^ ^-1 ^ frosted_ice replace 
+    run setblock ^-1 ^-1 ^1 frosted_ice replace 
 
