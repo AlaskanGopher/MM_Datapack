@@ -2,6 +2,9 @@ execute as @a if entity @s[tag=NightVision] run effect give @s minecraft:night_v
 execute as @a unless entity @s[tag=NightVision] run effect clear @s minecraft:night_vision
 execute as @e[type=marker, tag=globals, limit=1] store result score @s Time run time query daytime
 
+# Temp Login
+execute if entity @a[tag=!Registered] run function majoras_mask:entity_setup/login
+
 # Locations
 function majoras_mask:locations/_tick
 
@@ -33,6 +36,3 @@ execute if entity @a[scores={Run=1..}] run scoreboard players set @a Run 0
 execute store result score @p coord_x run data get entity @p Pos[0]
 execute store result score @p coord_y run data get entity @p Pos[1]
 execute store result score @p coord_z run data get entity @p Pos[2]
-
-# Temp Login
-execute if entity @a[tag=!Registered] run function majoras_mask:entity_setup/login
