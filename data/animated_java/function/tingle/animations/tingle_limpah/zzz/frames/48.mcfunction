@@ -7,6 +7,7 @@ $data merge entity $(block_display_tingle_pen) {transformation: [-0.4198f,-0.158
 $data merge entity $(bone_rightarm) {transformation: [-0.8396f,0.5197f,-0.1581f,-0.375f,0.542f,0.7825f,-0.3066f,1.3737f,-0.0356f,-0.3431f,-0.9386f,-0.0586f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(item_display_tingle_book) {transformation: [-0.2994f,0.0946f,-0.3891f,0.4525f,-0.2752f,0.3044f,0.2857f,1.069f,0.2909f,0.3853f,-0.1302f,0.5686f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_leftarm) {transformation: [-0.9737f,-0.1268f,-0.1891f,0.375f,0.0149f,0.7932f,-0.6087f,1.3737f,0.2272f,-0.5956f,-0.7705f,-0.0586f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
+$data merge entity $(bone_misc_head_items) {transformation: [-1f,0f,0f,0f,0f,0.9978f,-0.0656f,1.4984f,0f,-0.0656f,-0.9978f,-0.0668f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(bone_head) {transformation: [-1f,0f,0f,0f,0f,0.9978f,-0.0656f,1.4984f,0f,-0.0656f,-0.9978f,-0.0668f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(item_display_tingles_pack) {transformation: [-0.5f,0f,0f,0f,0f,0.4989f,-0.0164f,1.2325f,0f,-0.0328f,-0.2495f,-0.2999f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}
 $data merge entity $(item_display_tingles_ballon_small) {transformation: [0f,0f,0f,0f,0f,0f,0f,2.0187f,0f,0f,0f,-0.7273f,0f,0f,0f,1f],start_interpolation: 0,interpolation_duration: 1}

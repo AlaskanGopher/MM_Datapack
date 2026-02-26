@@ -27,6 +27,9 @@ data modify entity @s data.uuids_by_name.item_display_tingle_book set from stora
 execute on vehicle on passengers if entity @s[tag=aj.tingle.node.leftarm] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_leftarm set from storage animated_java:gu out
+execute on vehicle on passengers if entity @s[tag=aj.tingle.node.misc_head_items] run function animated_java:global/gu/get_entity_uuid_string
+data modify entity @s data.uuids append from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.bone_misc_head_items set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.tingle.node.head] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_head set from storage animated_java:gu out

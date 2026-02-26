@@ -1,8 +1,8 @@
 # Add
-execute positioned 0.5 100 56.5 rotated 180 0 run function animated_java:south_gate_soldier/summon {args: {animation: 'soldier_idle', start_animation: true}}
+execute positioned 0.5 100 56.5 rotated 180 0 run function animated_java:south_gate_soldier/summon {args: {animation: 'guard_idle', start_animation: true}}
 execute positioned 0.5 100 56.5 rotated 180 0 run summon minecraft:interaction ~ ~ ~ {Tags:["SouthClocktownSoldierInteraction"],width:1.5,height:3,response:true}
 
-execute positioned 14.5 100 32.0 rotated -90 0 unless entity @e[tag=globals,limit=1,scores={DayCycle=3,Time=17999..}] run function animated_java:brac/summon {args: {animation: 'carpenter_idle', start_animation: true}}
+execute positioned 14.5 100 32.0 rotated -90 0 unless entity @e[tag=globals,limit=1,scores={DayCycle=3,Time=17999..}] run function animated_java:brac/summon {args: {animation: 'carpenter_shout', start_animation: true}}
 execute positioned 14.5 100 32.0 rotated -90 0 unless entity @e[tag=globals,limit=1,scores={DayCycle=3,Time=17999..}] run summon minecraft:interaction ~ ~ ~ {Tags:["BracInteraction"],width:1.5,height:3,response:true}
 
 execute positioned -4.5 100 38.5 rotated -90 0 if entity @e[tag=globals,limit=1,scores={DayCycle=1}] run function animated_java:mack/summon {args: {animation: 'carpenter_wave_up', start_animation: true}}

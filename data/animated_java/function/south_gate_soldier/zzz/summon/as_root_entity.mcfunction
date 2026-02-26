@@ -8,9 +8,8 @@ execute if score #success aj.i matches 0 run return fail
 function animated_java:south_gate_soldier/set_default_pose
 execute if data storage animated_java:temp args.animation run function animated_java:south_gate_soldier/zzz/summon/animation_arg/process with storage animated_java:temp args
 execute if score #success aj.i matches 0 run return fail
-execute on passengers if entity @s[tag=aj.global.data] run function animated_java:south_gate_soldier/on_tick/transform_floating_entities
 execute on passengers run rotate @s ~ ~
-data modify entity @s teleport_duration set value 5
-execute on passengers run data modify entity @s teleport_duration set value 5
+data modify entity @s teleport_duration set value 1
+execute on passengers run data modify entity @s teleport_duration set value 1
 tag @s remove aj.new
 execute on passengers run tag @s remove aj.new

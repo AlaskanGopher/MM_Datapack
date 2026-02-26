@@ -3,15 +3,15 @@ data modify entity @s data.uuids append from storage animated_java:gu out
 function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.data_data set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.mack.node.lower_rightleg] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.mack.node.lowerrightleg] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_lower_rightleg set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.bone_lowerrightleg set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.mack.node.rightleg] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_rightleg set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.mack.node.lower_leftleg] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.mack.node.lowerleftleg] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_lower_leftleg set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.bone_lowerleftleg set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.mack.node.leftleg] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_leftleg set from storage animated_java:gu out
@@ -21,9 +21,9 @@ data modify entity @s data.uuids_by_name.bone_rightarm set from storage animated
 execute on vehicle on passengers if entity @s[tag=aj.mack.node.leftarm] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_leftarm set from storage animated_java:gu out
-execute on vehicle on passengers if entity @s[tag=aj.mack.node.hat] run function animated_java:global/gu/get_entity_uuid_string
+execute on vehicle on passengers if entity @s[tag=aj.mack.node.head_layer2] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
-data modify entity @s data.uuids_by_name.bone_hat set from storage animated_java:gu out
+data modify entity @s data.uuids_by_name.bone_head_layer2 set from storage animated_java:gu out
 execute on vehicle on passengers if entity @s[tag=aj.mack.node.head] run function animated_java:global/gu/get_entity_uuid_string
 data modify entity @s data.uuids append from storage animated_java:gu out
 data modify entity @s data.uuids_by_name.bone_head set from storage animated_java:gu out
