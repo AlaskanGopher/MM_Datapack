@@ -3,7 +3,7 @@ execute as @a unless entity @s[tag=NightVision] run effect clear @s minecraft:ni
 execute as @e[type=marker, tag=globals, limit=1] store result score @s Time run time query daytime
 
 # Temp Login
-execute if entity @a[tag=!Registered] run function majoras_mask:entity_setup/login
+execute if entity @p[tag=!Registered] run function majoras_mask:entity_setup/login
 
 # Locations
 function majoras_mask:locations/_tick
