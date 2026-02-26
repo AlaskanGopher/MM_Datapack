@@ -55,5 +55,5 @@
 
 execute store result score @s WorkingVariable run function majoras_mask:items/masks/deku_mask/water_check
 
-execute if score @s WorkingVariable matches 0 run tellraw @s "You're on water... and this works"
+execute if score @s WorkingVariable matches 1 run tellraw @s "You're on water... and this works"
 
