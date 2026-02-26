@@ -62,7 +62,11 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "function majoras_mask:locations/terminafield/_teleports/north_gate/inside"
+              }
             },
             {
               "type": "minecraft:dialog_list",
