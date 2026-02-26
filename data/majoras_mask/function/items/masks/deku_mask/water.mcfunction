@@ -53,13 +53,18 @@
 #execute as @a[scores={Run=1..}] if entity @s[tag=DekuWaterBounce] run effect clear @s minecraft:levitation
 #execute as @a[scores={Run=1..}] if entity @s[tag=DekuWaterBounce] run kill @e[type=armor_stand,tag=DekuWaterBounce]
 
+say The beginning
 execute store result score @s WorkingVariable run function majoras_mask:items/masks/deku_mask/water_check {val: 0}
 $execute if score @s WorkingVariable matches 0 if entity @e[tag=$(id)] run kill @e[tag=$(id)]
 execute if score @s WorkingVariable matches 0 run return fail
 
+say The middle
+
 execute store result score @s WorkingVariable run function majoras_mask:items/masks/deku_mask/water_check {val: 1}
 $execute if score @s WorkingVariable matches 0 if entity @e[tag=$(id)] run kill @e[tag=$(id)]
 execute if score @s WorkingVariable matches 0 run return fail
+
+say The end
 
 $execute unless entity @e[tag=$(id)] as @s at @s run summon happy_ghast ^ ^-4 ^ {NoAI: 1b, Invulnerable: 1, Tags:["$(id)"]}
 
