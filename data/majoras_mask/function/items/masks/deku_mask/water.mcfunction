@@ -57,4 +57,4 @@ execute store result score @s WorkingVariable run function majoras_mask:items/ma
 
 execute store result score @s WorkingVariable run function majoras_mask:items/masks/deku_mask/water_check {val: 1}
 
-$execute unless entity @e[tag=$(id)] as @s at @s run summon happy_ghast ^ ^-4 ^ {NoAI: 1b, Invulnerable: 1, Tags:["$(id)"]}
+$execute unless entity @e[tag=$(id)] as @s at @s run summon happy_ghast ^ ^-4.5 ^ {NoAI: 1b, Tags:["$(id)"]}
