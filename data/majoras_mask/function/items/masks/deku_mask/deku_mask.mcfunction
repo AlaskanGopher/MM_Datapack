@@ -12,4 +12,4 @@ execute as @s if entity @s[tag=Wearing_Deku_Mask] run function majoras_mask:item
 execute as @s[scores={UseItem=1..,Cooldown=40..}] at @s if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_model_data={strings:["deku_mask"]}] \
     if items entity @s armor.head minecraft:stone[minecraft:custom_model_data={strings:["deku_head"]}, \
     minecraft:custom_name={"text":"Deku Link","italic":false},minecraft:custom_data={DekuLink:1b,tag:"deku_head"}] \
-    run function majoras_mask:items/masks/deku_mask/remove
+    run function majoras_mask:items/masks/deku_mask/remove with storage temp:working
