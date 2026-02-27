@@ -4,8 +4,11 @@ function majoras_mask:items/multiplayer_tick_fix
 #Deku Flower
 function majoras_mask:items/deku_flower/deku_flower_launch
 
+#Mask equips
+execute as @a run function majoras_mask:items/mask_equip
+
 #Deku Mask
-function majoras_mask:items/masks/deku_mask/deku_mask
+execute as @p[tag=Wearing_Deku_Mask] run function majoras_mask:items/masks/deku_mask/deku_mask
 
 #Advance Cooldown
 execute as @a run scoreboard players add @s Cooldown 1
