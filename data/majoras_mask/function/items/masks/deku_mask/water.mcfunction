@@ -54,5 +54,5 @@
 #execute as @a[scores={Run=1..}] if entity @s[tag=DekuWaterBounce] run kill @e[type=armor_stand,tag=DekuWaterBounce]
 
 execute store result score @s WorkingVariable run function majoras_mask:items/masks/deku_mask/water_check_converge
-$execute unless entity @e[tag=$(id)] as @s at @s rotated ~ 0 run summon happy_ghast ^ ^-4.1 ^ {NoAI: 1b, Tags:["$(id)"]}
+#$execute unless entity @e[tag=$(id)] as @s at @s rotated ~ 0 run summon happy_ghast ^ ^-4.1 ^ {NoAI: 1b, Tags:["$(id)"]}
 $execute if score @s WorkingVariable matches 0 if entity @e[tag=$(id)] run kill @e[tag=$(id)]
