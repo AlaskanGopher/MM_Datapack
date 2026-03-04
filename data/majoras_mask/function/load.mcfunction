@@ -31,6 +31,9 @@ scoreboard objectives add npc_timer_temp dummy
 scoreboard objectives add _ClocktowerTunnelDistance dummy
 scoreboard objectives add _ClocktowerTunnelHoldVariable dummy
 scoreboard objectives add _ClocktowerTunnelDynamicVariable dummy
+scoreboard objectives add Bomber_test dummy
+scoreboard objectives add PlayerQuit minecraft.custom:minecraft.leave_game
+scoreboard objectives add CutsceneState dummy
 
 scoreboard objectives add coord_x dummy
 scoreboard objectives add coord_y dummy
@@ -47,8 +50,9 @@ scoreboard objectives add PlayerID dummy
 
 # Temp variable for local storage
 scoreboard objectives add WorkingVariable dummy
+scoreboard objectives add WorkingVariable2 dummy
 
 # Global Scoreboard
-scoreboard players add MMGameManager PlayerID 0
+scoreboard players add #MMGameManager PlayerID 0
 
 #scoreboard players set bombchuconst lifetime -1

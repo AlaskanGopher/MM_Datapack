@@ -1,63 +1,64 @@
-# South Gate Guard
-    # Deku Link
-    execute at @e[tag=SouthClocktownSoldierInteraction] if score @s text matches 1 on target if entity @s[tag=Wearing_Deku_Mask,distance=..6] if entity @e[tag=globals,tag=!GatesOpen] run tellraw @a[distance=..6] ["",{"text":"Soldier: ","color":"dark_gray"},{"text":"Stop right there, Deku Scrub! Do you intend to return to the "},{"text":"swamp ","color":"red"},{"text":"alone?"}]
-    execute at @e[tag=SouthClocktownSoldierInteraction] if score @s text matches 2 on target if entity @s[tag=Wearing_Deku_Mask,distance=..6] if entity @e[tag=globals,tag=!GatesOpen] run tellraw @a[distance=..6] ["",{"text":"Soldier: ","color":"dark_gray"},{"text":"It is dangerous outside the town walls, so I cannot allow a child like you to leave unaccompanied."}]
-    execute at @e[tag=SouthClocktownSoldierInteraction] if score @s text matches 3 on target if entity @s[tag=Wearing_Deku_Mask,distance=..6] if entity @e[tag=globals,tag=!GatesOpen] run tellraw @a[distance=..6] ["",{"text":"Soldier: ","color":"dark_gray"},{"text":"You are not allowed to pass through here without an adult or until you are old enough to carry a "},{"text":"weapon","color":"red"},{"text":"."}]
-    # Normal Link
-    execute at @e[tag=SouthClocktownSoldierInteraction] if score @s text matches 1 on target if entity @s[tag=NoTransformationMask,distance=..6] if entity @e[tag=globals,tag=!GatesOpen] run tellraw @a[distance=..6] ["",{"text":"Soldier: ","color":"dark_gray"},{"text":"Stop right there! Have you some errand in the "},{"text":"swamp","color":"red"},{"text":"?"}]
-    execute at @e[tag=SouthClocktownSoldierInteraction] if score @s text matches 2 on target if entity @s[tag=NoTransformationMask,distance=..6] if entity @e[tag=globals,tag=!GatesOpen] run tellraw @a[distance=..6] ["",{"text":"Soldier: ","color":"dark_gray"},{"text":"It is dangerous outside the town walls, so I cannot allow a child like you to..."}]
-    execute at @e[tag=SouthClocktownSoldierInteraction] if score @s text matches 3 on target if entity @s[tag=NoTransformationMask,distance=..6] if entity @e[tag=globals,tag=!GatesOpen] run tellraw @a[distance=..6] ["",{"text":"Soldier: ","color":"dark_gray"},{"text":"...A "},{"text":"sword","color":"red"},{"text":"?"}]
-    execute at @e[tag=SouthClocktownSoldierInteraction] if score @s text matches 4 on target if entity @s[tag=NoTransformationMask,distance=..6] if entity @e[tag=globals,tag=!GatesOpen] run tellraw @a[distance=..6] ["",{"text":"Soldier: ","color":"dark_gray"},{"text":"My apologies, sir. It was wrong of me to treat you like a child."}]
-    execute at @e[tag=SouthClocktownSoldierInteraction] if score @s text matches 5 on target if entity @s[tag=NoTransformationMask,distance=..6] if entity @e[tag=globals,tag=!GatesOpen] run tellraw @a[distance=..6] ["",{"text":"Soldier: ","color":"dark_gray"},{"text":"The southern swamp at "},{"text":"Woodfall ","color":"red"},{"text":"lies in this direction. Be careful."}]
-    execute at @e[tag=SouthClocktownSoldierInteraction] if score @s text matches 5 on target if entity @s[tag=NoTransformationMask,distance=..6] if entity @e[tag=globals,tag=!GatesOpen] run tag @e[tag=globals,tag=!GatesOpen] add GatesOpen
-    execute at @e[tag=SouthClocktownSoldierInteraction] if score @s text matches 5 on target if entity @s[tag=NoTransformationMask,distance=..6] run function majoras_mask:locations/clocktown_south/game_states/gate_barrier
-    # Repeated Text
-    execute at @e[tag=SouthClocktownSoldierInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=GatesOpen] run tellraw @a[distance=..6] ["",{"text":"Soldier: ","color":"gold"},{"text":"The southern swamp at "},{"text":"Woodfall ","color":"red"},{"text":"lies in this direction. Be careful."}]
+
+# Running as minecraft:interaction
+
+execute at @s on target unless entity @s[distance=..6] run return 0
+
 # Brac
-    execute at @e[tag=BracInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] run tellraw @a[distance=..6] ["",{"text":"Brac: ","color":"gray"},{"text":"This poster's an eyesore! What a sorry collection of cowards!! Bluh-yek! Foo!"}]
-    execute at @e[tag=BracInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] run tellraw @a[distance=..6] ["",{"text":"Brac: ","color":"gray"},{"text":"Bwah! I won't run! I'm stickin' with my parents! I'm diff'rent from you cowards!"}]
-    execute at @e[tag=BracInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] run tellraw @a[distance=..6] ["",{"text":"Brac: ","color":"gray"},{"text":"Bwah! I'm not gonna run! Not me! You got that? I'm Master Mutoh's apprentice!"}]
+execute if entity @s[tag=BracInteraction] if function majoras_mask:locations/clocktown_south/npcs/brac/text/repeating \
+    run return 0
+   
 # Mack
-    execute at @e[tag=MackInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] run tellraw @a[distance=..6] ["",{"text":"Mack: ","color":"green"},{"text":"Hey, apprentice! Don't just stand around lookin' at the sky all day!"}]
-    execute at @e[tag=MackInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] run tellraw @a[distance=..6] ["",{"text":"Mack: ","color":"green"},{"text":"Bremor! Don't be standin' 'round lookin' at yer feet all day!"}]
-    execute at @e[tag=MackInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] run tellraw @a[distance=..6] ["",{"text":"Mack: ","color":"green"},{"text":"I'm sorry, Bremor, but I'm going, too!"}]
+execute if entity @s[tag=MackInteraction] if function majoras_mask:locations/clocktown_south/npcs/mack/text/repeating \
+    run return 0
+
 # Apprentice
-    execute at @e[tag=ApprenticeInteraction] if score @s text matches 1 on target if entity @s[distance=..4] if entity @e[tag=globals,limit=1,scores={Time=..12000}] run tellraw @a[distance=..6] ["",{"text":"Apprentice: ","color":"green"},{"text":"Huh? The moon?"}]
-    execute at @e[tag=ApprenticeInteraction] if score @s text matches 1 on target if entity @s[distance=..4] if entity @e[tag=globals,limit=1,scores={Time=12000..}] run tellraw @a[distance=..6] ["",{"text":"Apprentice: ","color":"green"},{"text":"It's gotten bigger again. Th-this is bad..."}]
+execute if entity @s[tag=ApprenticeInteraction] if function majoras_mask:locations/clocktown_south/npcs/apprentice/text/repeating \
+    run return 0
+
 # Bremor
-    execute at @e[tag=BremorInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,limit=1,scores={DayCycle=1}] run tellraw @a[distance=..6] ["",{"text":"Bremor: ","color":"dark_purple"},{"text":"Tsk! Is Brac working t'night?"}]
-    execute at @e[tag=BremorInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,limit=1,scores={DayCycle=2}] run tellraw @a[distance=..6] ["",{"text":"Bremor: ","color":"dark_purple"},{"text":"Tsk, tsk, Brac... I wonder if this'll make it?"}]
-    execute at @e[tag=BremorInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,limit=1,scores={DayCycle=3}] run tellraw @a[distance=..6] ["",{"text":"Bremor: ","color":"dark_purple"},{"text":"Tsk! I knew it... It's startin' to feel like this job'll be impossible."}]
+execute if entity @s[tag=BremorInteraction] if function majoras_mask:locations/clocktown_south/npcs/bremor/text/repeating \
+    run return 0
+
+# South Gate Guard
+execute if entity @s[tag=SouthClocktownSoldierInteraction] if entity @e[tag=globals,tag=GatesOpen] if function majoras_mask:locations/clocktown_south/npcs/south_gate_soldier/text/repeating \
+    run return 0
+
+### Player Specific Text ###
+
+## If interacting player is within distance ##
+execute store result score @s WorkingVariable \
+    run function majoras_mask:bool/interacting_player_distance {max_distance: 6}
+
+## If player is human ##
+execute store result score @s WorkingVariable2 \
+    run function majoras_mask:bool/interacting_player_attributes {tag: NoTransformationMask, max_distance: 6}
+
 # Guru Guru
-    # Normal link 
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HasBremenMask] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"La-la-la... They said I was much too loud when I practiced in my room."}]
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 2 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HasBremenMask] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"They got mad. Sigh...Now I'm sad. I'll just think about the past to keep my mind off the bad."}]
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 3 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HasBremenMask] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"Ah, yes, I'll do that..."}]
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 4 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HasBremenMask] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"Dear guest...Long ago, I was in an animal troupe, with dogs and donkeys and such."}]
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 5 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HasBremenMask] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"Why could a...? Why could a...? Why could a man join?!? That's 'cause a man is an animal, too, my boy!"}]
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 6 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HasBremenMask] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"They were all great. But there was one thing I didn't like about it..."}]
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 7 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HasBremenMask] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"Why was the...? Why was the...? Why was the dog the leader?!? Was it 'cause something was wrong with me, sir???"}]
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 8 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HasBremenMask] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"Oh, that dog was an amazing leader! He always had a stellar troupe no matter what animals he had to work with..."}]
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 9 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HasBremenMask] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"That's why I...That's why I... That's why I stole it... The dog's "},{"text":"mask","color": "red"},{"text":". I stole it."}]
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 10 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HasBremenMask] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"I wanted it because it was the leader's mask..."}]
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 11 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HasBremenMask] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"But I no longer need it... I give it to my gest."}]
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 12 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HasBremenMask] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"The leader was a good instructor. His members matured quickly and they became adults in an instant."}]
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 12 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HasBremenMask] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tag @e[tag=globals,tag=!HGaru_Garu] add HGaru_Garu
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 12 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HasBremenMask] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tag @e[tag=globals,tag=!HasBremenMask] add HasBremenMask
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 12 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HasBremenMask] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tag @e[tag=globals,tag=!DGaru_Garu] add DGaru_Garu
-    # With_mask
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 11 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=HasBremenMask] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"The leader was a good instructor. His members matured quickly and they became adults in an instant."}]
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 11 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=HasBremenMask] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tag @e[tag=globals,tag=!HGaru_Garu] add HGaru_Garu
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 11 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=HasBremenMask] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tag @e[tag=globals,tag=!DGaru_Garu] add DGaru_Garu
-    # Repeated Text Human
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=HasBremenMask] if entity @e[tag=globals,tag=HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"La-la-la... They said I was much too loud when I practiced in my room."}]
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 2 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=HasBremenMask] if entity @e[tag=globals,tag=HGaru_Garu] if entity @s[tag=!Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"They got mad. Sigh...Now I'm sad I'll just stay here all night and away from their pad."}]
-    # Deku link 
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!DGaru_Garu] if entity @s[tag=Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"La-la-la... They said I was much too loud when I practiced in my room."}]
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 2 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!DGaru_Garu] if entity @s[tag=Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"They got mad. Sigh...Now I'm sad I'll just stay here all night and away from their pad."}]
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 2 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!DGaru_Garu] if entity @s[tag=Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"And you are a child, so you must go to bed"}]
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 3 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HGaru_Garu] if entity @s[tag=Wearing_Deku_Mask,distance=..6] run tag @e[tag=globals,tag=!DGaru_Garu] add DGaru_Garu
-    # Repeated Text Deku 
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=DGaru_Garu] if entity @s[tag=Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"La-la-la... They said I was much too loud when I practiced in my room."}]
-    execute at @e[tag=OGuru_GuruInteraction] if score @s text matches 2 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=DGaru_Garu] if entity @s[tag=Wearing_Deku_Mask,distance=..6] run tellraw @a[distance=..6] ["",{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"Guru-Guru","color": "#2CBAA8"},{"text":"They got mad. Sigh...Now I'm sad I'll just stay here all night and away from their pad."}]
+execute if entity @s[tag=OGuru_GuruInteraction] if score @s WorkingVariable2 matches 1.. if function majoras_mask:locations/clocktown_south/npcs/guru_guru/text/no_bremon \
+    run return 0
+
+execute if entity @s[tag=OGuru_GuruInteraction] if score @s WorkingVariable2 matches 1.. if function majoras_mask:locations/clocktown_south/npcs/guru_guru/text/has_bremon \
+    run return 0
+
+execute if entity @s[tag=OGuru_GuruInteraction] if score @s WorkingVariable2 matches 1.. if function majoras_mask:locations/clocktown_south/npcs/guru_guru/text/repeating_normal \
+    run return 0
+
+# South Gate Guard
+execute if entity @s[tag=SouthClocktownSoldierInteraction] if score @s WorkingVariable2 matches 1.. if function majoras_mask:locations/clocktown_south/npcs/south_gate_soldier/text/normal \
+    run return 0
+
+## If player is Deku ##
+execute store result score @s WorkingVariable2 \
+    run function majoras_mask:bool/interacting_player_attributes {tag: Wearing_Deku_Mask, max_distance: 6}
+
+# Guru Guru
+execute if entity @s[tag=OGuru_GuruInteraction] if score @s WorkingVariable2 matches 1.. if function majoras_mask:locations/clocktown_south/npcs/guru_guru/text/deku \
+    run return 0
+
+execute if entity @s[tag=OGuru_GuruInteraction] if score @s WorkingVariable2 matches 1.. if function majoras_mask:locations/clocktown_south/npcs/guru_guru/text/repeating_deku \
+    run return 0
+
+# South Gate Guard
+execute if entity @s[tag=SouthClocktownSoldierInteraction] if score @s WorkingVariable2 matches 1.. if function majoras_mask:locations/clocktown_south/npcs/south_gate_soldier/text/deku \
+    run return 0
 

@@ -5,9 +5,13 @@
 		"animated_java:brac/on_load",
 		"animated_java:bremor/on_load",
 		"animated_java:east_gate_soldier/on_load",
+		"animated_java:greatfairy_clocktown/on_load",
+		"animated_java:happy_mask_salesman/on_load",
+		"animated_java:jugglers/on_load",
 		"animated_java:mack/on_load",
 		"animated_java:north_gate_soldier/on_load",
 		"animated_java:south_gate_soldier/on_load",
+		"animated_java:stray_fairy_clocktown/on_load",
 		"animated_java:tingle/on_load",
 		"animated_java:west_gate_soldier/on_load"
 	]

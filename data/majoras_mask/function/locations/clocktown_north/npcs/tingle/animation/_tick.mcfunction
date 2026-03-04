@@ -1,0 +1,9 @@
+function animated_java:tingle/animations/tingle_float/pause
+function animated_java:tingle/animations/tingle_idle/pause
+function animated_java:tingle/animations/tingle_idle_kick/pause
+function animated_java:tingle/animations/tingle_idle_spin/pause
+function animated_java:tingle/animations/tingle_inflate/pause
+function animated_java:tingle/animations/tingle_limpah/pause
+function animated_java:tingle/animations/tingle_pop/pause
+function animated_java:tingle/animations/tingle_fall/pause
+function animated_java:tingle/animations/tingle_land/pause

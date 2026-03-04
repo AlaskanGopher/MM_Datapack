@@ -6,10 +6,19 @@ execute as @s if entity @s[tag=DekuSpinCharge] run function majoras_mask:items/m
 #execute as @a[scores={DekuWater=1..}] if entity @s[tag=Wearing_Deku_Mask] run function majoras_mask:items/masks/deku_mask/water
 #execute as @a if entity @s[tag=DekuWaterBounce] run function majoras_mask:items/masks/deku_mask/water
 execute store result storage temp:working id int 1 run scoreboard players get @s PlayerID
-execute as @s if entity @s[tag=Wearing_Deku_Mask] run function majoras_mask:items/masks/deku_mask/water with storage temp:working
+#execute as @s if entity @s[tag=Wearing_Deku_Mask] run function majoras_mask:items/masks/deku_mask/water with storage temp:working
 
 #Deku Mask : Remove
 execute as @s[scores={UseItem=1..,Cooldown=40..}] at @s if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_model_data={strings:["deku_mask"]}] \
     if items entity @s armor.head minecraft:stone[minecraft:custom_model_data={strings:["deku_head"]}, \
     minecraft:custom_name={"text":"Deku Link","italic":false},minecraft:custom_data={DekuLink:1b,tag:"deku_head"}] \
-    run function majoras_mask:items/masks/deku_mask/remove with storage temp:working
+    run function majoras_mask:items/masks/deku_mask/remove
+
+#execute at @s anchored feet rotated ~ 0 if block ^ ^-1 ^ minecraft:water \
+    run function majoras_mask:items/masks/deku_mask/water with storage temp:working
+function majoras_mask:items/masks/deku_mask/boat_loop with storage temp:working
+
+execute at @s if entity @s[predicate=majoras_mask:touchingwater] \
+    run function majoras_mask:items/masks/deku_mask/water with storage temp:working
+
+

@@ -5,19 +5,19 @@ function majoras_mask:items/multiplayer_tick_fix
 function majoras_mask:items/deku_flower/deku_flower_launch
 
 #Mask equips
-execute as @a run function majoras_mask:items/mask_equip
+execute as @s run function majoras_mask:items/mask_equip
 
 #Deku Mask
-execute as @p[tag=Wearing_Deku_Mask] run function majoras_mask:items/masks/deku_mask/deku_mask
+execute as @s[tag=Wearing_Deku_Mask] run function majoras_mask:items/masks/deku_mask/deku_mask
 
 #Advance Cooldown
-execute as @a run scoreboard players add @s Cooldown 1
+execute as @s run scoreboard players add @s Cooldown 1
 
 #Use Item Reset
-execute as @a[scores={UseItem=1..}] run scoreboard players set @s UseItem 0
+execute as @s[scores={UseItem=1..}] run scoreboard players set @s UseItem 0
 
 #Player Height scoreboard
-execute as @a store result score @s Height run data get entity @s Pos[1] 100.0
+execute as @s store result score @s Height run data get entity @s Pos[1] 100.0
 
 #Player Speed scoreboard
 #execute as @a run scoreboard players operation @s LastXPos = @s XPos
@@ -40,5 +40,5 @@ execute as @a store result score @s Height run data get entity @s Pos[1] 100.0
 #execute as @a run scoreboard players operation @s HorizontalSpeedSq += @s WorkingVariable
 
 # Player on ground
-execute as @a at @s if block ~ ~-.25 ~ air run tag @s remove onGround
-execute as @a at @s unless block ~ ~-.25 ~ air run tag @s add onGround
+execute as @s at @s if block ~ ~-.25 ~ air run tag @s remove onGround
+execute as @s at @s unless block ~ ~-.25 ~ air run tag @s add onGround

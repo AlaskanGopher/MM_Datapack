@@ -1,55 +1,58 @@
+
 # North Gate Guard
-    # Deku Link
-    execute at @e[tag=NorthClocktownSoldierInteraction] if score @s text matches 1 on target if entity @s[tag=Wearing_Deku_Mask,distance=..6] if entity @e[tag=globals,tag=!GatesOpen] run tellraw @a[distance=..6] ["",{"text":"Soldier: ","color":"dark_gray"},{"text":"Stop right there, Deku Scrub! Do you intend to return to the "},{"text":"swamp ","color":"red"},{"text":"alone?"}]
-    execute at @e[tag=NorthClocktownSoldierInteraction] if score @s text matches 2 on target if entity @s[tag=Wearing_Deku_Mask,distance=..6] if entity @e[tag=globals,tag=!GatesOpen] run tellraw @a[distance=..6] ["",{"text":"Soldier: ","color":"dark_gray"},{"text":"It is dangerous outside the town walls, so I cannot allow a child like you to leave unaccompanied."}]
-    execute at @e[tag=NorthClocktownSoldierInteraction] if score @s text matches 3 on target if entity @s[tag=Wearing_Deku_Mask,distance=..6] if entity @e[tag=globals,tag=!GatesOpen] run tellraw @a[distance=..6] ["",{"text":"Soldier: ","color":"dark_gray"},{"text":"You are not allowed to pass through here without an adult or until you are old enough to carry a "},{"text":"weapon","color":"red"},{"text":"."}]
-    # Normal Link
-    execute at @e[tag=NorthClocktownSoldierInteraction] if score @s text matches 1 on target if entity @s[tag=NoTransformationMask,distance=..6] if entity @e[tag=globals,tag=!GatesOpen] run tellraw @a[distance=..6] ["",{"text":"Soldier: ","color":"dark_gray"},{"text":"Stop right there! Have you some errand in the "},{"text":"swamp","color":"red"},{"text":"?"}]
-    execute at @e[tag=NorthClocktownSoldierInteraction] if score @s text matches 2 on target if entity @s[tag=NoTransformationMask,distance=..6] if entity @e[tag=globals,tag=!GatesOpen] run tellraw @a[distance=..6] ["",{"text":"Soldier: ","color":"dark_gray"},{"text":"It is dangerous outside the town walls, so I cannot allow a child like you to..."}]
-    execute at @e[tag=NorthClocktownSoldierInteraction] if score @s text matches 3 on target if entity @s[tag=NoTransformationMask,distance=..6] if entity @e[tag=globals,tag=!GatesOpen] run tellraw @a[distance=..6] ["",{"text":"Soldier: ","color":"dark_gray"},{"text":"...A "},{"text":"sword","color":"red"},{"text":"?"}]
-    execute at @e[tag=NorthClocktownSoldierInteraction] if score @s text matches 4 on target if entity @s[tag=NoTransformationMask,distance=..6] if entity @e[tag=globals,tag=!GatesOpen] run tellraw @a[distance=..6] ["",{"text":"Soldier: ","color":"dark_gray"},{"text":"My apologies, sir. It was wrong of me to treat you like a child."}]
-    execute at @e[tag=NorthClocktownSoldierInteraction] if score @s text matches 5 on target if entity @s[tag=NoTransformationMask,distance=..6] if entity @e[tag=globals,tag=!GatesOpen] run tellraw @a[distance=..6] ["",{"text":"Soldier: ","color":"dark_gray"},{"text":"The northern swamp at "},{"text":"Woodfall ","color":"red"},{"text":"lies in this direction. Be careful."}]
-    execute at @e[tag=NorthClocktownSoldierInteraction] if score @s text matches 5 on target if entity @s[tag=NoTransformationMask,distance=..6] if entity @e[tag=globals,tag=!GatesOpen] run tag @e[tag=globals,tag=!GatesOpen] add GatesOpen
-    execute at @e[tag=NorthClocktownSoldierInteraction] if score @s text matches 5 on target if entity @s[tag=NoTransformationMask,distance=..6] run function majoras_mask:locations/clocktown_north/game_states/gate_barrier
-    # Repeated Text
-    execute at @e[tag=NorthClocktownSoldierInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=GatesOpen] run tellraw @a[distance=..6] ["",{"text":"Soldier: ","color":"gold"},{"text":"The northern swamp at "},{"text":"Woodfall ","color":"red"},{"text":"lies in this direction. Be careful."}]
+execute if entity @s[tag=NorthClocktownSoldierInteraction] if entity @e[tag=globals,tag=GatesOpen] if function majoras_mask:locations/clocktown_north/npcs/north_gate_soldier/text/repeating \
+    run return 0
+
+### Player Specific Text ###
+
+## If interacting player is within distance ##
+execute store result score @s WorkingVariable2 \
+    run function majoras_mask:bool/interacting_player_distance {max_distance: 6}
 
 # Tingle
-    # Set Temp Timer Forward
-    execute at @e[tag=TingleInteraction] if score @s text matches 1 on target if entity @s[distance=..6] run scoreboard players set @e[tag=TingleInteraction,limit=1] npc_timer_temp 61
-    # Meet Tingle (First Time each cycle)
-    execute at @e[tag=TingleInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"What's this? Green clothes... White fairy... Sir, could you, by chance, be a forest fairy?"}]
-    execute at @e[tag=TingleInteraction] if score @s text matches 2 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Oh my!"}]
-    execute at @e[tag=TingleInteraction] if score @s text matches 3 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"My name is "},{"text":"Tingle","color":"red"},{"text":"! I think I am the same as you, sir. A forest fairy!"}]
-    execute at @e[tag=TingleInteraction] if score @s text matches 4 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Alas, though I am already age 35, no fairy has come to me yet..."}]
-    execute at @e[tag=TingleInteraction] if score @s text matches 5 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"My father tells me to grow up and act my age, but why?"}]
-    execute at @e[tag=TingleInteraction] if score @s text matches 6 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"I tell you... Tingle is the very reincarnation of a fairy!"}]
-    execute at @e[tag=TingleInteraction] if score @s text matches 7 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Now while I stand here waiting for a fairy of my own, I sell maps to help out my father."}]
-    execute at @e[tag=TingleInteraction] if score @s text matches 8 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Lucky! Lucky! You're so lucky to have a fairy! I know! I know! We should be friends!"}]
-    execute at @e[tag=TingleInteraction] if score @s text matches 9 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Yes! Yes! In exchange, I will sell you a map for cheap as a sign of my friendship."}]
-    execute at @e[tag=TingleInteraction] if score @s text matches 10 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Will you buy one of Tingle's "},{"text":"maps?","color":"green"},{"text":"?"}]
+execute if entity @s[tag=TingleInteraction] if score @s WorkingVariable2 matches 1.. if function majoras_mask:locations/clocktown_north/npcs/tingle/text/repeating \
+    run return 0
 
-    execute at @e[tag=TingleInteraction] if score @s text matches 11 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"[Shop will be added later...]"}]
+## If player is human ##
+execute store result score @s WorkingVariable2 \
+    run function majoras_mask:bool/interacting_player_attributes {tag: NoTransformationMask, max_distance: 6}
 
-    execute at @e[tag=TingleInteraction] if score @s text matches 12 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"...I see! Well, call again!"}]
-    execute at @e[tag=TingleInteraction] if score @s text matches 13 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Tingle, Tingle! Kooloo-Limpah!","color":"green"}]
-        execute at @e[tag=TingleInteraction] if score @s text matches 13 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run scoreboard players set @e[tag=TingleInteraction,limit=1] npc_timer_temp 0
+# North Gate Guard
+execute if entity @s[tag=NorthClocktownSoldierInteraction] if score @s WorkingVariable2 matches 1.. if function majoras_mask:locations/clocktown_north/npcs/north_gate_soldier/text/normal \
+    run return 0
 
-    execute at @e[tag=TingleInteraction,scores={npc_timer_temp=50..}] if score @s text matches 14 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"...These are the magic words that Tingle created himself."}]
-    execute at @e[tag=TingleInteraction,scores={npc_timer_temp=50..}] if score @s text matches 15 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Don't steal them!"}]
-        execute at @e[tag=TingleInteraction,scores={npc_timer_temp=50..}] if score @s text matches 15 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!TingleMet] run tag @e[tag=globals,limit=1] add TingleMet
+## If player is Deku ##
+execute store result score @s WorkingVariable2 \
+    run function majoras_mask:bool/interacting_player_attributes {tag: Wearing_Deku_Mask, max_distance: 6}
 
-    # Tingle Met
-    execute at @e[tag=TingleInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Uh, sir?"}]
-    execute at @e[tag=TingleInteraction] if score @s text matches 2 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Hello, Mr. Fairy!"}]
-    execute at @e[tag=TingleInteraction] if score @s text matches 3 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Will you buy one of Tingle's "},{"text":"maps?","color":"green"},{"text":"?"}]
+# North Gate Guard
+execute if entity @s[tag=NorthClocktownSoldierInteraction] if score @s WorkingVariable2 matches 1.. if function majoras_mask:locations/clocktown_north/npcs/north_gate_soldier/text/deku \
+    run return 0
+   
+#jim
+ #Before balloon pop 
+   execute at @e[tag=JimInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!BomberBalloonPop] if entity @e[tag=globals,tag=!HideAndSeekFail] if entity @e[tag=!BomberGame] run tellraw @a[distance=..6] ["",{"text":"Jim: ","color":"red"},{"text":"...Whaddya want, shrimp? I'm busy practicing with my blowgun!"}]
+   execute at @e[tag=JimInteraction] if score @s text matches 2 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!BomberBalloonPop] if entity @e[tag=globals,tag=!HideAndSeekFail] if entity @e[tag=!BomberGame] run tellraw @a[distance=..6] ["",{"text":"Jim: ","color":"red"},{"text":"If you can't pop that "},{"text":"balloon","color":"red"},{"text":", then don't mess with Jim! Grrrr..."}]
+ #After balloon pop as deku 
+   execute at @e[tag=JimInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=BomberBalloonPop] if entity @e[tag=globals,tag=!HideAndSeekFail] if entity @e[tag=!BomberGame] run tellraw @a[distance=..6] ["",{"text":"Jim: ","color":"red"},{"text":"Are you the one who just popped that up there? Not bad for a Deku Scrub!"}]
+   execute at @e[tag=JimInteraction] if score @s text matches 2 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=BomberBalloonPop] if entity @e[tag=globals,tag=!HideAndSeekFail] if entity @e[tag=!BomberGame] run tellraw @a[distance=..6] ["",{"text":"Jim: ","color":"red"},{"text":"We Bombers have a "},{"text":"hideout","color":"red"},{"text":" that leads to the "},{"text":"observatory","color":"red"},{"text":" outside town."}]
+   execute at @e[tag=JimInteraction] if score @s text matches 3 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=BomberBalloonPop] if entity @e[tag=globals,tag=!HideAndSeekFail] if entity @e[tag=!BomberGame] run tellraw @a[distance=..6] ["",{"text":"Jim: ","color":"red"},{"text":"You need a "},{"text":"code","color":"red"},{"text":"  to get in. Maybe I'll tell you what it is!"}]
+   execute at @e[tag=JimInteraction] if score @s text matches 4 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=BomberBalloonPop] if entity @e[tag=globals,tag=!HideAndSeekFail] if entity @e[tag=!BomberGame] run tellraw @a[distance=..6] ["",{"text":"Jim: ","color":"red"},{"text":"But don't think you're getting it that easily! I can't just tell you what the code is... You'll have to pass my test first."}]
+   execute at @e[tag=JimInteraction] if score @s text matches 5 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=BomberBalloonPop] if entity @e[tag=globals,tag=!HideAndSeekFail] if entity @e[tag=!BomberGame] run tellraw @a[distance=..6] ["",{"text":"Jim: ","color":"red"},{"text":"Are you ready?"},{"text":" Yes No","color":"green"}]
+#yes
+   execute at @e[tag=JimInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=BomberBalloonPop] if entity @e[tag=globals,tag=!HideAndSeekFail] if entity @e[tag=!BomberGame] run tellraw @a[distance=..6] ["",{"text":"Jim: ","color":"red"},{"text":"All right! Line up, guys!"}]
+   execute at @e[tag=JimInteraction] if score @s text matches 2 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=BomberBalloonPop] if entity @e[tag=globals,tag=!HideAndSeekFail] if entity @e[tag=!BomberGame] run tellraw @a[distance=..6] ["",{"text":"Jim: ","color":"red"},{"text":"If you can find all "},{"text":"five","color":"red"},{"text":"  of us by "},{"text":"tomorrow morning","color":"red"},{"text":", I'll teach you the code!"}]
+   execute at @e[tag=JimInteraction] if score @s text matches 3 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=BomberBalloonPop] if entity @e[tag=globals,tag=!HideAndSeekFail] if entity @e[tag=!BomberGame] run tellraw @a[distance=..6] ["",{"text":"Jim: ","color":"red"},{"text":"Are you ready?"}]
+#No
+   execute at @e[tag=JimInteraction] if score @s text matches 2 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=BomberBalloonPop] if entity @e[tag=globals,tag=!HideAndSeekFail] if entity @e[tag=!BomberGame] run tellraw @a[distance=..6] ["",{"text":"Jim: ","color":"red"},{"text":"I thought you were tougher than that...But you're nothing special!"}]
+#If failed hide and seek Add hide and seek fail tag when time is up 
+   execute at @e[tag=JimInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=BomberBalloonPop] if entity @e[tag=globals,tag=HideAndSeekFail] if entity @e[tag=!BomberGame] run tellraw @a[distance=..6] ["",{"text":"Jim: ","color":"red"},{"text":"I thought you were tougher than that...But you're nothing special!"}]
+   execute at @e[tag=JimInteraction] if score @s text matches 2 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=BomberBalloonPop] if entity @e[tag=globals,tag=HideAndSeekFail] if entity @e[tag=!BomberGame] run tellraw @a[distance=..6] ["",{"text":"Jim: ","color":"red"},{"text":"Wanna try again?"},{"text":" Yes No","color":"green"}]
+   execute at @e[tag=JimInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=BomberBalloonPop] if entity @e[tag=globals,tag=HideAndSeekFail] if entity @e[tag=!BomberGame] run tellraw @a[distance=..6] ["",{"text":"Jim: ","color":"red"},{"text":"All right! Line up, guys!"}]
+   execute at @e[tag=JimInteraction] if score @s text matches 2 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=BomberBalloonPop] if entity @e[tag=globals,tag=HideAndSeekFail] if entity @e[tag=!BomberGame] run tellraw @a[distance=..6] ["",{"text":"Jim: ","color":"red"},{"text":"If you can find all "},{"text":"five","color":"red"},{"text":"  of us by "},{"text":"tomorrow morning","color":"red"},{"text":", I'll teach you the code!"}]
+   execute at @e[tag=JimInteraction] if score @s text matches 3 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=BomberBalloonPop] if entity @e[tag=globals,tag=HideAndSeekFail] if entity @e[tag=!BomberGame] run tellraw @a[distance=..6] ["",{"text":"Jim: ","color":"red"},{"text":"Are you ready?"}]
     
-    execute at @e[tag=TingleInteraction] if score @s text matches 4 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"[Shop will be added later...]"}]
-    
-    execute at @e[tag=TingleInteraction] if score @s text matches 5 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"...I see! Well, call again!"}]
-    execute at @e[tag=TingleInteraction] if score @s text matches 6 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=TingleMet] run tellraw @a[distance=..6] ["",{"text":"Tingle: ","color":"green"},{"text":"Tingle, Tingle! Kooloo-Limpah!","color":"green"}]
-        execute at @e[tag=TingleInteraction] if score @s text matches 6 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=TingleMet] run scoreboard players set @e[tag=TingleInteraction,limit=1] npc_timer_temp 0
-#Fairy Fountain 
+
  #Great fairy Before reform , says when you walk to the middle of the fairy fountain without stray fairy 
     execute at @e[tag=CTFairyInteraction] if score @s text matches 1 on target if entity @s[distance=..6] run tellraw @a[distance=..6] ["",{"text":"Great_Fairy:","color":"#EB7114"},{"text":"Young one! Please hear my plea! I have been broken and shattered to pieces by the masked Skull Kid.","color":"blue"}]
     execute at @e[tag=CTFairyInteraction] if score @s text matches 2 on target if entity @s[distance=..6] run tellraw @a[distance=..6] ["",{"text":"Great_Fairy:","color":"#EB7114"},{"text":"Please find the ","color":"blue"},{"text":"one","color":"red"},{"text":" Stray Fairy lost in town, and bring her to this","color":"blue"},{"text":"Fairy Fountain","color":"red"},{"text":".","color":"blue"}]
@@ -64,7 +67,7 @@
     execute at @e[tag=CTGreat_FairyInteraction] if score @s text matches 8 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HasMagic] run tellraw @a[distance=..6] ["",{"text":"Great_Fairy:","color":"#EB7114"},{"text":"You must not underestimate that child's powers. Kind young one,"}]
     execute at @e[tag=CTGreat_FairyInteraction] if score @s text matches 9 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HasMagic] run tellraw @a[distance=..6] ["",{"text":"Great_Fairy:","color":"#EB7114"},{"text":"If ever you are returned to your "},{"text":"former shape","color":"red"},{"text":", come see me. I shall give you "},{"text":"more help","color":"red"},{"text":"."}]
     execute at @e[tag=CTGreat_FairyInteraction] if score @s text matches 9 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=!HasMagic] run tag @e[tag=globals,tag=!HasMagic] add HasMagic
- #Repeated text 
+ #Repeated text if not human 
     execute at @e[tag=CTGreat_FairyInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=HasMagic] run tellraw @a[distance=..6] ["",{"text":"Great_Fairy:","color":"#EB7114"},{"text":"Welcome, "},{"selector":"@a[distance=..6]"},{"text":"..."}]
     execute at @e[tag=CTGreat_FairyInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=HasMagic] run tellraw @a[distance=..6] ["",{"text":"Great_Fairy:","color":"#EB7114"},{"text":"Come see me again if ever you are returned to your "},{"text":"former shape","color":"red"},{"text":". I shall give you an item that will add to your "},{"text":"strength","color":"red"},{"text":"..."}]
     execute at @e[tag=CTGreat_FairyInteraction] if score @s text matches 1 on target if entity @s[distance=..6] if entity @e[tag=globals,tag=HasMagic] run tellraw @a[distance=..6] ["",{"text":"Great_Fairy:","color":"#EB7114"},{"text":"The "},{"text":"Skull Kid","color":"red"},{"text":" is a childish demon... If you seek him, ask the "},{"text":"children","color":"red"},{"text":" in town."}]

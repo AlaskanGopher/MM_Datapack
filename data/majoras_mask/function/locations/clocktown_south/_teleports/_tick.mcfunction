@@ -22,4 +22,3 @@ execute if entity @s[x=23,y=104,z=4,dx=0,dy=5,dz=5] run function majoras_mask:lo
 execute if entity @s[x=-1,y=107,z=-25,dx=3,dy=5,dz=0] run function majoras_mask:locations/clocktown_south/_teleports/tunnels/to_north_clocktown
 execute if entity @s[x=-20,y=100,z=30,dx=0,dy=5,dz=4] run function majoras_mask:locations/clocktown_south/_teleports/tunnels/to_west_clocktown_southern
 execute if entity @s[x=-32,y=107,z=-3,dx=0,dy=11,dz=5] run function majoras_mask:locations/clocktown_south/_teleports/tunnels/to_west_clocktown_central
-

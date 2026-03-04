@@ -2,26 +2,17 @@ execute as @a if entity @s[tag=NightVision] run effect give @s minecraft:night_v
 execute as @a unless entity @s[tag=NightVision] run effect clear @s minecraft:night_vision
 execute as @e[type=marker, tag=globals, limit=1] store result score @s Time run time query daytime
 
-# Temp Login
-execute if entity @a[tag=!Registered] as @p[tag=!Registered] run function majoras_mask:entity_setup/login
-
-# Locations
-function majoras_mask:locations/_tick
+#Moving Things (Includes Day Cycle)
+function majoras_mask:moving_things/loop
 
 #Jump Cutscenes
 #function majoras_mask:jump_cutscenes/loop
 
 #Entities
-#function majoras_mask:entity_setup/loop
+function majoras_mask:entity/_tick
 
-#Moving Things
-function majoras_mask:moving_things/loop
-
-#Items
-function majoras_mask:items/loop
-
-#Music
-function majoras_mask:music/loop
+# Locations
+function majoras_mask:locations/_tick
 
 #Always Active
 recipe take @a *
@@ -33,6 +24,9 @@ stopsound @a ambient minecraft:ambient.cave
 execute if entity @a[scores={Sneak=1..}] run scoreboard players set @a Sneak 0
 execute if entity @a[scores={Walk=1..}] run scoreboard players set @a Walk 0
 execute if entity @a[scores={Run=1..}] run scoreboard players set @a Run 0
+
+execute if score @s PlayerQuit matches 1.. run function majoras_mask:entity/player/logout
+
 execute store result score @p coord_x run data get entity @p Pos[0]
 execute store result score @p coord_y run data get entity @p Pos[1]
 execute store result score @p coord_z run data get entity @p Pos[2]

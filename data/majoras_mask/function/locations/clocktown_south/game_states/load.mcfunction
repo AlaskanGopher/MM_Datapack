@@ -24,4 +24,4 @@ execute positioned 1.0 112 39.0 rotated 90 0 if entity @e[tag=globals,limit=1,sc
 execute as @e[tag=BremorInteraction] run scoreboard players set @s npc_movement 0
 
 # Reload
-function majoras_mask:locations/clocktown_south/game_states/gate_barrier
+function majoras_mask:locations/_any/game_states/clocktown_gate_barriers

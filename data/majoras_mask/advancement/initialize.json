@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:ender_eye"
+    },
+    "title": "Majora's Mask",
+    "description": "You've met a terrible fate, haven't you?",
+    "background": "minecraft:block/andesite",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "Launch": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "majoras_mask:entity/player/login"
+  }
+}

@@ -10,4 +10,4 @@ execute as @e[tag=TingleInteraction] run scoreboard players set @s npc_movement 
 execute as @e[tag=TingleInteraction] run scoreboard players set @s npc_timer 0
 
 # Reload
-function majoras_mask:locations/clocktown_north/game_states/gate_barrier
+function majoras_mask:locations/_any/game_states/clocktown_gate_barriers
